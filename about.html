@@ -53,12 +53,66 @@
     </div>
 </nav>
 
+<section id="hero" class="min-vh-100 d-flex align-items-center text-center position-relative">
+    <img src="./stuff/assets/aboutbg.jpg"
+         class="hero-bg position-absolute w-100 h-100 opacity-75" 
+         style="background: linear-gradient(rgba(var(--c-brand-rgb), 0.407), rgba(var(--c-brand-rgb), 0.207)) !important; z-index: -10;"/>
+    
+    <div class="container position-relative">
+        <div class="row">
+            <div class="col-12">
+                <h1 class="text-uppercase text-white fw-semibold display-1">
+                    <span data-aos="fade-left" data-aos-delay="100">Wildan</span>
+                    <span data-aos="fade-up" data-aos-delay="300">"Zavents"</span>
+                    <span data-aos="zoom-in" data-aos-delay="500">Fathan</span>
+                </h1>
+                <h4 class="text-white mt-3 mb-4">
+                    <span data-aos="fade-right" data-aos-delay="850">Currently is a Vocational High School student, </span><br>
+                    <span data-aos="fade-left" data-aos-delay="1100">majoring in software engineering at SMK Negeri 2 Pekanbaru</span>
+                </h4>
+                <div data-aos="fade-up" data-aos-delay="1250">
+                    <a href="javascript:void(0);" class="btn btn-brand me-2" id="youtubeButton">Click Me !</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
 
+<div class="music-player">
+    <div class="music-control">
+        <a id="music-backward" onclick="prevTrack()">
+            <i class="player-icons">&#xe802;</i>
+        </a>
+        <a id="music-play" onclick="playpauseTrack()">
+            <i class="player-icons">&#xe800;</i>
+        </a>
+        <a id="music-forward" onclick="nextTrack()">
+            <i class="player-icons">&#xe801;</i>
+        </a>
+    </div>
+    <a id="split">|</a>
+    <div class="music-info" style="flex: 5;">
+        <a id="music-queue">1/1</a>
+        <a id="split">|</a>
+        <a id="music-duration">0:00 / 0:00</a>
+        <a id="split">|</a>
+        <a id="music-title" style="flex: 5;">MUSIC-TITLE</a>
+    </div>
+    <a id="split">|</a>
+    <div class="music-volume" style="flex: 0.5; padding-left: 5px;padding-right: 32px;">
+        <input type="range" id="music-volume" min="0" max="100" value="25" onchange="setVolume()" oninput="setVolume()">
+    </div>
+    <audio id="music" src="" crossorigin="anonymous"></audio>
+  </div>
+
+
+  <script src="./stuff/public/js/music.js"></script>
     <script src="./stuff/bootstrap-5.3.3-dist/js/bootstrap.bundle.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.umd.js"></script>
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script src="./stuff/js/11.12.4-sweetalert2.all.min.js" type="text/javascript"></script>
     <script src="./stuff/js/main.js"></script>
+
 </body>
 
 </html>
