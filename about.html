@@ -9,8 +9,8 @@
     <meta name="author" content="Zavents">
     <meta name="description" content="About Zavents can be found here ! ">
     <!-- icon -->
-    <link rel="icon" type="image/png" sizes="32x32" href="./public/assets2/icon/zavents-logo-new.svg">
-    <link rel="icon" type="image/png" sizes="16x16" href="./public/assets2/icon/zavents-logo-new.svg">
+    <link rel="icon" type="image/png" sizes="32x32" href="./assets/icon/zavents-logo-new.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./assets/icon/zavents-logo-new.png">
     <!-- tailwind css -->
     <link rel="stylesheet" href="./css/style2.css">
     <!-- music css -->
@@ -19,10 +19,7 @@
     <link rel="stylesheet" href="./css/sweetalert.css">
     <!-- aos -->
     <link href="./css/aos.css" rel="stylesheet">
-    
-
-    
-
+  
 <style>
   @font-face {
     font-family: Terminus;
@@ -81,22 +78,17 @@
 </style>
 
 </head>
-
 <body style="background-image: url(./assets/sky.png) " > 
     <div class="bg-blue-100 sticky top-0 z-50 p-4">
         <div class="container mx-auto flex justify-center items-center">
-            <!-- Logo section -->
             <a href="#" class="mr-auto flex items-center">
                 <img class="h-9 w-auto" src="./assets/icon/logo.png" alt="Logo">
             </a>
-            
-        <!-- Hamburger Icon (visible on mobile) -->
         <button class="block md:hidden text-black focus:outline-none" id="navbar-toggle">
             <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
             </svg>
         </button>
-            <!-- Navbar list -->
             <div class="hidden md:flex md:items-center" id="navbar-menu">
             <ul class="flex gap-x-20 text-base font-bold">
                     <li><a href="./index.html" class="nav-link text-black hover:text-blue-700">Home</a></li>
@@ -111,7 +103,6 @@
         </div>
     </div>
     
-    < <!-- Mobile Menu (hidden by default, shown when hamburger is clicked) -->
     <div class="hidden absolute top-16 left-0 w-full bg-blue-100 p-5 md:hidden" id="mobile-menu">
         <ul class="flex flex-col gap-y-5 text-base font-bold">
             <li><a href="#" class="nav-link text-black hover:text-blue-700">Home</a></li>
@@ -125,19 +116,16 @@
     </div>
     
     <script>
-        // Toggle for mobile menu
         document.getElementById('navbar-toggle').addEventListener('click', function() {
             document.getElementById('mobile-menu').classList.toggle('hidden');
         });
     </script>
 
-
-<!-- About Section -->
 <section id="about">
     <div class="mx-auto max-w-screen-2xl px-4 py-12 sm:px-6 lg:px-8" style="z-index: -10;">
         <div class="grid grid-cols-1 lg:grid-cols-2">
-            <div class="relative flex items-center justify-center lg:py-12"> <!-- Added flex and justify-center -->
-                <div class="relative w-80 lg:max-h-[calc(100vh-6rem)]"> <!-- Keep it relative for positioning -->
+            <div class="relative flex items-center justify-center lg:py-12"> 
+                <div class="relative w-80 lg:max-h-[calc(100vh-6rem)]"> 
                     <img
                         alt="my picture"
                         src="./assets/me.jpg"
@@ -161,39 +149,25 @@
         </div>
     </div>
 </section>
-<!-- End of About Section -->
 
-<!-- Skillset Section -->
 <section class="py-12 bg-black/50">
   <div class="container grid grid-cols-1 gap-10 px-6 mx-auto lg:grid-cols-3">
-      <!-- Title and Intro -->
       <div>
           <h1 class="mt-2 text-3xl font-bold text-white md:text-4xl tracking-wide">My Technical Skillset</h1>    
           <p class="mt-4 text-gray-400">Here are some of the technologies I specialize in:</p>
       </div>
-
-      <!-- Skills Grid -->
       <div class="grid grid-cols-1 gap-12 lg:col-span-2 sm:grid-cols-2">
-            <!-- Python -->
             <div class="relative flex items-start space-x-4 p-4 rounded-lg hover:bg-gray-800 transition-colors group">
-              <!-- Python Icon and Description -->
               <img src="./assets/icon/py.svg" alt="Python Logo" class="w-12 h-12">
               <div>
                 <h3 class="font-bold text-xl text-white">Python</h3>
                 <p class="text-gray-400 mt-2">I am actively developing Discord bots using Python, focusing on automation, moderation, and custom commands for seamless user interactions.</p>
               </div>
-
-              <!-- Popup that shows on hover -->
               <div class="absolute bottom-full left-0 mb-6 w-64 p-4 bg-gray-900 text-white rounded-lg shadow-lg opacity-0 group-hover:opacity-100 group-hover:block transition-opacity duration-300 pointer-events-none group-hover:pointer-events-auto">
                 <img src="./assets/azbukents.png" alt="My Bot" class="w-full h-auto mb-2 rounded-lg">
                 <p>This is one of my Discord bots built with Python. Real-time notifications, and customizable commands for community management.</p>
               </div>
             </div>
-
-
-          
-
-          <!-- C++ -->
           <div class="flex items-start space-x-4 p-4 rounded-lg hover:bg-gray-800 transition-colors">
               <img src="./assets/icon/c.svg" alt="C++ Logo" class="w-12 h-12">
               <div>
@@ -201,8 +175,6 @@
                   <p class="text-gray-400 mt-2">I am experienced in designing and developing efficient IoT devices, using C++.</p>
               </div>
           </div>
-
-          <!-- PHP -->
           <div class="flex items-start space-x-4 p-4 rounded-lg hover:bg-gray-800 transition-colors">
               <img src="./assets/icon/html.svg" alt="HTML Logo" class="w-12 h-12">
               <div>
@@ -211,8 +183,6 @@
                     I’ve been working with Bootstrap and Tailwind for web design. I just finished a website using <a href="https://zavents.github.io/learn-tailwind" class="text-white font-semibold" target="_blank"> Tailwind</a>, and it was awesome to create a modern, responsive design quickly with its utility classes!
               </div>
           </div>
-
-          <!-- Git -->
           <div class="flex items-start space-x-4 p-4 rounded-lg hover:bg-gray-800 transition-colors">
               <img src="./assets/icon/vs.svg" alt="VS code Logo" class="w-12 h-12">
               <div>
@@ -225,7 +195,7 @@
 </section>
 <script>
   function showProject1() {
-      const imageUrl = "./assets/jam.jpeg"; // Ensure this path is correct
+      const imageUrl = "./assets/jam.jpeg";
       const img = new Image();
       img.src = imageUrl;
 
@@ -237,10 +207,10 @@
                   <p>This project is a digital clock that uses an ESP32 module to retrieve time data from the internet. It displays the time and date in real-time with high precision, synchronized with a global time server via Wi-Fi.</p>
               `,
               confirmButtonText: 'Close',
-              width: `${img.width + 40}px`, // Adjust width to fit image + padding
+              width: `${img.width + 40}px`, 
               padding: '20px',
               customClass: {
-                  popup: 'swal-custom-popup', // Custom class for further CSS styling if needed
+                  popup: 'swal-custom-popup', 
               },
           });
       };
@@ -252,7 +222,7 @@
   }
 
   function showProject3() {
-      const imageUrl = "assets/sampah.gif"; // Ensure this path is correct
+      const imageUrl = "assets/sampah.gif"; 
       const img = new Image();
       img.src = imageUrl;
 
@@ -264,10 +234,10 @@
                   <p>This project is a smart trash bin that uses Arduino Uno to control servo motors. The lid opens and closes automatically when it detects an object nearby, improving hygiene and convenience.</p>
               `,
               confirmButtonText: 'Close',
-              width: `${img.width + 40}px`, // Adjust width to fit image + padding
+              width: `${img.width + 40}px`, 
               padding: '20px',
               customClass: {
-                  popup: 'swal-custom-popup', // Custom class for further CSS styling if needed
+                  popup: 'swal-custom-popup', 
               },
           });
       };
@@ -286,9 +256,8 @@
           <h2 class="text-2xl font-bold text-white sm:text-3xl">Projects</h2>
           <p class="mt-4 text-gray-400">Here are some projects I've worked on recently.</p>
       </header>
-
       <ul class="mt-8 grid gap-4 sm:grid-cols-2 lg:grid-cols-2">
-          <!-- Project 2 -->
+
           <li>
               <a href="javascript:void(0);" onclick="showProject1()" class="block overflow-hidden rounded-lg border border-gray-100 bg-white shadow-sm">
                   <img alt="Project 2" src="./assets/jam.jpeg" class="h-56 w-full object-cover" />
@@ -299,7 +268,6 @@
                   </div>
               </a>
           </li>
-          <!-- Project 3 -->
           <li>
               <a href="javascript:void(0);" onclick="showProject3()" class="block overflow-hidden rounded-lg border border-gray-100 bg-white shadow-sm">
                   <img alt="Project 3" src="./assets/sampah.gif" class="h-56 w-full object-cover" />
