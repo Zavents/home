@@ -1,86 +1,280 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Zavents</title>
-    
-    <link rel="stylesheet" href="./bootstrap-5.3.3-dist/css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-    <link rel="stylesheet" href="./css/style.css">
-    <link rel="stylesheet" href="./css/music.css">
-    <link rel="icon" type="image/png" href="./assets/icon/logo.jpg">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zavents's Project Website </title>
+
+    <!-- author -->
+    <meta name="author" content="Zavents">
+    <meta name="description" content="About Zavents can be found here ! ">
+    <!-- icon -->
+    <link rel="icon" type="image/png" sizes="32x32" href="./public/assets2/icon/zavents-logo-new.svg">
+    <link rel="icon" type="image/png" sizes="16x16" href="./public/assets2/icon/zavents-logo-new.svg">
+    <!-- tailwind css -->
+    <link rel="stylesheet" href="./css/style2.css">
+    <!-- music css -->
+     <link rel="stylesheet" href="./css/music.css">
+    <!-- sweet alert -->
     <link rel="stylesheet" href="./css/11.12.4-sweetalert2.min.css">
+    <!-- aos -->
 
-</head>
 
-<body>  
+    <link href="https://cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <!-- AOS CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
 
-    <!-- NAVBAR -->
-    <nav class="navbar navbar-expand-lg bg-white sticky-top">
-        <div class="container">
-                <img class="navbar-logo "style="height:35px; width: 70px;" loading="lazy"  src="./assets/icon/logo.png" alt="">
+
+<style>
+  @font-face {
+    font-family: Terminus;
+    src: url(./fonts/TerminusTTF.woff2)
+}
+  *
+  {
+    font-family: Terminus;
+  }
+  html {
+    scroll-behavior: smooth;
+  }
+  ::-webkit-scrollbar {
+  width: 6px;
+  }
+  ::-webkit-scrollbar-track {
+  background: #afb3b1;
+  }
+  ::-webkit-scrollbar-thumb {
+  background: #062637;
+  }
+  ::-webkit-scrollbar-thumb:hover {
+  background: rgb(42, 42, 111);
+  }
+  @layer utilities {
+    .scrollbar-thin {
+      scrollbar-width: thin;
+      scrollbar-color: #2ad46c #1c9d5698; /* thumb color | track color */
+    }
+
+    .scrollbar-thumb {
+      &::-webkit-scrollbar-thumb {
+        background-color: #07441e; /* Thumb color */
+        border-radius: 10px;
+      }
+    }
+    .scrollbar-thumb {
+      &::-webkit-scrollbar-thumb {
+        background-color: #07441e; /* Thumb color */
+        border-radius: 10px;
+      }
+    }
+
+    .scrollbar-track {
+      &::-webkit-scrollbar-track {
+        background-color: #333333; /* Track color */
+      }
+    }
+
+    .scrollbar {
+      &::-webkit-scrollbar {
+        width: 8px; /* Width of the scrollbar */
+      }
+    }
+  } 
+</style>
+
+</head><style>
+    :root {
+        --c-brand-rgb: 255, 255, 255; /* Replace with your RGB values */
+    }
+
+    body {
+        background-image: url('./assets/banner1.jpg');
+        background-size: cover;
+        background-position: center;
+        min-height: 100vh;
+        background-color: rgb(255, 255, 255);
+        position: relative; /* Ensure the body is positioned */
+        z-index: 0; /* Lower z-index for body */
+    }
+
+    body::before {
+        opacity: 0.75; /* Overall opacity of the background */
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(rgba(var(--c-brand-rgb), 0.190), rgba(var(--c-brand-rgb), 0.190));
+        z-index: -1; /* Keep this below the content */
+        opacity: 75;
+        backdrop-filter: blur(2px); /* Blur effect */
+        -webkit-backdrop-filter: blur(2px); /* For Safari support */
+    }
+
+    /* Ensure navbar stays on top of the background */
+    .navbar {
+        position: sticky; /* or fixed if you want it always visible */
+        top: 0;
+        z-index: 100; /* Higher than body and its background */
+    }
+</style>
+
+<body class="relative bg-white">
+
+    <!-- Navbar -->
+    <div class="bg-blue-100 navbar p-4">
+        <div class="container mx-auto flex justify-center items-center">
+            <!-- Logo section -->
+            <a href="#" class="mr-auto flex items-center">
+                <img class="h-9 w-auto" src="./assets/icon/logo.png" alt="Logo">
             </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
+            
+            <!-- Hamburger Icon (visible on mobile) -->
+            <button class="block md:hidden text-black focus:outline-none" id="navbar-toggle">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+                </svg>
             </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ms-auto ">
 
-                    <li class="nav-item">
-                        <a class="nav-link mx-4 fw-semibold active" href="#">Home</a>
-                    </li>
-                    <li class="nav-item ">
-                        <a class="nav-link mx-4 fw-semibold " href="./about.html">About Me</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link mx-4 fw-semibold" href="#social">Social Stuff </a>
-                    </li>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link mx-4 fw-semibold" href="#portfolio">Website</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link mx-4 fw-semibold" href="#team">Photo</a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link mx-3 px-2 fw-semibold" href="#blog">Video</a>
-                  </li>
-                    <li class="nav-item">
-                        <a class="nav-link fw-semibold" style="padding-left: 20px;" href="#contact">Vents</a>
-                    </li>
+            <!-- Navbar list -->
+            <div class="hidden md:flex md:items-center" id="navbar-menu">
+                <ul class="flex gap-x-20 text-base font-bold">
+                    <li><a href="./index.html" class="nav-link text-blue-700 hover:text-blue-700">Home</a></li>
+                    <li><a href="./about.html" class="nav-link text-black hover:text-blue-700">About Me</a></li>
+                    <li><a href="#social" class="nav-link text-black hover:text-blue-700">Social Stuff</a></li>
+                    <li><a href="#portfolio" class="nav-link text-black hover:text-blue-700">Website</a></li>
+                    <li><a href="#team" class="nav-link text-black hover:text-blue-700">Photo</a></li>
+                    <li><a href="#blog" class="nav-link text-black hover:text-blue-700">Video</a></li>
+                    <li><a href="#contact" class="nav-link text-black hover:text-blue-700">Vents</a></li>
                 </ul>
             </div>
         </div>
-    </nav>
-
-   <!-- HERO -->
-<section id="hero" class="min-vh-100 d-flex align-items-center text-center position-relative">
-    <img src="./assets/banner1.jpg"
-         class="hero-bg position-absolute w-100 h-100 opacity-75" 
-         style="background: linear-gradient(rgba(var(--c-brand-rgb), 0.407), rgba(var(--c-brand-rgb), 0.207)) !important; z-index: -10;"/>
-    
-    <div class="container position-relative">
-        <div class="row">
-            <div class="col-12">
-                <h1 class="text-uppercase text-white fw-semibold display-1">
-                    <span data-aos="fade-left" data-aos-delay="100">Wildan</span>
-                    <span data-aos="fade-up" data-aos-delay="300">"Zavents"</span>
-                    <span data-aos="zoom-in" data-aos-delay="500">Fathan</span>
-                </h1>
-                <h4 class="text-white mt-3 mb-4">
-                    <span data-aos="fade-right" data-aos-delay="850">Currently is a Vocational High School student, </span><br>
-                    <span data-aos="fade-left" data-aos-delay="1100">majoring in software engineering at SMK Negeri 2 Pekanbaru</span>
-                </h4>
-                <div data-aos="fade-up" data-aos-delay="1250">
-                    <a href="javascript:void(0);" class="btn btn-brand me-2" id="youtubeButton">Click Me !</a>
-                </div>
-            </div>
-        </div>
     </div>
+
+    <!-- Mobile Menu (hidden by default, shown when hamburger is clicked) -->
+    <div class="hidden absolute top-16 left-0 w-full bg-blue-100 p-5 md:hidden" id="mobile-menu">
+        <ul class="flex flex-col gap-y-5 text-base font-bold">
+            <li><a href="#" class="nav-link text-black hover:text-blue-700">Home</a></li>
+            <li><a href="./about.html" class="nav-link text-blue-700 hover:text-blue-700 active">About Me</a></li>
+            <li><a href="#social" class="nav-link text-black hover:text-blue-700">Social Stuff</a></li>
+            <li><a href="#portfolio" class="nav-link text-black hover:text-blue-700">Website</a></li>
+            <li><a href="#team" class="nav-link text-black hover:text-blue-700">Photo</a></li>
+            <li><a href="#blog" class="nav-link text-black hover:text-blue-700">Video</a></li>
+            <li><a href="#contact" class="nav-link text-black hover:text-blue-700">Vents</a></li>
+        </ul>
+    </div>
+
+    <script>
+        // Toggle for mobile menu
+        document.getElementById('navbar-toggle').addEventListener('click', function() {
+            document.getElementById('mobile-menu').classList.toggle('hidden');
+        });
+    </script>
+
+
+
+<!-- About Section -->
+ <section id="hero" class="min-h-screen  flex items-center justify-center text-center ">
+<div class="container ">
+   <div class="grid grid-cols-1">
+       <div>
+        <style>.text-white{
+            text-shadow: 0 0 3px #ff9ed3, 0 0 5px #1900ff;
+        }</style>
+           <h1 class="uppercase text-white font-bold text-3xl md:text-3xl lg:text-7xl ">
+               <span data-aos="fade-left" data-aos-delay="100">Wildan</span>
+               <span data-aos="fade-up" data-aos-delay="300">"Zavents"</span>
+               <span data-aos="zoom-in" data-aos-delay="500">Fathan</span>
+           </h1>
+           <h4 class="text-white mt-3 mb-4 text-lg md:text-xl font-bold lg:text-xl">
+               <span data-aos="fade-right" data-aos-delay="850">Currently a Vocational High School student,</span><br>
+               <span data-aos="fade-left" data-aos-delay="1100">majoring in software engineering at SMK Negeri 2 Pekanbaru</span>
+           </h4>
+           <div data-aos="fade-up" data-aos-delay="1250">
+            <style>
+                .btn {
+                    font-weight: 600;
+                    font-size: 14px;
+                    text-transform: uppercase;
+                    border-radius: 0;
+                    padding: 10px 24px;
+                }
+            
+                .btn-brand {
+                    background-color:  #6145dd; /* Base color */
+                    border-color:  #6145dd; /* Border color */
+                    color: white; /* Text color */
+                }
+            
+                .btn-brand:hover {
+                    background-color: #1f1452e0; /* Hover background color */
+                    border-color: #1f1452e0; /* Hover border color */
+                    color: white; /* Hover text color */
+                }
+                /* popup button nav */
+            .nav-btn {
+                display: inline-block;
+                padding: 15px 20px;
+                text-align: center;
+                color: white !important;
+                background-color: #6145dd;
+                border-radius: 5px;
+                text-decoration: none;
+                font-size: 1.5rem;
+                font-weight: bold;
+                transition:  all 0.5s ease;
+                width: 100%;
+                text-decoration: none !important;
+            }
+            
+            .nav-btn:hover {
+                background-color:#1f1452e0;
+                color: white;
+            }
+            .swal2-confirm{
+                background-color: #6145dd;
+                text-decoration: none !important;
+                transition: var(--transition);
+            }
+            .swal2-confirm:hover{
+                background-color: #1f1452e0;
+                text-decoration: none !important;
+                transition: all 0.5s ease;
+            }
+            .swal2-popup.fullscreen-popup {
+                max-width: none;
+                height: 100%;
+            }
+            
+            .full-width {
+                width: 100%;
+            }
+
+            </style>
+            
+            <a href="javascript:void(0);" id="youtubeButton" class="btn btn-brand me-2 bg-[#6145dd] border-[#6145dd] text-white transition-all duration-500 ease-in-out hover:bg-[#1f1452e0] hover:border-[#1f1452e0] py-2 px-4 rounded">
+                Click Me!
+            </a>
+            
+            
+           </div>
+       </div>
+   </div>
+</div>
 </section>
+
+<!-- End of About Section -->
+
+
+
+
+
+    
+
+
 
 <div class="music-player">
     <div class="music-control">
@@ -109,395 +303,42 @@
     <audio id="music" src="" crossorigin="anonymous"></audio>
   </div>
 
-    <!-- ABOUT
-    <section id="about" class="section-padding">
-        <div class="container">
-            <div class="row">
-                <div class="col-12 text-center" data-aos="fade-down" data-aos-delay="50">
-                    <div class="section-title">
-                        <h1 class="display-4 fw-semibold">MDTA Nurul Huda</h1>
-                        <div class="line"></div>
-                        <p>Masjid ini telah berdiri sejak tahun lebih dari 20+ tahun dan sudah memiliki sebuah <a href="https://www.youtube.com/@MDTANurulHuda05">MDTA</a> pada tahun 2017 hingga kini sudah mencapai 7 Alumni
-                </div>
-            </div>
-            <div class="row justify-content-between align-items-center">
-                <div class="col-lg-6" data-aos="fade-down" data-aos-delay="50" >
-                    <img class="about-gambar" src="./assets/images/about.png" alt="">
-                </div>
-                <div data-aos="fade-down" data-aos-delay="150" class="col-lg-5">
-                    <p class="mt-3 mb-4"><a href="https://www.youtube.com/@MDTANurulHuda05">MDTA</a> ini memiliki beragam macam kegiatan untuk mengisi waktu luang yakni . . . </p>
-                    <div class="d-flex pt-4 mb-3">
-                        <div class="iconbox me-4">
-                            <i class="ri-book-line"></i>
-                        </div>
-                        <div>
-                            <h5>Al-Qur'an</h5>
-                            <p>Kegiatan Magrib Mengaji yang diadakan setiap harinya. Kegiatan ini diharapkan agar Santri - Santri lebih ingat kepada Allah SWT dengan membaca al-quran </p>
-                        </div>
-                    </div>
-                    <div class="d-flex mb-3">
-                        <div class="iconbox me-4">
-                            <i class="ri-user-5-line"></i>
-                        </div>
-                        <div>
-                            <h5>Jadwal</h5>
-                            <p>Kegiatan belajar mengajar dilakukan pada hari senin - jum'at, pada <B>jam 13:00 - waktu shalat isya</B> </p>
-                        </div>
-                    </div>
-                    <div class="d-flex">
-                        <div class="iconbox me-4">
-                            <i class="ri-building-line"></i>
-                        </div>
-                        <div>
-                            <h5>Kuliah Shubuh</h5>
-                            <p>Setiap hari minggu diadakan kegiatan kuliah shubuh yakni, melatih keberanian untuk tampil membacakan surah - surah pendek</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
+<script>
+  function openModal(imgElement) {
+    const modal = document.getElementById("imageModal");
+    const modalImage = document.getElementById("modalImage");
+    modalImage.src = imgElement.src;
+    modal.classList.remove("hidden");
+  }
+  function closeModal() {
+    const modal = document.getElementById("imageModal");
+    modal.classList.add("hidden");
+  }
+  function openModal(imgElement) {
+  const modal = document.getElementById("imageModal");
+  const modalImage = document.getElementById("modalImage");
+  const modalContent = document.getElementById("modalContent");
+  modalImage.src = imgElement.src;
+  setTimeout(() => {
+    modalContent.classList.remove("scale-75");
+    modalContent.classList.add("scale-100");
+  }, 100);
+  modal.classList.remove("hidden");
+  modal.classList.add("opacity-100");
+}
 
+function closeModal() {
+  const modal = document.getElementById("imageModal");
+  const modalContent = document.getElementById("modalContent");
+  modalContent.classList.remove("scale-100");
+  modalContent.classList.add("scale-75");
+  setTimeout(() => {
+    modal.classList.add("hidden");
+  }, 500);
+}
+</script>
 
-  jadwal
-    <section id="jadwal" class="section-padding border-top">
-        
-        <div class="container">
-            <div class="row">
-                <div class="col-12 text-center" data-aos="fade-down" data-aos-delay="150">
-                    <div class="section-title">
-                        <h1 class="display-4 fw-semibold">Jadwal Sholat</h1>
-                        
-                        <h2><i class="ri-map-pin-line"></i>  Pekanbaru</h2>
-                        <div class="line"></div>
-                        <p>Berikut ialah Jadwal Shalat untuk Pekanbaru dan Sekitarnya</p>
-
-
-                        <div  id="clock">
-                            <h1 id="date-time"></h1>
-                          </div>
-                        </div>
-
-                </div>
-            </div>
-            <div class="row g-4 text-center">
-                <div class="col-lg-4 col-sm-6" data-aos="fade-down" data-aos-delay="150">
-                    <div class="service theme-shadow p-lg-5 p-4">
-                        
-                        <div class="iconbox">
-                            <i class="ri-time-line"></i>
-                        </div>
-                        <h5 class="mt-2 mb -3">Imsyak</h5>
-                        <p>4:37 AM</p>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-sm-6" data-aos="fade-down" data-aos-delay="250">
-                    <div class="service theme-shadow p-lg-5 p-4">
-                        <div class="iconbox">
-                            <i class="ri-time-line"></i>
-                        </div>
-                        <h5 class="mt-2 mb -3">Shubuh</h5>
-                        <p>4:47 AM</p>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-sm-6" data-aos="fade-down" data-aos-delay="350">
-                    <div class="service theme-shadow p-lg-5 p-4">
-                        <div class="iconbox">
-                            <i class="ri-time-line"></i>
-                        </div>
-                        <h5 class="mt-2 mb -3">Dzuhur</h5>
-                        <p>12:15 AM</p>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-sm-6" data-aos="fade-down" data-aos-delay="450">
-                    <div class="service theme-shadow p-lg-5 p-4">
-                        <div class="iconbox">
-                            <i class="ri-time-line"></i>
-                        </div>
-                        <h5 class="mt-2 mb -3">Ashr</h5>
-                        <p>3:40 PM</p>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-sm-6" data-aos="fade-down" data-aos-delay="550">
-                    <div class="service theme-shadow p-lg-5 p-4">
-                        <div class="iconbox">
-                            <i class="ri-time-line"></i>
-                        </div>
-                        <h5 class="mt-2 mb -3">Maghrib</h5>
-                        <p>6:20 PM</p>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-sm-6" data-aos="fade-down" data-aos-delay="650">
-                    <div class="service theme-shadow p-lg-5 p-4">
-                        <div class="iconbox">
-                            <i class="ri-time-line"></i>
-                        </div>
-                        <h5 class="mt-2 mb -3">Isya</h5>
-                        <p>7:34 PM</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section> 
-
-    COUNTER
-    <section id="counter" class="section-padding">
-        <div class="container text-center">
-            <div class="row 2">
-             
-                <div class="col-lg-5 col-sm-6" data-aos="fade-down" data-aos-delay="250">
-                    <h1 class="text-white display-4">Terbit Matahari</h1>
-                    <h6 class="text-uppercase mb-0 text-white mt-3">6:06 AM </h6>
-                </div>
-                <div class="col-lg-7 col-sm-6" data-aos="fade-down" data-aos-delay="350">
-                    <h1 class="text-white display-4">Dhuha</h1>
-                    <h6 class="text-uppercase mb-4 text-white mt-3">6:30 AM</h6>
-                </div>
-            </div>
-        </div>
-    </section>
-
-
-     PORTFOLIO
-    <section id="portfolio" class="section-padding">
-        <div class="container">
-            <div class="row">
-                <div class="col-12 text-center" data-aos="fade-down" data-aos-delay="150">
-                    <div class="section-title">
-                        <h1 class="display-4 fw-semibold">Dokumentasi Masjid</h1>
-                        <div class="line"></div>
-                        <p>Kegiatan - kegiatan yang dilakukan di Masjid Nurul Huda</p>
-                    </div>
-                </div>
-            </div>
-            <div class="row g-9">
-                <div class="col-md-4" data-aos="fade-down" data-aos-delay="150">
-                    <div class="portfolio-item image-zoom">
-                        <div class="image-zoom-wrapper">
-                            <img src="./assets/images/project-1.jpeg" alt="">
-                        </div>
-                        <a href="./assets/images/project-1.jpeg" data-fancybox="gallery" class="iconbox">
-                            <i class="ri-search-2-line"></i>
-                        </a>
-                    </div>
-                    <div class="portfolio-item image-zoom mt-4">
-                        <div class="image-zoom-wrapper">
-                            <img src="./assets/images/project-2.jpeg" alt="">
-                        </div>
-                        <a href="./assets/images/project-2.jpeg" data-fancybox="gallery" class="iconbox">
-                            <i class="ri-search-2-line"></i>
-                        </a>
-                    </div>
-                </div>
-                <div class="col-md-4" data-aos="fade-down" data-aos-delay="250">
-                    <div class="portfolio-item image-zoom">
-                        <div class="image-zoom-wrapper">
-                            <img src="./assets/images/project-3.jpeg" alt="">
-                        </div>
-                        <a href="./assets/images/project-3.jpeg" data-fancybox="gallery" class="iconbox">
-                            <i class="ri-search-2-line"></i></a>
-                    </div>
-                    <div class="portfolio-item image-zoom mt-4">
-                        <div class="image-zoom-wrapper">
-                            <img src="./assets/images/project-4.jpg" alt="">
-                        </div>
-                        <a href="./assets/images/project-4.jpg" data-fancybox="gallery" class="iconbox">
-                            <i class="ri-search-2-line"></i></a>
-                    </div>
-                </div>
-                <div class="col-md-4" data-aos="fade-down" data-aos-delay="350">
-                    <div class="portfolio-item image-zoom">
-                        <div class="image-zoom-wrapper">
-                            <img src="./assets/images/project-5.jpeg" alt="">
-                        </div>
-                        <a href="./assets/images/project-5.jpeg" data-fancybox="gallery" class="iconbox">
-                            <i class="ri-search-2-line"></i>
-                        </a>
-                    </div>
-                    <div class="portfolio-item image-zoom mt-4">
-                        <div class="image-zoom-wrapper">
-                            <img src="./assets/images/project-6.jpg" alt="">
-                        </div>
-                        <a href="./assets/images/project-6.jpg" data-fancybox="gallery" class="iconbox">
-                            <i class="ri-search-2-line"></i>
-                        </a>
-                    </div>
-                    <div class="portfolio-item image-zoom mt-4">
-                        <div class="image-zoom-wrapper">
-                            <img src="./assets/images/project-8.jpg" alt="">
-                        </div>
-                        <a href="./assets/images/project-8.jpg" data-fancybox="gallery" class="iconbox">
-                            <i class="ri-search-2-line"></i>
-                        </a>
-                    </div>
-                    <div class="portfolio-item image-zoom mt-4">
-                        <div class="image-zoom-wrapper">
-                            <img src="./assets/images/project-9.jpeg" alt="">
-                        </div>
-                        <a href="./assets/images/project-9.jpeg" data-fancybox="gallery" class="iconbox">
-                            <i class="ri-search-2-line"></i>
-                        </a>
-                </div>
-            </div>
-        </div>
-    </section>
-
- 
-     TEAM 
-    <section id="team" class="section-padding">
-        <div class="container">
-            <div class="row">
-                <div class="col-12 text-center" data-aos="fade-down" data-aos-delay="150">
-                    <div class="section-title">
-                        <h1 class="display-4 fw-semibold">Panitia</h1>
-                        <div class="line"></div>
-                        <p></p>
-                    </div>
-                </div>
-            </div>
-            <div class="row g-4 text-center ">
-                <div class="col-md-4" data-aos="fade-down" data-aos-delay="150">
-                    <div class="team-member image-zoom">
-                        <div class="image-zoom-wrapper">
-                            <img id="panitia" src="./assets/images/person-1.png" alt="">
-                        </div>
-                        <div class="team-member-content">
-                            <h4 class="text-white">Ust. Abdhul Ghani</h4>
-                            <p class="mb-0 text-white">Ketua Pengurus MDTA</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4" data-aos="fade-down" data-aos-delay="250">
-                    <div class="team-member image-zoom">
-                        <div class="image-zoom-wrapper">
-                            <img id="panitia" src="./assets/images/person-2.jpg" alt="">
-                        </div>
-                        <div class="team-member-content">
-                            <h4 class="text-white">H. Israwardi</h4>
-                            <p class="mb-0 text-white">Ketua Pengurus Masjid</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4" data-aos="fade-down" data-aos-delay="350">
-                    <div class="team-member image-zoom">
-                        <div class="image-zoom-wrapper">
-                            <img id="panitia" src="./assets/images/person-3.jpeg" alt="">
-                        </div>
-                        <div class="team-member-content">
-                            <h4 class="text-white">Bero S. Soekarno </h4>
-                            <p class="mb-0 text-white">Ketua Pengurus Yayasan</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-
-    CONTACT
-    <section class="section-padding bg-light" id="contact">
-        <div class="container text-center">
-            <div class="row 6">
-                <h1 class="text-white display-4 fw-semibold" >Sedekah Masjid</h1>
-
-                <p>&nbsp;</p>
-                <div class="col-lg-5 col-sm-6" data-aos="fade-down" data-aos-delay="250">
-                    <h1 class="text-white display-4">Bank BRI Syariah</h1>
-                    <h6 class="text-uppercase mb-0 text-white mt-3">0000-0000-0000-0000 </h6>
-                </div>
-                
-                <div class="col-lg-7 col-sm-6" data-aos="fade-down" data-aos-delay="350">
-                    <h1 class="text-white display-4">Bank Islam </h1>
-                    <h6 class="text-uppercase mb-4 text-white mt-3">0000-0000-0000-0000</h6>
-                    
-                    
-                    <p>&nbsp;</p>
-                    <p>&nbsp;</p>
-                    <p>&nbsp;</p>
-                </div>
-
-            </div>
-        </div>
-
-    </section>
-
-
-    BLOG
-    <section id="blog" class="section-padding">
-        <div class="container">
-            <div class="row">
-                <div class="col-12 text-center" data-aos="fade-down" data-aos-delay="150">
-                    <div class="section-title">
-                        <h1 class="display-4 fw-semibold">Video</h1>
-                        <div class="line"></div>
-                        <p>Video - Video Dari Masjid Nurul Huda</p>
-                    </div>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-md-4" data-aos="fade-down" data-aos-delay="150">
-                    <div class="team-member image-zoom">
-                        <div class="image-zoom-wrapper">
-                            <a href="https://www.youtube.com/watch?v=CkteQNAq7YI" target="_blank">
-                            <img src="./assets/images/blog-post-1.png" alt=""></a>
-                        </div>
-                        <h5 class="mt-4">Allah Mengawasi Setiap Manusia - Kajian Shubuh Ramadhan oleh Ust. Rizki Mubarok</h5>
-
-                        <a href="https://www.youtube.com/watch?v=CkteQNAq7YI">Video nya > </a>
-                    </div>
-                </div>
-                <div class="col-md-4" data-aos="fade-down" data-aos-delay="250">
-                    <div class="team-member image-zoom">
-                        <div class="image-zoom-wrapper">
-                            <a href="https://www.youtube.com/watch?v=47NP8V1--5E" target="_blank">
-                            <img src="./assets/images/blog-post-2.png" alt=""></a>
-                        </div>
-                        <h5 class="mt-4">Motivasi Amal Sholeh- Kajian Shubuh Ramadhan oleh Ustadz. Saifullah, S.Pdi</h5>
-                   
-                        <a href="https://www.youtube.com/watch?v=47NP8V1--5E" target="_blank">Video nya > </a>
-                    </div>
-                </div>
-                <div class="col-md-4" data-aos="fade-down" data-aos-delay="350">
-                    <div class="team-member image-zoom">
-                        <div class="image-zoom-wrapper">
-                            <a href="https://www.youtube.com/watch?v=aL0SneyynME" target="_blank">
-                            <img src="./assets/images/blog-post-3.png" alt=""></a>
-                        </div>
-                        <h5 class="mt-4">GHIBAH - Kajian Shubuh Ramadhan oleh Ust. Atan Aprizal, M.Pd</h5>
-                       
-                        <a href="https://www.youtube.com/watch?v=aL0SneyynME" target="_blank">Video nya > </a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    FOOTER 
-    <footer class="bg-dark">
-        <div class="footer-bottom">
-            <div class="container">
-                <div class="row g-4 justify-content-between">
-                    <div class="col-auto">
-                        <p class="mb-0">Masjid Nurul Huda 2024</p>
-                    </div>
-                    <div class="col-auto">
-                        <p class="mb-0">Designed with <i class="ri-heart-line"></i>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </footer>
-
- -->
-
-
-
-    <script src="./js/music.js"></script>
-    <script src="./bootstrap-5.3.3-dist/js/bootstrap.bundle.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.umd.js"></script>
-    <script src="./js/11.12.4-sweetalert2.all.min.js" type="text/javascript"></script>
-    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-    <script src="./js/main.js"></script>
+<script src="./js/music.js"></script>
+<script src="./js/main.js" type="text/javascript"></script>
 </body>
-
 </html>
