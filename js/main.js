@@ -66,10 +66,10 @@ document.getElementById('youtubeButton').addEventListener('click', function() {
     html: `
       <ul style="list-style-type: none; padding-left: 0; display: flex; flex-wrap: wrap; gap: 10px; justify-content: center;">
         <li style="flex-basis: 100%;">
-          <a href="./index.html" class="nav-btn full-width">Home</a>
+          <a href="../index.html" class="nav-btn full-width">Home</a>
         </li>
         <li style="flex-basis: calc(50% - 10px);">
-          <a href="./about.html" class="nav-btn">About Me</a>
+          <a href="../about.html" class="nav-btn">About Me</a>
         </li>
         <li style="flex-basis: calc(50% - 10px);">
           <a href="#social" class="nav-btn">Social Stuff</a>
