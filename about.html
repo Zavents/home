@@ -220,7 +220,6 @@
           Swal.fire('Error', 'Could not load the project image.', 'error');
       };
   }
-
   function showProject3() {
       const imageUrl = "assets/sampah.gif"; 
       const img = new Image();
@@ -240,8 +239,7 @@
                   popup: 'swal-custom-popup', 
               },
           });
-      };
-
+      }
       img.onerror = function() {
           console.error('Image failed to load:', imageUrl);
           Swal.fire('Error', 'Could not load the project image.', 'error');
