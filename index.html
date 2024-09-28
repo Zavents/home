@@ -4,7 +4,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Zavents's Project Website </title>
-
     <!-- author -->
     <meta name="author" content="Zavents">
     <meta name="description" content="About Zavents can be found here ! ">
@@ -20,10 +19,7 @@
     <!-- aos -->
     <link href="./css/aos.css" rel="stylesheet">  
     <!-- AOS CDN -->
-
     <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
-
-
 <style>
   @font-face {
     font-family: Terminus;
@@ -80,7 +76,6 @@
     }
   } 
 </style>
-
 </head><style>
     :root {
         --c-brand-rgb: 255, 255, 255; /* Replace with your RGB values */
@@ -118,25 +113,18 @@
         z-index: 100; /* Higher than body and its background */
     }
 </style>
-
 <body class="relative bg-white">
-
     <!-- Navbar -->
     <div class="bg-blue-100 navbar p-4">
         <div class="container mx-auto flex justify-center items-center">
-            <!-- Logo section -->
             <a href="#" class="mr-auto flex items-center">
                 <img class="h-9 w-auto" src="./assets/icon/logo.png" alt="Logo">
             </a>
-            
-            <!-- Hamburger Icon (visible on mobile) -->
             <button class="block md:hidden text-black focus:outline-none" id="navbar-toggle">
                 <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
                 </svg>
             </button>
-
-            <!-- Navbar list -->
             <div class="hidden md:flex md:items-center" id="navbar-menu">
                 <ul class="flex gap-x-20 text-base font-bold">
                     <li><a href="./index.html" class="nav-link text-blue-700 hover:text-blue-700">Home</a></li>
@@ -150,8 +138,6 @@
             </div>
         </div>
     </div>
-
-    <!-- Mobile Menu (hidden by default, shown when hamburger is clicked) -->
     <div class="hidden absolute top-16 left-0 w-full bg-blue-100 p-5 md:hidden" id="mobile-menu">
         <ul class="flex flex-col gap-y-5 text-base font-bold">
             <li><a href="#" class="nav-link text-black hover:text-blue-700">Home</a></li>
@@ -163,7 +149,6 @@
             <li><a href="#contact" class="nav-link text-black hover:text-blue-700">Vents</a></li>
         </ul>
     </div>
-
     <script>
         // Toggle for mobile menu
         document.getElementById('navbar-toggle').addEventListener('click', function() {
@@ -171,9 +156,6 @@
         });
     </script>
 
-
-
-<!-- About Section -->
  <section id="hero" class="min-h-screen  flex items-center justify-center text-center ">
 <div class="container ">
    <div class="grid grid-cols-1">
@@ -199,19 +181,16 @@
                     border-radius: 0;
                     padding: 10px 24px;
                 }
-            
                 .btn-brand {
-                    background-color:  #6145dd; /* Base color */
-                    border-color:  #6145dd; /* Border color */
-                    color: white; /* Text color */
+                    background-color:  #6145dd; 
+                    border-color:  #6145dd; 
+                    color: white; 
                 }
-            
                 .btn-brand:hover {
-                    background-color: #1f1452e0; /* Hover background color */
-                    border-color: #1f1452e0; /* Hover border color */
-                    color: white; /* Hover text color */
+                    background-color: #1f1452e0; 
+                    border-color: #1f1452e0; 
+                    color: white; 
                 }
-                /* popup button nav */
             .nav-btn {
                 display: inline-block;
                 padding: 15px 20px;
@@ -226,7 +205,6 @@
                 width: 100%;
                 text-decoration: none !important;
             }
-            
             .nav-btn:hover {
                 background-color:#1f1452e0;
                 color: white;
@@ -249,29 +227,15 @@
             .full-width {
                 width: 100%;
             }
-
             </style>
-            
             <a href="javascript:void(0);" id="youtubeButton" class="btn btn-brand me-2 bg-[#6145dd] border-[#6145dd] text-white transition-all duration-500 ease-in-out hover:bg-[#1f1452e0] hover:border-[#1f1452e0] py-2 px-4 rounded">
                 Click Me!
             </a>
-            
-            
            </div>
        </div>
    </div>
 </div>
 </section>
-
-<!-- End of About Section -->
-
-
-
-
-
-    
-
-
 
 <div class="music-player">
     <div class="music-control">
@@ -299,7 +263,6 @@
     </div>
     <audio id="music" src="" crossorigin="anonymous"></audio>
   </div>
-
 <script>
   function openModal(imgElement) {
     const modal = document.getElementById("imageModal");
