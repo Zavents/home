@@ -1,6 +1,6 @@
 document.getElementById('youtubeButton').addEventListener('click', function() {
   Swal.fire({
-    title: 'Navigation',
+    title: 'Where to Go ?',
     html: `
       <ul style="list-style-type: none; padding-left: 0; display: flex; flex-wrap: wrap; gap: 10px; justify-content: center;">
         <li style="flex-basis: 100%;">
