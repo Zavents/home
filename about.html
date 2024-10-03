@@ -102,7 +102,7 @@
     <div class="bg-blue-100 sticky top-0 z-50 p-4">
         <div class="container mx-auto flex justify-center items-center">
             <a href="#" class="mr-auto flex items-center">
-                <img class="h-9 w-auto" src="./assets/icon/logo.png" alt="Logo">
+                <img loading="lazy" class="h-9 w-auto" src="./assets/icon/logo.png" alt="Logo">
             </a>
         <button class="block md:hidden text-black focus:outline-none" id="navbar-toggle">
             <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
@@ -146,7 +146,7 @@
         <div class="grid grid-cols-1 lg:grid-cols-2">
             <div class="relative flex items-center justify-center lg:py-12"> 
                 <div class="relative w-80 lg:max-h-[calc(100vh-6rem)]"> 
-                    <img
+                    <img loading="lazy"
                         alt="my picture"
                         src="./assets/me.jpg"
                         class="h-full w-full object-cover rounded-md"
@@ -178,25 +178,25 @@
       </div>
       <div class="grid grid-cols-1 gap-12 lg:col-span-2 sm:grid-cols-2">
             <div class="relative flex items-start space-x-4 p-4 rounded-lg hover:bg-gray-800 transition-colors group">
-              <img src="./assets/icon/py.svg" alt="Python Logo" class="w-12 h-12">
+              <img loading="lazy" src="./assets/icon/py.svg" alt="Python Logo" class="w-12 h-12">
               <div>
                 <h3 class="font-bold text-xl text-white">Python</h3>
                 <p class="text-gray-400 mt-2">I am actively developing Discord bots using Python, focusing on automation, moderation, and custom commands for seamless user interactions.</p>
               </div>
               <div class="absolute bottom-full left-0 mb-6 w-64 p-4 bg-gray-900 text-white rounded-lg shadow-lg opacity-0 group-hover:opacity-100 group-hover:block transition-opacity duration-300 pointer-events-none group-hover:pointer-events-auto">
-                <img src="./assets/azbukents.png" alt="My Bot" class="w-full h-auto mb-2 rounded-lg">
+                <img loading="lazy" src="./assets/azbukents.png" alt="My Bot" class="w-full h-auto mb-2 rounded-lg">
                 <p>This is one of my Discord bots built with Python. Real-time notifications, and customizable commands for community management.</p>
               </div>
             </div>
           <div class="flex items-start space-x-4 p-4 rounded-lg hover:bg-gray-800 transition-colors">
-              <img src="./assets/icon/c.svg" alt="C++ Logo" class="w-12 h-12">
+              <img loading="lazy" src="./assets/icon/c.svg" alt="C++ Logo" class="w-12 h-12">
               <div>
                   <h3 class="font-bold text-xl text-white">C++</h3>
                   <p class="text-gray-400 mt-2">I am experienced in designing and developing efficient IoT devices, using C++.</p>
               </div>
           </div>
           <div class="flex items-start space-x-4 p-4 rounded-lg hover:bg-gray-800 transition-colors">
-              <img src="./assets/icon/html.svg" alt="HTML Logo" class="w-12 h-12">
+              <img loading="lazy" src="./assets/icon/html.svg" alt="HTML Logo" class="w-12 h-12">
               <div>
                   <h3 class="font-bold text-xl text-white">HTML</h3>
                   <p class="text-gray-400 mt-2">
@@ -204,7 +204,7 @@
               </div>
           </div>
           <div class="flex items-start space-x-4 p-4 rounded-lg hover:bg-gray-800 transition-colors">
-              <img src="./assets/icon/vs.svg" alt="VS code Logo" class="w-12 h-12">
+              <img loading="lazy" src="./assets/icon/vs.svg" alt="VS code Logo" class="w-12 h-12">
               <div>
                   <h3 class="font-bold text-xl text-white">VSCode</h3>
                   <p class="text-gray-400 mt-2">I mainly using <strong>Visual Studio Code </strong> as my text editor for coding</p>
@@ -248,7 +248,7 @@
           Swal.fire({
               title: 'Smart Trash Bin',
               html: `
-                  <img src="${imageUrl}" alt="Smart Trash Bin" class="mb-2" style="width:100%; max-height:300px; object-fit:cover;">
+                  <img loading="lazy" src="${imageUrl}" alt="Smart Trash Bin" class="mb-2" style="width:100%; max-height:300px; object-fit:cover;">
                   <p>This project is a smart trash bin that uses Arduino Uno to control servo motors. The lid opens and closes automatically when it detects an object nearby, improving hygiene and convenience.</p>
               `,
               confirmButtonText: 'Close',
@@ -276,7 +276,7 @@
 
           <li>
               <a href="javascript:void(0);" onclick="showProject1()" class="block overflow-hidden rounded-lg border border-gray-100 bg-white shadow-sm">
-                  <img alt="Project 2" src="./assets/jam.jpeg" class="h-56 w-full object-cover" />
+                  <img loading="lazy" alt="Project 2" src="./assets/jam.jpeg" class="h-56 w-full object-cover" />
                   <div class="p-6">
                       <h3 class="font-bold text-gray-900">Digital Clock</h3>
                       <p class="mt-2 text-sm text-gray-500">Internet-based Digital Clock</p>
@@ -286,7 +286,7 @@
           </li>
           <li>
               <a href="javascript:void(0);" onclick="showProject3()" class="block overflow-hidden rounded-lg border border-gray-100 bg-white shadow-sm">
-                  <img alt="Project 3" src="./assets/sampah.gif" class="h-56 w-full object-cover" />
+                  <img loading="lazy" alt="Project 3" src="./assets/sampah.gif" class="h-56 w-full object-cover" />
                   <div class="p-6">
                       <h3 class="font-bold text-gray-900">Smart Trash Bin</h3>
                       <p class="mt-2 text-sm text-gray-500">Smart Trash Bin That Opens and Closes by Itself</p>
@@ -368,11 +368,10 @@
 
     
 <footer class="w-full">
-
     <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
     <div class="max-w-3xl mx-auto">
     <a href="https://github.com/zavents" target="_blank" class="flex justify-center ">
-      <img src="./assets/icon/loogo.png" loading="lazy" width="100px" alt="">
+      <img loading="lazy" src="./assets/icon/loogo.png" loading="lazy" width="100px" alt="">
     </a>
     <ul class="text-lg flex items-center justify-center flex-col gap-7 md:flex-row md:gap-12 transition-all duration-500 py-10 mb-10 border-b border-gray-200">
       <li>
