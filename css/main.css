@@ -2,6 +2,28 @@
     font-family: Terminus;
     src: url(./fonts/TerminusTTF.woff2)
 }
+.ms200 {
+  animation-delay: 200ms;
+}
+.ms400 {
+  animation-delay: 400ms;
+}
+.ms600 {
+  animation-delay: 600ms;
+}
+.ms800 {
+  animation-delay: 800ms;
+}
+.ms1s {
+  animation-delay: 1000ms;
+}
+.ms2s5 {
+  animation-delay: 2500ms;
+}
+.ms3s {
+  animation-delay: 3000ms;
+}
+
   *
   {
     font-family: Terminus;
