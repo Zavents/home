@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zavents's Project Website </title>
+
+    <!-- author -->
+    <meta name="author" content="Zavents">
+    <meta name="description" content="List of Zavents Website Project ! ">
+    <!-- icon -->
+    <link rel="icon" type="image/png" sizes="32x32" href="./stuff/public/assets2/icon/zavents-logo-new.svg">
+    <link rel="icon" type="image/png" sizes="16x16" href="./stuff/public/assets2/icon/zavents-logo-new.svg">
+    <!-- style css -->
+    <link rel="stylesheet" href="./css/style-4.css">
+
+<style>
+  @font-face {
+    font-family: Terminus;
+    src: url(./fonts/TerminusTTF.woff2)
+}
+  *
+  {
+    font-family: Terminus;
+  }
+  html {
+    scroll-behavior: smooth;
+  }
+  ::-webkit-scrollbar {
+  width: 6px;
+  }
+  ::-webkit-scrollbar-track {
+  background: #afb3b1;
+  }
+  ::-webkit-scrollbar-thumb {
+  background: #062637;
+  }
+  ::-webkit-scrollbar-thumb:hover {
+  background: rgb(42, 42, 111);
+  }
+  @layer utilities {
+    .scrollbar-thin {
+      scrollbar-width: thin;
+      scrollbar-color: #2ad46c #1c9d5698; /* thumb color | track color */
+    }
+
+    .scrollbar-thumb {
+      &::-webkit-scrollbar-thumb {
+        background-color: #07441e; /* Thumb color */
+        border-radius: 10px;
+      }
+    }
+    .scrollbar-thumb {
+      &::-webkit-scrollbar-thumb {
+        background-color: #07441e; /* Thumb color */
+        border-radius: 10px;
+      }
+    }
+
+    .scrollbar-track {
+      &::-webkit-scrollbar-track {
+        background-color: #333333; /* Track color */
+      }
+    }
+
+    .scrollbar {
+      &::-webkit-scrollbar {
+        width: 8px; /* Width of the scrollbar */
+      }
+    }
+  } 
+</style>
+
+</head>
+<body style="background-color:#000000;"> 
+
+<section class="flex justify-center items-center gap-10 mx-auto p-4 min-h-screen">
+  <div class="container min-screen-h mb-7 text-center">
+    <h1 class="max-w-5xl mb-4 text-4xl  tracking-tight leading-none md:text-5xl xl:text-6xl text-gray-400 font-semibold mx-auto">
+      Zavents's Website Project <br>
+    </h1>
+    <div class="grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-3">
+      <div class="grid gap-10">
+        <div>
+          <!-- Apply min-h to card container -->
+          <div class="relative flex flex-col my-6 bg-gray-800 shadow-lg border border-white-500 hover:shadow-pink-700 rounded-lg w-70 transition-transform duration-300 ease-in-out transform hover:scale-105 min-h-[450px]"> 
+            <div class="relative h-56 m-2.5 overflow-hidden text-white rounded-md">
+              <img loading="lazy" src="./stuff/public/assets2/screenshot1.png" loading="lazy" alt="card-image" class="cursor-pointer transition-transform duration-500 ease-in-out transform hover:scale-110" onclick="openModal(this)" />
+            </div>
+            <div class="p-4 flex-grow">
+              <h6 class="mb-2 text-white text-xl font-semibold">
+                Bootstrap
+              </h6>
+              <p class="text-gray-400 leading-normal font-light">
+                On this website, I was instructed to learn Bootstrap, and I created a website that displays Bootstrap components here!
+              </p>
+            </div>
+            <div class="flex  px-5 flex-wrap  items-center  align-middle left-20  gap-2 pb-3 ">
+              <a href="javascript:void(0)" class="flex bg-purple-300 border border-purple-600 rounded-full px-2 py-1 items-center text-center hover:scale-95 duration-200 hover:shadow-md hover:shadow-purple-700/70">
+                <img loading="lazy" src="./stuff/public/assets2/bs.svg" class="w-3 h-3" alt="">
+                <p class="text-purple-600 ps-1 text-xs font-semibold tracking-wider">BOOTSTRAP</p>
+              </a>
+              <a href="javascript:void(0)" class="flex bg-orange-300 border border-orange-600 rounded-full px-2 py-1 items-center text-center hover:scale-95 duration-200 hover:shadow-md hover:shadow-orange-700/70">
+                <img loading="lazy" src="./stuff/public/assets2/html.svg" class="w-3 h-3" alt="">
+                <p class="text-orange-600 ps-1 text-xs font-semibold tracking-wider">HTML</p>
+              </a>
+              <a href="javascript:void(0)" class="flex bg-cyan-300 border border-cyan-600 rounded-full px-2 py-1 items-center text-center hover:scale-95 duration-200 hover:shadow-md hover:shadow-cyan-700/70">
+                <img loading="lazy" src="./stuff/public/assets2/css.svg" class="w-3 h-3" alt="">
+                <p class="text-cyan-600 ps-1 text-xs font-semibold tracking-wider">CSS</p>
+              </a>
+            </div>
+            <div class="px-4 pb-4 pt-0 mt-2">
+              <a  href="https://magang.webby.digital/wildan/learn-bootstrap/" target="_blank">
+                  <button class="rounded-md bg-gray-600 py-2 px-4 border border-transparent text-center text-sm text-white transition-all shadow-md hover:shadow-lg focus:bg-slate-700 focus:shadow-none active:bg-slate-700 hover:bg-slate-700 active:shadow-none disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none" type="button">
+                  Visit Site
+                </button>
+              </a>
+              <a  href="https://github.com/zavents/learn-bootstrap" target="_blank">
+                  <button class="rounded-md bg-gray-600 py-2 px-4 border border-transparent text-center text-sm text-white transition-all shadow-md hover:shadow-lg focus:bg-slate-700 focus:shadow-none active:bg-slate-700 hover:bg-slate-700 active:shadow-none disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none" type="button">
+                  Check on Github
+                </button>
+              </a>
+            </div>
+            <div class="absolute top-0 left-0 bg-white border-gray-900 text-gray-800 font-bold py-1 px-3 rounded-lg m-0">
+              1
+            </div>
+          </div>
+          <div id="imageModal" class="fixed inset-0 bg-black bg-opacity-70 flex justify-center items-center hidden transition-opacity duration-500 ease-in-out" style="z-index: 100">
+            <div id="modalContent" class="relative max-w-4xl mx-auto p-6 bg-gray-900 rounded-lg transform scale-75 transition-transform duration-500 ease-in-out" style="z-index: 100">
+              <img id="modalImage" src="" alt="Fullscreen image" class="max-w-full h-auto rounded-lg shadow-lg" style="z-index: 100" />
+              <button class="absolute top-2 right-2 bg-gray-200 px-5 text-black rounded-full p-2" onclick="closeModal()">X</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="grid gap-10">
+        <div>
+          <div class="relative flex flex-col my-6 bg-gray-800 shadow-lg border border-white-500 hover:shadow-pink-700 rounded-lg w-70 transition-transform duration-300 ease-in-out transform hover:scale-105 min-h-[450px]">
+            <div class="relative h-56 m-2.5 overflow-hidden text-white rounded-md">
+              <img loading="lazy" src="./stuff//public/assets2/screenshot2.png" loading="lazy" alt="card-image" class="cursor-pointer transition-transform duration-500 ease-in-out transform hover:scale-110" onclick="openModal(this)" />
+            </div>
+            <div class="p-4 flex-grow">
+              <h6 class="mb-2 text-white text-xl font-semibold">
+                IFG
+              </h6>
+              <p class="text-gray-400 leading-normal font-light">
+                On this website, I was instructed to replicate a design built with Tailwind  and then convert it into Bootstrap , ensuring the layout and styling work with the new framework.
+              </p>
+            </div>
+            <div class="flex  px-5 flex-wrap  items-center  align-middle left-20  gap-2 pb-3 ">
+              <a href="javascript:void(0)" class="flex bg-purple-300 border border-purple-600 rounded-full px-2 py-1 items-center text-center hover:scale-95 duration-200 hover:shadow-md hover:shadow-purple-700/70">
+                <img loading="lazy" src="./stuff/public/assets2/bs.svg" class="w-3 h-3" alt="">
+                <p class="text-purple-600 ps-1 text-xs font-semibold tracking-wider">BOOTSTRAP</p>
+              </a>
+              <a href="javascript:void(0)" class="flex bg-orange-300 border border-orange-600 rounded-full px-2 py-1 items-center text-center hover:scale-95 duration-200 hover:shadow-md hover:shadow-orange-700/70">
+                <img loading="lazy" src="./stuff/public/assets2/html.svg" class="w-3 h-3" alt="">
+                <p class="text-orange-600 ps-1 text-xs font-semibold tracking-wider">HTML</p>
+              </a>
+              <a href="javascript:void(0)" class="flex bg-cyan-300 border border-cyan-600 rounded-full px-2 py-1 items-center text-center hover:scale-95 duration-200 hover:shadow-md hover:shadow-cyan-700/70">
+                <img loading="lazy" src="./stuff/public/assets2/css.svg" class="w-3 h-3" alt="">
+                <p class="text-cyan-600 ps-1 text-xs font-semibold tracking-wider">CSS</p>
+              </a>
+              <a href="javascript:void(0)" class="flex bg-yellow-300 border border-yellow-600 rounded-full px-2 py-1 items-center text-center hover:scale-95 duration-200 hover:shadow-md hover:shadow-yellow-700/70">
+                <img loading="lazy" src="./stuff/public/assets2/js.svg" class="w-3 h-3 border border-white" alt="">
+                <p class="text-yellow-600 ps-1 text-xs font-semibold tracking-wider">JAVASCRIPT</p>
+              </a>
+            </div>
+            <div class="px-4 pb-4 pt-0 mt-2">
+              <a  href="https://magang.webby.digital/wildan/ifg/" target="_blank">
+                  <button class="rounded-md bg-gray-600 py-2 px-4 border border-transparent text-center text-sm text-white transition-all shadow-md hover:shadow-lg focus:bg-slate-700 focus:shadow-none active:bg-slate-700 hover:bg-slate-700 active:shadow-none disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none" type="button">
+                  Visit Site
+                </button>
+              </a>
+              <a  href=" https://github.com/Zavents/ifg" target="_blank">
+                  <button class="rounded-md bg-gray-600 py-2 px-4 border border-transparent text-center text-sm text-white transition-all shadow-md hover:shadow-lg focus:bg-slate-700 focus:shadow-none active:bg-slate-700 hover:bg-slate-700 active:shadow-none disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none" type="button">
+                  Check on Github
+                </button>
+              </a>
+            </div>
+            <div class="absolute top-0 left-0 bg-white border-gray-900 text-gray-800 font-bold py-1 px-3 rounded-lg m-0">
+              2
+            </div>
+          </div>
+          <div id="imageModal" class="fixed inset-0 bg-black bg-opacity-70 flex justify-center items-center hidden transition-opacity duration-500 ease-in-out" style="z-index: 100">
+            <div id="modalContent" class="relative max-w-4xl mx-auto p-6 bg-gray-900 rounded-lg transform scale-75 transition-transform duration-500 ease-in-out" style="z-index: 100">
+              <img id="modalImage" src="" alt="Fullscreen image" class="max-w-full h-auto rounded-lg shadow-lg" style="z-index: 100" />
+              <button class="absolute top-2 right-2 bg-gray-200 px-5 text-black rounded-full p-2" onclick="closeModal()">X</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="grid gap-10">
+        <div>
+          <div class="relative flex flex-col my-6 bg-gray-800 shadow-lg border border-white-500 hover:shadow-pink-700 rounded-lg w-70 transition-transform duration-300 ease-in-out transform hover:scale-105 min-h-[450px]">
+            <div class="relative h-56 m-2.5 overflow-hidden text-white rounded-md">
+              <img loading="lazy" src="./stuff//public/assets2/screenshot3.png" loading="lazy" alt="card-image" class="cursor-pointer transition-transform duration-500 ease-in-out transform hover:scale-110" onclick="openModal(this)" />
+            </div>
+            <div class="p-4 flex-grow">
+              <h6 class="mb-2 text-white text-xl font-semibold">
+                Ikinglink
+              </h6>
+              <p class="text-gray-400 leading-normal font-light">
+                an office project that asked us to create a design for the office. It uses Bootstrap, but only for the base grid and responsive system; the rest of the styling is done with pure CSS. The website is hard to replicate because we're still new to JavaScript
+              </p>
+            </div>
+            <div class="flex  px-5 flex-wrap  items-center  align-middle left-20  gap-2 pb-3 ">
+              <a href="javascript:void(0)" class="flex bg-cyan-300 border border-cyan-600 rounded-full px-2 py-1 items-center text-center hover:scale-95 duration-200 hover:shadow-md hover:shadow-cyan-700/70">
+                <img loading="lazy" src="./stuff/public/assets2/css.svg" class="w-3 h-3" alt="">
+                <p class="text-cyan-600 ps-1 text-xs font-semibold tracking-wider">CSS</p>
+              </a>
+              <a href="javascript:void(0)" class="flex bg-orange-300 border border-orange-600 rounded-full px-2 py-1 items-center text-center hover:scale-95 duration-200 hover:shadow-md hover:shadow-orange-700/70">
+                <img loading="lazy" src="./stuff/public/assets2/html.svg" class="w-3 h-3" alt="">
+                <p class="text-orange-600 ps-1 text-xs font-semibold tracking-wider">HTML</p>
+              </a>
+
+              <a href="javascript:void(0)" class="flex bg-yellow-300 border border-yellow-600 rounded-full px-2 py-1 items-center text-center hover:scale-95 duration-200 hover:shadow-md hover:shadow-yellow-700/70">
+                <img loading="lazy" src="./stuff/public/assets2/js.svg" class="w-3 h-3 border border-white" alt="">
+                <p class="text-yellow-600 ps-1 text-xs font-semibold tracking-wider">JAVASCRIPT</p>
+              </a>
+              <a href="javascript:void(0)" class="flex bg-purple-300 border border-purple-600 rounded-full px-2 py-1 items-center text-center hover:scale-95 duration-200 hover:shadow-md hover:shadow-purple-700/70">
+                <img loading="lazy" src="./stuff/public/assets2/bs.svg" class="w-3 h-3" alt="">
+                <p class="text-purple-600 ps-1 text-xs font-semibold tracking-wider">BOOTSTRAP</p>
+              </a>
+            </div>
+            <div class="px-4 pb-4 pt-0 mt-2">
+              <a  href="https://magang.webby.digital/wildan/ikinglink ">
+                  <button class="rounded-md bg-gray-600 py-2 px-4 border border-transparent text-center text-sm text-white transition-all shadow-md hover:shadow-lg focus:bg-slate-700 focus:shadow-none active:bg-slate-700 hover:bg-slate-700 active:shadow-none disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none" type="button">
+                  Visit Site
+                </button>
+              </a>
+              <a  href=" https://github.com/Zavents/ikinglink">
+                  <button class="rounded-md bg-gray-600 py-2 px-4 border border-transparent text-center text-sm text-white transition-all shadow-md hover:shadow-lg focus:bg-slate-700 focus:shadow-none active:bg-slate-700 hover:bg-slate-700 active:shadow-none disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none" type="button">
+                  Check on Github
+                </button>
+              </a>
+            </div>
+            <div class="absolute top-0 left-0 bg-white border-gray-900 text-gray-800 font-bold py-1 px-3 rounded-lg m-0">
+              2
+            </div>
+          </div>
+          <div id="imageModal" class="fixed inset-0 bg-black bg-opacity-70 flex justify-center items-center hidden transition-opacity duration-500 ease-in-out" style="z-index: 100">
+            <div id="modalContent" class="relative max-w-4xl mx-auto p-6 bg-gray-900 rounded-lg transform scale-75 transition-transform duration-500 ease-in-out" style="z-index: 100">
+              <img id="modalImage" src="" alt="Fullscreen image" class="max-w-full h-auto rounded-lg shadow-lg" style="z-index: 100" />
+              <button class="absolute top-2 right-2 bg-gray-200 px-5 text-black rounded-full p-2" onclick="closeModal()">X</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="grid gap-10">
+        <div>
+          <div class="relative flex flex-col my-6 bg-gray-800 shadow-lg border border-white-500 hover:shadow-pink-700 rounded-lg w-70 transition-transform duration-300 ease-in-out transform hover:scale-105 min-h-[450px]"> 
+            <div class="relative h-56 m-2.5 overflow-hidden text-white rounded-md">
+              <img loading="lazy" src="./stuff/public/assets2/screenshot4.png" loading="lazy" alt="card-image" class="cursor-pointer transition-transform duration-500 ease-in-out transform hover:scale-110" onclick="openModal(this)" />
+            </div>
+            <div class="p-4 flex-grow">
+              <h6 class="mb-2 text-white text-xl font-semibold">
+                Calendar
+              </h6>
+              <p class="text-gray-400 leading-normal font-light">
+                Our office project tasked us with creating a calendar scheduler in HTML, optimized for mobile view
+              </p>
+            </div>
+            <div class="flex  px-5 flex-wrap  items-center  align-middle left-20  gap-2 pb-3 ">
+              <a href="#" class="flex bg-yellow-300 border border-yellow-600 rounded-full px-2 py-1 items-center text-center hover:scale-95 duration-200 hover:shadow-md hover:shadow-yellow-700/70">
+                <img loading="lazy" src="./stuff/public/assets2/js.svg" class="w-3 h-3 border border-white" alt="">
+                <p class="text-yellow-600 ps-1 text-xs font-semibold tracking-wider">JAVASCRIPT</p>
+              </a>
+              <a href="#" class="flex bg-orange-300 border border-orange-600 rounded-full px-2 py-1 items-center text-center hover:scale-95 duration-200 hover:shadow-md hover:shadow-orange-700/70">
+                <img loading="lazy" src="./stuff/public/assets2/html.svg" class="w-3 h-3" alt="">
+                <p class="text-orange-600 ps-1 text-xs font-semibold tracking-wider">HTML</p>
+              </a>
+              <a href="#" class="flex bg-cyan-300 border border-cyan-600 rounded-full px-2 py-1 items-center text-center hover:scale-95 duration-200 hover:shadow-md hover:shadow-cyan-700/70">
+                <img loading="lazy" src="./stuff/public/assets2/css.svg" class="w-3 h-3" alt="">
+                <p class="text-cyan-600 ps-1 text-xs font-semibold tracking-wider">CSS</p>
+              </a>
+            </div>
+            <div class="px-4 pb-4 pt-0 mt-2">
+              <a  href="https://magang.webby.digital/wildan/calendar/" target="_blank">
+                  <button class="rounded-md bg-gray-600 py-2 px-4 border border-transparent text-center text-sm text-white transition-all shadow-md hover:shadow-lg focus:bg-slate-700 focus:shadow-none active:bg-slate-700 hover:bg-slate-700 active:shadow-none disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none" type="button">
+                  Visit Site
+                </button>
+              </a>
+              <a  href="https://github.com/zavents/calendar" target="_blank">
+                  <button class="rounded-md bg-gray-600 py-2 px-4 border border-transparent text-center text-sm text-white transition-all shadow-md hover:shadow-lg focus:bg-slate-700 focus:shadow-none active:bg-slate-700 hover:bg-slate-700 active:shadow-none disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none" type="button">
+                  Check on Github
+                </button>
+              </a>
+            </div>
+            <div class="absolute top-0 left-0 bg-white border-gray-900 text-gray-800 font-bold py-1 px-3 rounded-lg m-0">
+              1
+            </div>
+          </div>
+          <div id="imageModal" class="fixed inset-0 bg-black bg-opacity-70 flex justify-center items-center hidden transition-opacity duration-500 ease-in-out" style="z-index: 100">
+            <div id="modalContent" class="relative max-w-4xl mx-auto p-6 bg-gray-900 rounded-lg transform scale-75 transition-transform duration-500 ease-in-out" style="z-index: 100">
+              <img id="modalImage" src="" alt="Fullscreen image" class="max-w-full h-auto rounded-lg shadow-lg" style="z-index: 100" />
+              <button class="absolute top-2 right-2 bg-gray-200 px-5 text-black rounded-full p-2" onclick="closeModal()">X</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="grid gap-10">
+        <div>
+          <div class="relative flex flex-col my-6 bg-gray-800 shadow-lg border border-white-500 hover:shadow-pink-700 rounded-lg w-70 transition-transform duration-300 ease-in-out transform hover:scale-105 min-h-[450px]">
+            <div class="relative h-56 m-2.5 overflow-hidden text-white rounded-md">
+              <img loading="lazy" src="./stuff//public/assets2/screenshot5.png" loading="lazy" alt="card-image" class="cursor-pointer transition-transform duration-500 ease-in-out transform hover:scale-110" onclick="openModal(this)" />
+            </div>
+            <div class="p-4 flex-grow">
+              <h6 class="mb-2 text-white text-xl font-semibold">
+                Tailwind !
+              </h6>
+              <p class="text-gray-400 leading-normal font-light">
+                A new framework to work with! It was a bit difficult figuring out how to install and use the Tailwind CLI, but in the end, it was simple to use
+              </p>
+            </div>
+            <div class="flex  px-5 flex-wrap  items-center  align-middle left-20  gap-2 pb-3 ">
+              <a href="#" class="flex bg-blue-300 border border-blue-600 rounded-full px-2 py-1 items-center text-center hover:scale-95 duration-200 hover:shadow-md hover:shadow-blue-700/70">
+                <img loading="lazy" src="./stuff/public/assets2/tailwind.svg" class="w-3 h-3 bg-blue-100/30 rounded-full" alt="">
+                <p class="text-blue-600 ps-1 text-xs font-semibold tracking-wider">TAILWIND</p>
+              </a>
+              <a href="#" class="flex bg-orange-300 border border-orange-600 rounded-full px-2 py-1 items-center text-center hover:scale-95 duration-200 hover:shadow-md hover:shadow-orange-700/70">
+                <img loading="lazy" src="./stuff/public/assets2/html.svg" class="w-3 h-3" alt="">
+                <p class="text-orange-600 ps-1 text-xs font-semibold tracking-wider">HTML</p>
+              </a>
+              <a href="#" class="flex bg-cyan-300 border border-cyan-600 rounded-full px-2 py-1 items-center text-center hover:scale-95 duration-200 hover:shadow-md hover:shadow-cyan-700/70">
+                <img loading="lazy" src="./stuff/public/assets2/css.svg" class="w-3 h-3" alt="">
+                <p class="text-cyan-600 ps-1 text-xs font-semibold tracking-wider">CSS</p>
+              </a>
+              <a href="#" class="flex bg-yellow-300 border border-yellow-600 rounded-full px-2 py-1 items-center text-center hover:scale-95 duration-200 hover:shadow-md hover:shadow-yellow-700/70">
+                <img loading="lazy" src="./stuff/public/assets2/js.svg" class="w-3 h-3" alt="">
+                <p class="text-yellow-600 ps-1 text-xs font-semibold tracking-wider">JAVASCRIPT</p>
+              </a>
+            </div>
+            <div class="px-4 pb-4 pt-0 mt-2">
+              <a  href=" https://magang.webby.digital/wildan/learn-tailwind/">
+                  <button class="rounded-md bg-gray-600 py-2 px-4 border border-transparent text-center text-sm text-white transition-all shadow-md hover:shadow-lg focus:bg-slate-700 focus:shadow-none active:bg-slate-700 hover:bg-slate-700 active:shadow-none disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none" type="button">
+                  Visit Site
+                </button>
+              </a>
+              <a  href=" ">
+                  <button class="rounded-md bg-gray-600 py-2 px-4 border border-transparent text-center text-sm text-white transition-all shadow-md hover:shadow-lg focus:bg-slate-700 focus:shadow-none active:bg-slate-700 hover:bg-slate-700 active:shadow-none disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none" type="button">
+                  Check on Github
+                </button>
+              </a>
+            </div>
+            <div class="absolute top-0 left-0 bg-white border-gray-900 text-gray-800 font-bold py-1 px-3 rounded-lg m-0">
+              2
+            </div>
+          </div>
+          <div id="imageModal" class="fixed inset-0 bg-black bg-opacity-70 flex justify-center items-center hidden transition-opacity duration-500 ease-in-out" style="z-index: 100">
+            <div id="modalContent" class="relative max-w-4xl mx-auto p-6 bg-gray-900 rounded-lg transform scale-75 transition-transform duration-500 ease-in-out" style="z-index: 100">
+              <img id="modalImage" src="" alt="Fullscreen image" class="max-w-full h-auto rounded-lg shadow-lg" style="z-index: 100" />
+              <button class="absolute top-2 right-2 bg-gray-200 px-5 text-black rounded-full p-2" onclick="closeModal()">X</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<script>
+  function openModal(imgElement) {
+    const modal = document.getElementById("imageModal");
+    const modalImage = document.getElementById("modalImage");
+    modalImage.src = imgElement.src;
+    modal.classList.remove("hidden");
+  }
+  function closeModal() {
+    const modal = document.getElementById("imageModal");
+    modal.classList.add("hidden");
+  }
+  function openModal(imgElement) {
+  const modal = document.getElementById("imageModal");
+  const modalImage = document.getElementById("modalImage");
+  const modalContent = document.getElementById("modalContent");
+  modalImage.src = imgElement.src;
+  setTimeout(() => {
+    modalContent.classList.remove("scale-75");
+    modalContent.classList.add("scale-100");
+  }, 100);
+  modal.classList.remove("hidden");
+  modal.classList.add("opacity-100");
+}
+
+function closeModal() {
+  const modal = document.getElementById("imageModal");
+  const modalContent = document.getElementById("modalContent");
+  modalContent.classList.remove("scale-100");
+  modalContent.classList.add("scale-75");
+  setTimeout(() => {
+    modal.classList.add("hidden");
+  }, 500);
+}
+</script>
+
+
+</body>
+</html>
