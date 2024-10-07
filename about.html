@@ -124,29 +124,29 @@
         </div>
     </div>
     
-    <div class="hidden absolute top-16 left-0 w-full bg-blue-100 p-5 md:hidden" id="mobile-menu">
-        <ul class="flex flex-col gap-y-5 text-base font-bold">
-            <li><a href="#" class="nav-link text-black hover:text-blue-700">Home</a></li>
-            <li><a href="./about.html" class="nav-link text-blue-700 hover:text-blue-700 active">About Me</a></li>
-            <li><a href="./cv.html" class="nav-link text-black hover:text-blue-700">View CV</a></li>
-            <li><a href="#portfolio" class="nav-link text-black hover:text-blue-700">Website</a></li>
-            <li><a href="#team" class="nav-link text-black hover:text-blue-700">Photo</a></li>
-            <li><a href="#blog" class="nav-link text-black hover:text-blue-700">Video</a></li>
-            <li><a href="#contact" class="nav-link text-black hover:text-blue-700">Vents</a></li>
-        </ul>
-    </div>
-    
-    <script>
-        document.getElementById('navbar-toggle').addEventListener('click', function() {
-            document.getElementById('mobile-menu').classList.toggle('hidden');
-        });
-    </script>
+      <div class="hidden absolute top-16 left-0 w-full bg-blue-100 p-5 md:hidden" id="mobile-menu">
+          <ul class="flex flex-col gap-y-5 text-base font-bold">
+              <li><a href="#" class="nav-link text-black hover:text-blue-700">Home</a></li>
+              <li><a href="./about.html" class="nav-link text-blue-700 hover:text-blue-700 active">About Me</a></li>
+              <li><a href="./cv.html" class="nav-link text-black hover:text-blue-700">View CV</a></li>
+              <li><a href="#portfolio" class="nav-link text-black hover:text-blue-700">Website</a></li>
+              <li><a href="#team" class="nav-link text-black hover:text-blue-700">Photo</a></li>
+              <li><a href="#blog" class="nav-link text-black hover:text-blue-700">Video</a></li>
+              <li><a href="#contact" class="nav-link text-black hover:text-blue-700">Vents</a></li>
+          </ul>
+      </div>
+      
+      <script>
+          document.getElementById('navbar-toggle').addEventListener('click', function() {
+              document.getElementById('mobile-menu').classList.toggle('hidden');
+          });
+      </script>
 
 <section id="about">
     <div class="mx-auto max-w-screen-2xl px-4 py-12 sm:px-6 lg:px-8" style="z-index: -10;">
-        <div class="grid grid-cols-1 lg:grid-cols-2">
-            <div class="relative flex items-center justify-center lg:py-12"> 
-                <div class="relative w-80 lg:max-h-[calc(100vh-6rem)]"> 
+        <div class="grid grid-cols-1 lg:grid-cols-2 ">
+            <div class="relative flex items-center justify-center lg:py-12 animate__animated animate__fadeInLeft"> 
+                <div class="relative w-80 lg:max-h-[calc(100vh-6rem)] "> 
                     <img loading="lazy"
                         alt="my picture"
                         src="./assets/me.jpg"
@@ -154,7 +154,7 @@
                     />
                 </div>                              
             </div>
-            <div class="relative flex items-center bg-gray-100">
+            <div class="relative flex items-center bg-gray-100 animate__animated animate__fadeInRight">
                 <span class="hidden lg:absolute lg:inset-y-0 lg:-start-16 lg:block lg:w-12 lg:bg-gray-100"></span>
 
                 <div class="p-6 sm:p-12 lg:p-16">
@@ -173,12 +173,12 @@
 
 <section class="py-12 bg-black/50">
   <div class="container grid grid-cols-1 gap-10 px-6 mx-auto lg:grid-cols-3">
-      <div>
+      <div  class="animate__animated animate__fadeInLeft ms1s">
           <h1 class="mt-2 text-3xl font-bold text-white md:text-4xl tracking-wide">My Technical Skillset</h1>    
           <p class="mt-4 text-gray-400">Here are some of the technologies I specialize in:</p>
       </div>
       <div class="grid grid-cols-1 gap-12 lg:col-span-2 sm:grid-cols-2">
-            <div class="relative flex items-start space-x-4 p-4 rounded-lg hover:bg-gray-800 transition-colors group">
+            <div class="relative flex items-start space-x-4 p-4 rounded-lg hover:bg-gray-800 transition-colors group animate__animated animate__fadeInTopLeft ms1s5">
               <img loading="lazy" src="./assets/icon/py.svg" alt="Python Logo" class="w-12 h-12">
               <div>
                 <h3 class="font-bold text-xl text-white">Python</h3>
@@ -189,14 +189,14 @@
                 <p>This is one of my Discord bots built with Python. Real-time notifications, and customizable commands for community management.</p>
               </div>
             </div>
-          <div class="flex items-start space-x-4 p-4 rounded-lg hover:bg-gray-800 transition-colors">
+          <div class="flex items-start space-x-4 p-4 rounded-lg hover:bg-gray-800 transition-colors animate__animated animate__fadeInTopRight ms1s5">
               <img loading="lazy" src="./assets/icon/c.svg" alt="C++ Logo" class="w-12 h-12">
               <div>
                   <h3 class="font-bold text-xl text-white">C++</h3>
                   <p class="text-gray-400 mt-2">I am experienced in designing and developing efficient IoT devices, using C++.</p>
               </div>
           </div>
-          <div class="flex items-start space-x-4 p-4 rounded-lg hover:bg-gray-800 transition-colors">
+          <div class="flex items-start space-x-4 p-4 rounded-lg hover:bg-gray-800 transition-colors animate__animated animate__fadeInBottomLeft ms1s5">
               <img loading="lazy" src="./assets/icon/html.svg" alt="HTML Logo" class="w-12 h-12">
               <div>
                   <h3 class="font-bold text-xl text-white">HTML</h3>
@@ -204,7 +204,7 @@
                     I’ve been working with Bootstrap and Tailwind for web design. I just finished a website using <a href="https://zavents.github.io/learn-tailwind" class="text-white font-semibold" target="_blank"> Tailwind</a>, and it was awesome to create a modern, responsive design quickly with its utility classes!
               </div>
           </div>
-          <div class="flex items-start space-x-4 p-4 rounded-lg hover:bg-gray-800 transition-colors">
+          <div class="flex items-start space-x-4 p-4 rounded-lg hover:bg-gray-800 transition-colors animate__animated animate__fadeInBottomRight ms1s5">
               <img loading="lazy" src="./assets/icon/vs.svg" alt="VS code Logo" class="w-12 h-12">
               <div>
                   <h3 class="font-bold text-xl text-white">VSCode</h3>
@@ -270,13 +270,13 @@
 <section id="projects">
   <div class="mx-auto max-w-screen-2xl px-4 py-16 sm:px-6 lg:px-8">
       <header class="text-center">
-          <h2 class="text-2xl font-bold text-white sm:text-3xl">Projects</h2>
-          <p class="mt-4 text-gray-400 font-semibold">Here are some projects I've worked on recently.</p>
+          <h2 class="text-2xl font-bold text-white sm:text-3xl animate__animated animate__pulse  animate__infinite	infinite">Projects</h2>
+          <p class="mt-4 text-gray-400 font-semibold animate__animated animate__pulse  animate__infinite	infinite">Here are some projects I've worked on recently.</p>
       </header>
       <ul class="mt-8 grid gap-4 sm:grid-cols-2 lg:grid-cols-2">
 
           <li>
-              <a href="javascript:void(0);" onclick="showProject1()" class="block overflow-hidden rounded-lg border border-gray-100 bg-white shadow-sm">
+              <a href="javascript:void(0);" onclick="showProject1()" class="block overflow-hidden rounded-lg border border-gray-100 bg-white shadow-sm ">
                   <img loading="lazy" alt="Project 2" src="./assets/jam.jpeg" class="h-56 w-full object-cover" />
                   <div class="p-6">
                       <h3 class="font-bold text-gray-900">Digital Clock</h3>
@@ -286,7 +286,7 @@
               </a>
           </li>
           <li>
-              <a href="javascript:void(0);" onclick="showProject3()" class="block overflow-hidden rounded-lg border border-gray-100 bg-white shadow-sm">
+              <a href="javascript:void(0);" onclick="showProject3()" class="block overflow-hidden rounded-lg border border-gray-100 bg-white shadow-sm ">
                   <img loading="lazy" alt="Project 3" src="./assets/sampah.gif" class="h-56 w-full object-cover" />
                   <div class="p-6">
                       <h3 class="font-bold text-gray-900">Smart Trash Bin</h3>
@@ -301,10 +301,10 @@
 
 <section>
     <div class="container px-4 py-16 mx-auto space-y-8 lg:max-w-3xl text-white  ">
-        <h2 class="text-2xl font-bold md:text-4xl">My Experience</h2>
+        <h2 class="text-2xl font-bold md:text-4xl animate__animated animate__pulse  animate__infinite	infinite">My Experience</h2>
         <div class="space-y-8">
             <div>
-                <h3 class="mb-3 text-lg font-bold md:text-xl">2023</h3>
+                <h3 class="mb-3 text-lg font-bold md:text-xl animate__animated animate__flash  animate__infinite	infinite">2023</h3>
                 <ul class="space-y-4">
                     <li class="space-y-1">
                         <div class="flex items-center space-x-2">
@@ -329,7 +329,7 @@
                 </ul>
             </div>
             <div>
-                <h3 class="mb-3 text-lg font-bold md:text-xl">2024</h3>
+                <h3 class="mb-3 text-lg font-bold md:text-xl animate__animated animate__flash  animate__infinite	infinite ">2024</h3>
                 <ul class="space-y-4">
                     <li class="space-y-1">
                         <div class="flex items-center space-x-2">

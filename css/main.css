@@ -17,6 +17,12 @@
 .ms1s {
   animation-delay: 1000ms;
 }
+.ms1s5 {
+  animation-delay: 1500ms;
+}
+.ms2s{
+  animation-delay: 2000ms;
+}
 .ms2s5 {
   animation-delay: 2500ms;
 }
