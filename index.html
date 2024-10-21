@@ -4,21 +4,21 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Homepages Zavents </title>
-    <!-- author -->
     <meta name="author" content="Zavents">
     <meta name="description" content="Zavents Portofolio ! ">
     <!-- icon -->
-    <link rel="icon" type="image/png" sizes="32x32" href="./assets/icon/zavents-logo-new.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="./assets/icon/zavents-logo-new.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./public/assets2/icon/zavents-logo-new.svg">
+    <link rel="icon" type="image/png" sizes="16x16" href="./public/assets2/icon/zavents-logo-new.svg">
     <!-- tailwind css -->
-    <link rel="stylesheet" href="./css/style-4.css">
-    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/styles1.css">
     <!-- music css -->
      <link rel="stylesheet" href="./css/music.css">
     <!-- sweet alert -->
     <link rel="stylesheet" href="./css/sweetalert.css">
-    <!-- Animate.css -->
-    <link rel="stylesheet" href="./css/animatedotcss.css">
+    <!-- aos -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" rel="stylesheet">  
+    <!-- AOS CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
 <style>
   @font-face {
     font-family: Terminus;
@@ -77,7 +77,7 @@
 </style>
 </head><style>
     :root {
-        --c-brand-rgb: 255, 255, 255; /* Replace with your RGB values */
+        --c-brand-rgb: 255, 255, 255; 
     }
 
     body {
@@ -86,12 +86,12 @@
         background-position: center;
         min-height: 100vh;
         background-color: rgb(255, 255, 255);
-        position: relative; /* Ensure the body is positioned */
-        z-index: 0; /* Lower z-index for body */
+        position: relative; 
+        z-index: 0;
     }
 
     body::before {
-        opacity: 0.75; /* Overall opacity of the background */
+        opacity: 0.75; 
         content: '';
         position: absolute;
         top: 0;
@@ -99,24 +99,19 @@
         width: 100%;
         height: 100%;
         background: linear-gradient(rgba(var(--c-brand-rgb), 0.190), rgba(var(--c-brand-rgb), 0.190));
-        z-index: -1; /* Keep this below the content */
+        z-index: -1; 
         opacity: 75;
-        backdrop-filter: blur(2px); /* Blur effect */
-        -webkit-backdrop-filter: blur(2px); /* For Safari support */
+        backdrop-filter: blur(2px); 
+        -webkit-backdrop-filter: blur(2px);
     }
 
-    /* Ensure navbar stays on top of the background */
     .navbar {
-        position: sticky; /* or fixed if you want it always visible */
+        position: sticky; 
         top: 0;
-        z-index: 100; /* Higher than body and its background */
+        z-index: 100; 
     }
 </style>
-
-
-
 <body class="relative bg-white">
-    <!-- Navbar -->
     <div class="bg-blue-100 navbar p-4">
         <div class="container mx-auto flex justify-center items-center">
             <a href="#" class="mr-auto flex items-center">
@@ -132,7 +127,7 @@
                     <li><a href="./index.html" class="nav-link text-blue-700 hover:text-blue-700">Home</a></li>
                     <li><a href="./about.html" class="nav-link text-black hover:text-blue-700">About Me</a></li>
                     <li><a href="./cv.html" class="nav-link text-black hover:text-blue-700">View CV</a></li>
-                    <li><a href="./website.html" class="nav-link text-black hover:text-blue-700">Website</a></li>
+                    <li><a href="#portfolio" class="nav-link text-black hover:text-blue-700">Website</a></li>
                     <li><a href="#team" class="nav-link text-black hover:text-blue-700">Photo</a></li>
                     <li><a href="#blog" class="nav-link text-black hover:text-blue-700">Video</a></li>
                     <li><a href="#contact" class="nav-link text-black hover:text-blue-700">Vents</a></li>
@@ -145,7 +140,7 @@
             <li><a href="#" class="nav-link text-black hover:text-blue-700">Home</a></li>
             <li><a href="./about.html" class="nav-link text-blue-700 hover:text-blue-700 active">About Me</a></li>
             <li><a href="./cv.html" class="nav-link text-black hover:text-blue-700">View CV</a></li>
-            <li><a href="./website.html" class="nav-link text-black hover:text-blue-700">Website</a></li>
+            <li><a href="#portfolio" class="nav-link text-black hover:text-blue-700">Website</a></li>
             <li><a href="#team" class="nav-link text-black hover:text-blue-700">Photo</a></li>
             <li><a href="#blog" class="nav-link text-black hover:text-blue-700">Video</a></li>
             <li><a href="#contact" class="nav-link text-black hover:text-blue-700">Vents</a></li>
@@ -165,24 +160,16 @@
         <style>.text-white{
             text-shadow: 0 0 3px #ff9ed3, 0 0 5px #1900ff;
         }</style>
-        <div class="flex justify-center items-center">
-          <h1 class="uppercase text-white font-bold text-5xl md:text-7xl lg:text-7xl">
-            <div class="flex space-x-2">
-              <span class="animate__animated animate__bounceInLeft ">Wildan</span>  
-              <span class="animate__animated animate__bounceInDown ms600">"Zavents"</span>
-              <span class="animate__animated animate__bounceInRight ms1s">Fathan</span>
-            </div>  
-          </h1>
-        </div>
-        <div class="flex justify-center items-center">
-          <h1 class="text-white mt-3 mb-4 text-xl md:text-xl font-bold lg:text-xl">
-            <div class="flex space-x-2">
-              <span class="animate__animated animate__lightSpeedInLeft ms2s">Currently a Vocational High School student,</span>  <br>
-              <span class="animate__animated animate__lightSpeedInRight ms2s5">"majoring in software engineering at SMK Negeri 2 Pekanbaru"</span>
-            </div>  
-          </h1>
-        </div>
-           <div >
+           <h1 class="uppercase text-white font-bold text-5xl md:text-7xl lg:text-7xl ">
+               <span data-aos="fade-left" data-aos-delay="100">Wildan</span>
+               <span data-aos="fade-up" data-aos-delay="300">"Zavents"</span>
+               <span data-aos="zoom-in" data-aos-delay="500">Fathan</span>
+           </h1>
+           <h4 class="text-white mt-3 mb-4 text-xl md:text-xl font-bold lg:text-xl">
+               <span data-aos="fade-right" data-aos-delay="850">Currently a Vocational High School student,</span><br>
+               <span data-aos="fade-left" data-aos-delay="1100">majoring in software engineering at SMK Negeri 2 Pekanbaru</span>
+           </h4>
+           <div data-aos="fade-up" data-aos-delay="1250">
             <style>
                 .btn {
                     font-weight: 600;
@@ -238,7 +225,7 @@
                 width: 100%;
             }
             </style>
-            <a href="javascript:void(0);" id="youtubeButton" class=" btn btn-brand me-2 bg-[#6145dd] border-[#6145dd] text-white transition-all duration-500 ease-in-out hover:bg-[#1f1452e0] hover:border-[#1f1452e0] py-2 px-4 rounded animate__animated animate__bounceInDown ms3s">
+            <a href="javascript:void(0);" id="youtubeButton" class="btn btn-brand me-2 bg-[#6145dd] border-[#6145dd] text-white transition-all duration-500 ease-in-out hover:bg-[#1f1452e0] hover:border-[#1f1452e0] py-2 px-4 rounded">
                 Click Me!
             </a>
            </div>
@@ -289,7 +276,7 @@
             <a href="./cv.html" class="nav-btn">View CV</a>
           </li>
           <li style="flex-basis: calc(50% - 10px);">
-            <a href="./website.html" class="nav-btn">Website</a>
+            <a href="#portfolio" class="nav-btn">Website</a>
           </li>
           <li style="flex-basis: calc(50% - 10px);">
             <a href="#team" class="nav-btn">Photo</a>
@@ -354,5 +341,8 @@ function closeModal() {
 <script src="./js/music.js"></script>
 <script src="./js/main2.js" type="text/javascript"></script>
 <script src="./js/sweetalert.js" type="text/javascript"></script>
+<script src="./js/aos.js" type="text/javascript"></script>
+</body>
+</html>
 </body>
 </html>
