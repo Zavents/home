@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Homepages Zavents </title>
+    <meta name="author" content="Zavents">
+    <meta name="description" content="Zavents Portofolio ! ">
+    <!-- icon -->
+    <link rel="icon" type="image/png" sizes="32x32" href="./public/assets2/icon/zavents-logo-new.svg">
+    <link rel="icon" type="image/png" sizes="16x16" href="./public/assets2/icon/zavents-logo-new.svg">
+    <!-- tailwind css -->
+    <link rel="stylesheet" href="./css/style.css">
+    <!-- music css -->
+     <link rel="stylesheet" href="./css/music.css">
+    <!-- sweet alert -->
+    <link rel="stylesheet" href="./css/sweetalert.css">
+    <!-- aos -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" rel="stylesheet">  
+    <!-- AOS CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.css">
+    <link rel="stylesheet" href="./css/animatedotcss.css">
+  
+  <style>
+      @font-face {
+        font-family: Terminus;
+        src: url(./fonts/TerminusTTF.woff2)
+    }
+      *
+      {
+        font-family: Terminus;
+      }
+      html {
+        scroll-behavior: smooth;
+      }
+      ::-webkit-scrollbar {
+      width: 6px;
+      }
+      ::-webkit-scrollbar-track {
+      background: #afb3b1;
+      }
+      ::-webkit-scrollbar-thumb {
+      background: #062637;
+      }
+      ::-webkit-scrollbar-thumb:hover {
+      background: rgb(42, 42, 111);
+      }
+      @layer utilities {
+        .scrollbar-thin {
+          scrollbar-width: thin;
+          scrollbar-color: #2ad46c #1c9d5698; /* thumb color | track color */
+        }
+
+        .scrollbar-thumb {
+          &::-webkit-scrollbar-thumb {
+            background-color: #07441e; /* Thumb color */
+            border-radius: 10px;
+          }
+        }
+        .scrollbar-thumb {
+          &::-webkit-scrollbar-thumb {
+            background-color: #07441e; /* Thumb color */
+            border-radius: 10px;
+          }
+        }
+
+        .scrollbar-track {
+          &::-webkit-scrollbar-track {
+            background-color: #333333; /* Track color */
+          }
+        }
+
+        .scrollbar {
+          &::-webkit-scrollbar {
+            width: 8px; /* Width of the scrollbar */
+          }
+        }
+      } 
+
+      #backToTopBtn {
+        display: none;
+        position: fixed;
+        bottom: 20px;
+        right: 20px;
+        width: 40px;
+        height: 40px;
+        border: none;
+        border-radius: 50%;
+        color: #fff;
+        font-size: 0; /* Hide any text inside the button */
+        cursor: pointer;
+        opacity: 0.6;
+        transition: opacity 0.3s ease;
+      }
+
+      #backToTopBtn:hover {
+        opacity: 1;
+      }
+</style>
+
+</head>
+
+<body class="bg-black">
+  <div class="bg-blue-100 sticky top-0 z-50 p-4">
+    <div class="container mx-auto flex justify-center items-center">
+        <a href="#" class="mr-auto flex items-center">
+            <img loading="lazy" class="h-9 w-auto" src="./assets/icon/logo.png" alt="Logo">
+        </a>
+    <button class="block md:hidden text-black focus:outline-none" id="navbar-toggle">
+        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+        </svg>
+    </button>
+        <div class="hidden md:flex md:items-center" style="z-index: 20;" id="navbar-menu">
+        <ul class="flex gap-x-20 text-base font-bold">
+                <li><a href="./index.html" class="nav-link text-black hover:text-blue-700">Home</a></li>
+                <li><a href="./about.html" class="nav-link text-black hover:text-blue-700">About Me</a></li>
+                <li><a href="./cv.html" class="nav-link text-black hover:text-blue-700">View CV</a></li>
+                <li><a href="./website.html" class="nav-link text-black hover:text-blue-700">Website</a></li>
+                <li><a href="#team" class="nav-link text-blue-700 hover:text-blue-700">Photo</a></li>
+                <li><a href="#blog" class="nav-link text-black hover:text-blue-700">Video</a></li>
+                <li><a href="#contact" class="nav-link text-black hover:text-blue-700">Vents</a></li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+  <div class="hidden absolute top-16 left-0 w-full bg-blue-100 p-5 md:hidden" style="z-index: 20;" id="mobile-menu">
+      <ul class="flex flex-col gap-y-5 text-base font-bold">
+          <li><a href="#" class="nav-link text-black hover:text-blue-700">Home</a></li>
+          <li><a href="./about.html" class="nav-link text-black hover:text-blue-700 active">About Me</a></li>
+          <li><a href="./cv.html" class="nav-link text-black hover:text-blue-700">View CV</a></li>
+          <li><a href="./website.html" class="nav-link text-black hover:text-blue-700">Website</a></li>
+          <li><a href="#team" class="nav-link text-blue-700 hover:text-blue-700">Photo</a></li>
+          <li><a href="#blog" class="nav-link text-black hover:text-blue-700">Video</a></li>
+          <li><a href="#contact" class="nav-link text-black hover:text-blue-700">Vents</a></li>
+      </ul>
+  </div>
+  
+  <script>
+      document.getElementById('navbar-toggle').addEventListener('click', function() {
+          document.getElementById('mobile-menu').classList.toggle('hidden');
+      });
+  </script>
+<section id="portfolio" class="py-16 p-4">
+  <div class="container mx-auto">
+      <div class="text-center">
+          <div class="section-title">
+              <h1 class="text-4xl font-semibold">Dokumentasi Masjid</h1>
+              <div class="my-4 h-1 w-16 bg-primary mx-auto"></div>
+              <p>Kegiatan - kegiatan yang dilakukan di Masjid Nurul Huda</p>
+          </div>
+      </div>
+      <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 mt-8">
+        <div class="relative group transition-transform duration-500 group-hover:scale-105 hover:shadow-2xl hover:shadow-red-600/50">
+          <div class="overflow-hidden">
+              <img src="./assets/aboutbg.jpg" alt="" class="transition-transform duration-300 group-hover:scale-110">
+          </div>
+          <a href="./assets/aboutbg.jpg" data-fancybox="gallery" class="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 bg-black/50 text-white transition-opacity duration-300">
+              <i class="ri-search-2-line text-3xl"></i>
+          </a>
+        </div>      
+        <div class="relative group">
+          <div class="overflow-hidden">
+              <img src="./assets/aboutbg.jpg" alt="" class="transition-transform duration-300 group-hover:scale-110">
+          </div>
+          <a href="./assets/aboutbg.jpg" data-fancybox="gallery" class="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 bg-black/50 text-white transition-opacity duration-300">
+              <i class="ri-search-2-line text-3xl"></i>
+          </a>
+        </div>
+        <div class="relative group">
+          <div class="overflow-hidden">
+              <img src="./assets/aboutbg.jpg" alt="" class="transition-transform duration-300 group-hover:scale-110">
+          </div>
+          <a href="./assets/aboutbg.jpg" data-fancybox="gallery" class="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 bg-black/50 text-white transition-opacity duration-300">
+              <i class="ri-search-2-line text-3xl"></i>
+          </a>
+        </div>
+        <div class="relative group">
+          <div class="overflow-hidden">
+              <img src="./assets/aboutbg.jpg" alt="" class="transition-transform duration-300 group-hover:scale-110">
+          </div>
+          <a href="./assets/aboutbg.jpg" data-fancybox="gallery" class="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 bg-black/50 text-white transition-opacity duration-300">
+              <i class="ri-search-2-line text-3xl"></i>
+          </a>
+        </div>
+        <div class="relative group">
+          <div class="overflow-hidden">
+              <img src="./assets/aboutbg.jpg" alt="" class="transition-transform duration-300 group-hover:scale-110">
+          </div>
+          <a href="./assets/aboutbg.jpg" data-fancybox="gallery" class="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 bg-black/50 text-white transition-opacity duration-300">
+              <i class="ri-search-2-line text-3xl"></i>
+          </a>
+        </div>
+        <div class="relative group">
+          <div class="overflow-hidden">
+              <img src="./assets/aboutbg.jpg" alt="" class="transition-transform duration-300 group-hover:scale-110">
+          </div>
+          <a href="./assets/aboutbg.jpg" data-fancybox="gallery" class="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 bg-black/50 text-white transition-opacity duration-300">
+              <i class="ri-search-2-line text-3xl"></i>
+          </a>
+        </div>
+        <div class="relative group">
+          <div class="overflow-hidden">
+              <img src="./assets/aboutbg.jpg" alt="" class="transition-transform duration-300 group-hover:scale-110">
+          </div>
+          <a href="./assets/aboutbg.jpg" data-fancybox="gallery" class="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 bg-black/50 text-white transition-opacity duration-300">
+              <i class="ri-search-2-line text-3xl"></i>
+          </a>
+        </div>
+        <div class="relative group">
+          <div class="overflow-hidden">
+              <img src="./assets/aboutbg.jpg" alt="" class="transition-transform duration-300 group-hover:scale-110">
+          </div>
+          <a href="./assets/aboutbg.jpg" data-fancybox="gallery" class="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 bg-black/50 text-white transition-opacity duration-300">
+              <i class="ri-search-2-line text-3xl"></i>
+          </a>
+        </div>
+        <div class="relative group">
+          <div class="overflow-hidden">
+              <img src="./assets/aboutbg.jpg" alt="" class="transition-transform duration-300 group-hover:scale-110">
+          </div>
+          <a href="./assets/aboutbg.jpg" data-fancybox="gallery" class="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 bg-black/50 text-white transition-opacity duration-300">
+              <i class="ri-search-2-line text-3xl"></i>
+          </a>
+        </div>
+        <div class="relative group">
+          <div class="overflow-hidden">
+              <img src="./assets/aboutbg.jpg" alt="" class="transition-transform duration-300 group-hover:scale-110">
+          </div>
+          <a href="./assets/aboutbg.jpg" data-fancybox="gallery" class="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 bg-black/50 text-white transition-opacity duration-300">
+              <i class="ri-search-2-line text-3xl"></i>
+          </a>
+        </div>
+        <div class="relative group">
+          <div class="overflow-hidden">
+              <img src="./assets/aboutbg.jpg" alt="" class="transition-transform duration-300 group-hover:scale-110">
+          </div>
+          <a href="./assets/aboutbg.jpg" data-fancybox="gallery" class="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 bg-black/50 text-white transition-opacity duration-300">
+              <i class="ri-search-2-line text-3xl"></i>
+          </a>
+        </div>
+        <div class="relative group">
+          <div class="overflow-hidden">
+              <img src="./assets/aboutbg.jpg" alt="" class="transition-transform duration-300 group-hover:scale-110">
+          </div>
+          <a href="./assets/aboutbg.jpg" data-fancybox="gallery" class="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 bg-black/50 text-white transition-opacity duration-300">
+              <i class="ri-search-2-line text-3xl"></i>
+          </a>
+        </div>
+        <div class="relative group">
+          <div class="overflow-hidden">
+              <img src="./assets/aboutbg.jpg" alt="" class="transition-transform duration-300 group-hover:scale-110">
+          </div>
+          <a href="./assets/aboutbg.jpg" data-fancybox="gallery" class="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 bg-black/50 text-white transition-opacity duration-300">
+              <i class="ri-search-2-line text-3xl"></i>
+          </a>
+        </div>
+        <div class="relative group">
+          <div class="overflow-hidden">
+              <img src="./assets/aboutbg.jpg" alt="" class="transition-transform duration-300 group-hover:scale-110">
+          </div>
+          <a href="./assets/aboutbg.jpg" data-fancybox="gallery" class="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 bg-black/50 text-white transition-opacity duration-300">
+              <i class="ri-search-2-line text-3xl"></i>
+          </a>
+        </div>
+        <div class="relative group">
+          <div class="overflow-hidden">
+              <img src="./assets/aboutbg.jpg" alt="" class="transition-transform duration-300 group-hover:scale-110">
+          </div>
+          <a href="./assets/aboutbg.jpg" data-fancybox="gallery" class="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 bg-black/50 text-white transition-opacity duration-300">
+              <i class="ri-search-2-line text-3xl"></i>
+          </a>
+        </div>
+    </div>
+  </div>
+</section>
+
+<style>
+
+/* IMAGE ZOOM */
+.image-zoom {
+  position: relative;
+  /* overflow: hidden; */
+}
+
+.image-zoom-wrapper {
+  overflow: hidden;
+  position: relative;
+}
+
+.image-zoom-wrapper img{
+   transition: var(--transition);
+}
+
+.image-zoom:hover .image-zoom-wrapper img {
+  transform: scale(1.1);
+}
+#panitia{
+  width: 400px;
+  height: 600px;
+}
+
+  /* PORTFOLIO */
+  .portfolio-item .iconbox {
+      background-color: var(--c-brand);
+      color: white;
+      position: absolute;
+      top: 40%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      opacity: 0;
+  }
+  
+  .portfolio-item:hover .iconbox {
+      opacity: 1;
+      top: 50%;
+  }
+  </style>
+  <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.umd.js"></script>
+<script src="./js/main2.js" type="text/javascript"></script>
+<script src="./js/sweetalert.js" type="text/javascript"></script>
+<script src="./js/aos.js" type="text/javascript"></script>
+</body>
+</html>
+</body>
+</html>
