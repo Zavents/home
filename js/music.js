@@ -112,7 +112,7 @@ function setVolume() {
     _current_track.volume = music_volume.value / 100;
 }
 
-function seekUpdate() {
+function seekUpdate() { 
     if (!isNaN(_current_track.duration)) {
         seekPosition = _current_track.currentTime * (100 / _current_track.duration);
 
