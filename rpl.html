@@ -1,0 +1,676 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>PPLG Website</title>
+    <meta name="og:title" property="og:title" content="PPLG Website">
+    
+    <!-- Meta(s) -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Primary Meta Tags -->
+    <meta name="author" content="Zavents">
+    <meta name="description" content="Website Mengenai PPLG SMK Negeri 2 Pekanbaru ">
+    <meta name="keywords" content="PPLG, SMK Negeri 2 Pekanbaru, website pendidikan, program keahlian, teknologi, pendidikan vokasi, pengembangan website, jurusan PPLG, teknologi informasi, desain web, pemrograman komputer, SMK di Pekanbaru, siswa berprestasi, pendidikan berbasis teknologi, SMK terbaik, keahlian komputer, pengolahan data, informatika, pengembangan aplikasi, keterampilan digital">
+    <meta name="robots" content="index, follow, max-image-preview:large" />
+
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://pplg2.pages.dev" />
+    <meta property="og:title" content="PPLG Website" />
+    <meta property="og:description" content="Website Mengenai PPLG SMK Negeri 2 Pekanbaru." />
+    <meta property="og:image" content="https://cdn.kumacdn.club/wp-content/uploads/images/test-bro//pplg2.png" />
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta property="twitter:url" content="https://pplg2.pages.dev" />
+    <meta property="twitter:title" content="PPLG Website" />
+    <meta property="twitter:description" content="Website Mengenai PPLG SMK Negeri 2 Pekanbaru." />
+    <meta property="twitter:image" content="https://cdn.kumacdn.club/wp-content/uploads/images/test-bro//pplg2.png" />
+
+
+    
+    <!-- Stylesheet(s) and Icons -->
+    <link rel="icon" type="image/png" sizes="32x32" href="./public/images/icon/pplg-white-icon.svg">
+    <link rel="stylesheet" href="./public/css/mainrpl.css">
+    <link rel="stylesheet" href="./public/css/tailwind/tailwind.min.css"> 
+    <link rel="stylesheet" href="./public/css/animate.css" />
+    <link rel="stylesheet" href="./public/css/aos.css" />
+    <link rel="stylesheet" href="./public/css/swiper.css" />
+
+
+
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "WebPage",
+        "name": "PPLG Website",
+        "description": "Website Mengenai PPLG SMK Negeri 2 Pekanbaru.",
+        "url": "https://pplg2.pages.dev",
+        "author": {
+          "@type": "Person",
+          "name": "Zavents"
+        }
+      }
+      </script>
+      
+
+
+    <style>
+      @font-face {
+        font-family: '印品鸿蒙体' !important;
+        src: url('../font/yinpin_hongmengti.ttf') format('truetype') !important;
+        font-weight: normal !important;
+        font-style: normal;
+      }
+      
+      body {
+        font-family: '印品鸿蒙体', sans-serif !important;
+        font-weight: normal !important;
+      }
+    </style>
+
+
+</head>
+<body class="antialiased bg-body text-body font-body" loading="lazy " decoding="ansync" style="background-image: url(./public/images/background.gif);">
+  <section x-data="{ mobileNavOpen: false }" class="bg-gradient-fuchsia background-animate overflow-hidden ">
+    <nav class=" fixed w-full z-50 -mt-2">
+      <div class="flex items-center justify-between px-8 py-5">
+        <div class="w-auto">
+          <div class="flex flex-wrap items-center">
+            <div class="w-auto mr-14">
+              <a href="#">
+                <img loading="lazy" decoding="async" loading="lazy" decoding="async" src="./public/images/icon/pplg-white-icon.svg" alt="" class="w-20 transition-transform duration-300 hover:scale-150">
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="w-auto hidden lg:block justify-center align-middle">
+          <ul class="flex items-center">
+            <li class=" mr-9 text-white ease-in rounded-10  px-2 text-lg transition-transform duration-300 hover:scale-125  duration-600 hover:text-gray-300"><a href="#about">About Us</a></li>
+            <li class=" mr-9 text-white ease-in rounded-10  px-2 text-lg transition-transform duration-300 hover:scale-125  duration-600 hover:text-gray-300"><a href="#guru">Guru</a></li>
+            <li class=" mr-9 text-white ease-in rounded-10  px-2 text-lg transition-transform duration-300 hover:scale-125  duration-600 hover:text-gray-300"><a href="#fasilitas">Fasilitas</a></li>
+            <li class=" mr-9 text-white ease-in rounded-10  px-2 text-lg transition-transform duration-300 hover:scale-125  duration-600 hover:text-gray-300"><a href="#website">Website Kami</a></li>
+            <li class=" mr-9 text-white ease-in rounded-10  px-2 text-lg transition-transform duration-300 hover:scale-125  duration-600 hover:text-gray-300"><a href="#photo">Photo & Video</a></li>
+          </ul>
+        </div>
+        <div class="w-auto">
+          <div class="flex flex-wrap items-center">
+            <div class="w-auto hidden lg:block">
+              <button class=" block py-3.5 uppercase text-xs tracking-px text-white font-bold bg-white bg-opacity-20 hover:bg-opacity-10 transition ease-in rounded-10 transition-transform duration-300 hover:scale-125 px-2">smk negeri 2</button>
+            </div>
+            <div class="w-auto lg:hidden">
+              <button x-on:click="mobileNavOpen = !mobileNavOpen">
+                <svg class="text-gray-800" width="51" height="51" viewbox="0 0 56 56" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <rect width="56" height="56" rx="28" fill="currentColor"></rect>
+                  <path d="M37 32H19M37 24H19" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                </svg>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div :class="{'block': mobileNavOpen, 'hidden': !mobileNavOpen}" class="fixed top-0 left-0 bottom-0 w-4/6 sm:max-w-xs z-50 hidden">
+        <div x-on:click="mobileNavOpen = !mobileNavOpen" class="fixed inset-0 bg-gray-800 opacity-80"></div>
+        <nav class="relative z-10 px-9 py-8 bg-white h-full">
+          <div class="flex flex-wrap justify-between h-full">
+            <div class="w-full">
+              <div class="flex items-center justify-between -m-2">
+                <div class="w-auto p-2">
+                  <a class="inline-block" href="#">
+                    <img loading="lazy" decoding="async" loading="lazy" decoding="async" src="./public/images/icon/pplg-black-icon.svg" alt="" class="transition-transform duration-300 hover:scale-125 w-20">
+                  </a>
+                </div>
+                <div class="w-auto p-2">
+                  <button x-on:click="mobileNavOpen = !mobileNavOpen">
+                    <svg width="24" height="24" viewbox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M6 18L18 6M6 6L18 18" stroke="#111827" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                    </svg>
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="flex flex-col justify-center py-8 w-full">
+              <ul>
+                <li class="mb-12"><a class=" font-medium text-lg text-gray-900 transition-transform duration-300 hover:scale-125" href="#about">About Us</a></li>
+                <li class="mb-12"><a class=" font-medium text-lg text-gray-900 hover:text-gray-700 transition-transform duration-300 hover:scale-125" href="#guru">Guru</a></li>
+                <li class="mb-12"><a class=" font-medium text-lg text-gray-900 hover:text-gray-700 transition-transform duration-300 hover:scale-125" href="#fasilitas">Fasilitas</a></li>
+                <li class="mb-12"><a class=" font-medium text-lg text-gray-900 hover:text-gray-700 transition-transform duration-300 hover:scale-125" href="#website">Website Kami</a></li>
+                <li><a class=" font-medium text-lg text-gray-900 hover:text-gray-700 transition-transform duration-300 hover:scale-125" href="#photo">Photo & Video</a></li>
+              </ul>
+            </div>
+            <div class="flex flex-col justify-end w-full">
+              <div class="flex flex-wrap">
+                <div class="w-full">
+                  <button class="p-0.5  block w-full text-lg text-gray-900 font-medium rounded-10">
+                    <div class="py-2 px-5 rounded-10"></div>
+                  </button>
+                </div>
+                <div class="w-full">
+                  <button class="group relative p-0.5  block w-full text-lg text-gray-900 font-medium bg-gradient-cyan overflow-hidden rounded-10">
+                    <div class="absolute top-0 left-0 transform -translate-y-full group-hover:-translate-y-0 h-full w-full bg-gradient-cyan transition ease-in-out duration-500"></div>
+                    <div class="py-2 px-5 bg-white rounded-lg">
+                      <p class="relative z-10">SMK NEGERI 2 PEKANBARU</p>
+                    </div>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </nav>
+      </div>
+    </nav>
+    
+    <div class="relative container mx-auto px-4 !min-h-screen   pb-20">
+      <div class="relative flex flex-wrap justify-center items-center -m-6 lg:pt-32 pb-36 min-h-screen ">
+        <div class="w-full lg:w-auto p-6 self-start pt-10">
+          <img loading="lazy" decoding="async" class="mx-auto w-60 transition-transform duration-300 hover:scale-125 " loading="lazy" decoding="async" src="./public/images/wildan-header.svg" alt="">
+          <p class="text-lg text-center font-bold mt-4 text-white">Wildan Fathan</p>
+        </div>
+        <div class="flex-1 p-6">
+          <div class="lg:max-w-2xl mx-auto">
+            <div class="mb-6  flex items-center max-w-max mx-auto px-5 py-2.5 uppercase font-semibold tracking-px text-white bg-white bg-opacity-20 rounded-lg text-xl animate-pulse ">
+              <svg class="mr-2 matrix-icon" width="14" height="14" viewbox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M6.33427 2.74895C6.54382 2.10403 7.45621 2.10403 7.66575 2.74895L8.41445 5.0532C8.50816 5.34162 8.77693 5.53689 9.08019 5.53689H11.503C12.1811 5.53689 12.4631 6.40462 11.9145 6.8032L9.95436 8.22731C9.70902 8.40556 9.60636 8.72152 9.70007 9.00994L10.4488 11.3142C10.6583 11.9591 9.92018 12.4954 9.37158 12.0968L7.41146 10.6727C7.16612 10.4945 6.8339 10.4945 6.58856 10.6727L4.62844 12.0968C4.07985 12.4954 3.34171 11.9591 3.55126 11.3142L4.29995 9.00994C4.39367 8.72152 4.29101 8.40556 4.04566 8.22731L2.08555 6.8032C1.53695 6.40462 1.81889 5.53689 2.497 5.53689H4.91984C5.22309 5.53689 5.49186 5.34162 5.58558 5.0532L6.33427 2.74895Z" fill="white"></path>
+              </svg>
+              <span class="matrix-text">
+                <img loading="lazy" decoding="async" loading="lazy" decoding="async" src="./public/images/icon/pplg-white-icon.svg" alt="PPLG Icon" class="w-20">
+              </span>
+            </div>
+            <h1 class="mb-6  text-center text-white text-4xl md:text-9xl xl:text-12xl font-bold matrix-text p-4">Pengembangan Perangkat Lunak dan Gim</h1>
+            <p class="mb-10 font-medium text-xl text-center text-white">
+              Website mengenai Kelas RPL Angkatan 2022/2023
+              <br>
+              Kreasi Website dan Design Gambar Lainnya !
+            </p>
+            <button class="group mb-9 relative flex items-center justify-center  px-24 py-5 mx-auto w-full lg:w-auto uppercase text-white text-xs font-semibold tracking-px bg-gray-900 overflow-hidden rounded-md">
+              <div class="absolute transform -translate-x-full group-hover:-translate-x-0 h-full w-full transition ease-in-out duration-500 bg-gradient-fuchsia"></div>
+              <p class="relative z-10 mr-2">Project kami</p>
+              <svg class="relative z-10" width="19" height="18" viewbox="0 0 19 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M9.49999 16.2C13.4764 16.2 16.7 12.9764 16.7 8.99999C16.7 5.02354 13.4764 1.79999 9.49999 1.79999C5.52354 1.79999 2.29999 5.02354 2.29999 8.99999C2.29999 12.9764 5.52354 16.2 9.49999 16.2ZM12.8364 8.36359L10.1364 5.66359C9.78491 5.31212 9.21506 5.31212 8.86359 5.66359C8.51212 6.01506 8.51212 6.58491 8.86359 6.93638L10.0272 8.09999L6.79999 8.09999C6.30293 8.09999 5.89999 8.50293 5.89999 8.99999C5.89999 9.49704 6.30293 9.89999 6.79999 9.89999H10.0272L8.86359 11.0636C8.51212 11.4151 8.51212 11.9849 8.86359 12.3364C9.21506 12.6879 9.78491 12.6879 10.1364 12.3364L12.8364 9.63638C13.1879 9.28491 13.1879 8.71506 12.8364 8.36359Z" fill="white"></path>
+              </svg>
+            </button>
+            <ul class="flex justify-center"></ul>
+          </div>
+        </div>
+        <div class="w-full lg:w-auto p-6 self-end">
+          <img loading="lazy" decoding="async" class="mx-auto w-60 transition-transform duration-300 hover:scale-125" loading="lazy" decoding="async" src="./public/images/rahsya-header.svg" alt="">
+          <p class="text-lg text-center font-bold mt-4 text-white">Rahsya Benova Akbar</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  
+<section id="about">
+  <section class="relative py-12 bg-white/50 pb-20  pt-20 p-4" style="overflow: hidden !important;" >
+    <h1 class="max-w-5xl mb-4 text-4xl tracking-tight leading-none md:text-5xl xl:text-6xl text-center text-white  mx-auto pb-10 relative z-20" data-aos="zoom-out-down">
+      Apasih PPLG Itu ? <br>
+  </h1>
+  <h1 class="max-w-5xl mb-4 text-md tracking-tight leading-none xl:text-lg text-center text-gray-200  mx-auto pb-10 relative z-20" data-aos="zoom-out-up" data-aos-delay="200">
+    PPLG (Pengembangan Perangkat Lunak dan Gim) adalah bidang keahlian yang fokus pada pembuatan dan pengembangan perangkat lunak, termasuk aplikasi dan gim.
+    <span id="moreText" style="display: none;">
+      Dalam PPLG, siswa belajar berbagai keterampilan seperti pemrograman, desain antarmuka, pemecahan masalah, dan pengujian perangkat lunak, yang berguna di dunia industri teknologi.
+    </span>
+    <a id="readMoreLink" href="javascript:void(0);" onclick="toggleReadMore()" class="text-gray-300 hover:underline">Read more</a>
+  </h1>
+  <style>
+    @keyframes flip-icon {
+      0% {
+          transform: rotateY(0);
+      }
+      50% {
+          transform: rotateY(180deg);
+      }
+      100% {
+          transform: rotateY(0);
+      }
+  }
+
+  .card.active .icon {
+      animation: flip-icon 0.6s ease-in-out forwards;
+  }
+
+  </style>
+
+
+    <div class="absolute inset-0 bg-cover bg-center blud-md" style="background-image: url('./public/images/tujuan/tujuan-bg.jpg');">
+      
+      <div class="absolute inset-0 bg-black opacity-80"></div>
+      <div class="absolute inset-0 bg-gradient-to-t from-black via-transparent to-transparent"></div>
+
+    </div>
+    <div class="container relative z-10 grid grid-cols-1 gap-10 px-6 mx-auto lg:grid-cols-3">
+      <div class="flex items-center justify-center animate__animated animate__fadeInLeft ms1s lg:col-span-1 lg:row-start-1">
+          <div>
+              <h1 class="mt-2 text-3xl text-white text-center lg:text-left md:text-4xl tracking-wide "  data-aos="zoom-out-right">Tujuan Jurusan</h1>    
+              <p class="mt-4 text-gray-200" data-aos="zoom-out-left" data-aos-offset="200"            >
+                  Jurusan PPLG, tujuan jurusan ini adalah membekali siswa dengan keterampilan dalam pengembangan perangkat lunak, pemrograman, dan teknologi digital. Kami fokus pada penguasaan teknik coding, pembuatan aplikasi, dan analisis sistem yang relevan dengan industri. Harapannya, lulusan siap bersaing dalam dunia kerja atau melanjutkan pendidikan lebih tinggi.
+              </p>
+          </div>
+      </div>
+      <div class="grid grid-cols-1 gap-12 lg:col-span-2 sm:grid-cols-2" id="card-container">
+
+      <div class="relative flex flex-col items-center space-y-4 p-4 rounded-lg transition-colors duration-300 group card" data-aos="zoom-in" data-aos-delay="500">
+        <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" class="icon default-icon  text-gray-200" viewBox="0 0 502.664 502.664">
+          <path d="M310.166,397.593H75.951V61.671h234.151v25.13h31.472V54.811C341.595,24.677,316.853,0,286.74,0H99.355
+              C69.199,0,44.522,24.677,44.522,54.811v393.02c0,30.178,24.677,54.833,54.833,54.833H286.74
+              c30.113,0,54.855-24.655,54.855-54.833V397.01h-31.429C310.166,397.01,310.166,397.593,310.166,397.593z M193.015,475.226
+              c-13.892,0-25.108-11.238-25.108-25.108c0-13.913,11.217-25.13,25.108-25.13c13.913,0,25.152,11.238,25.152,25.13
+              C218.167,463.988,206.929,475.226,193.015,475.226z"/>
+          <rect x="102.785" y="95.386" width="70.256" height="42.84"/>
+          <rect x="102.785" y="205.073" width="70.256" height="42.84"/>
+          <rect x="102.785" y="319.873" width="70.256" height="42.818"/>
+          <path d="M422.399,223.905c-2.481-12.986-7.507-25.001-14.625-35.506l25.195-25.216l-25.734-25.648l-25.152,25.173
+              c-10.462-7.161-22.541-12.123-35.484-14.625v-35.7h-36.411v35.7c-12.964,2.502-24.936,7.485-35.505,14.625l-25.108-25.173
+              l-25.734,25.669l25.152,25.216c-7.097,10.505-12.101,22.52-14.582,35.484h-35.657v36.39h35.656
+              c2.481,12.921,7.507,24.936,14.603,35.484l-25.173,25.173l25.734,25.626l25.173-25.152c10.527,7.161,22.541,12.144,35.505,14.668
+              v35.635h36.411v-35.656c12.942-2.481,24.936-7.507,35.484-14.625l25.152,25.152l25.734-25.648l-25.195-25.173
+              c7.118-10.505,12.123-22.541,14.625-35.505h35.678l0,0v-36.368H422.399z M328.437,281.693c-21.894,0-39.669-17.688-39.669-39.604
+              c0-21.894,17.774-39.69,39.669-39.69c21.916,0,39.604,17.774,39.604,39.69C368.041,264.026,350.309,281.693,328.437,281.693z"/>
+      </svg>
+        <div class="text-center">
+            <h3 class="text-lg md:text-xl text-white">Mobile Apps</h3>
+            <p class="text-gray-200 mt-2 text-sm md:text-base">Siswa diharapkan mampu membuat aplikasi mobile berbasis sistem operasi Android untuk dioperasikan di smartphone masing-masing.</p>
+        </div>
+      </div>
+
+      <div class="relative flex flex-col items-center space-y-4 p-4 rounded-lg transition-colors duration-300 group card" data-aos="zoom-in" data-aos-delay="500">
+        <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" class="icon default-icon  text-gray-200" viewBox="0 0 502.664 502.664">
+          <path d="M310.166,397.593H75.951V61.671h234.151v25.13h31.472V54.811C341.595,24.677,316.853,0,286.74,0H99.355
+              C69.199,0,44.522,24.677,44.522,54.811v393.02c0,30.178,24.677,54.833,54.833,54.833H286.74
+              c30.113,0,54.855-24.655,54.855-54.833V397.01h-31.429C310.166,397.01,310.166,397.593,310.166,397.593z M193.015,475.226
+              c-13.892,0-25.108-11.238-25.108-25.108c0-13.913,11.217-25.13,25.108-25.13c13.913,0,25.152,11.238,25.152,25.13
+              C218.167,463.988,206.929,475.226,193.015,475.226z"/>
+          <rect x="102.785" y="95.386" width="70.256" height="42.84"/>
+          <rect x="102.785" y="205.073" width="70.256" height="42.84"/>
+          <rect x="102.785" y="319.873" width="70.256" height="42.818"/>
+          <path d="M422.399,223.905c-2.481-12.986-7.507-25.001-14.625-35.506l25.195-25.216l-25.734-25.648l-25.152,25.173
+              c-10.462-7.161-22.541-12.123-35.484-14.625v-35.7h-36.411v35.7c-12.964,2.502-24.936,7.485-35.505,14.625l-25.108-25.173
+              l-25.734,25.669l25.152,25.216c-7.097,10.505-12.101,22.52-14.582,35.484h-35.657v36.39h35.656
+              c2.481,12.921,7.507,24.936,14.603,35.484l-25.173,25.173l25.734,25.626l25.173-25.152c10.527,7.161,22.541,12.144,35.505,14.668
+              v35.635h36.411v-35.656c12.942-2.481,24.936-7.507,35.484-14.625l25.152,25.152l25.734-25.648l-25.195-25.173
+              c7.118-10.505,12.123-22.541,14.625-35.505h35.678l0,0v-36.368H422.399z M328.437,281.693c-21.894,0-39.669-17.688-39.669-39.604
+              c0-21.894,17.774-39.69,39.669-39.69c21.916,0,39.604,17.774,39.604,39.69C368.041,264.026,350.309,281.693,328.437,281.693z"/>
+      </svg>
+        <div class="text-center">
+            <h3 class="text-lg md:text-xl text-white">Mobile Apps</h3>
+            <p class="text-gray-200 mt-2 text-sm md:text-base">Siswa diharapkan mampu membuat aplikasi mobile berbasis sistem operasi Android untuk dioperasikan di smartphone masing-masing.</p>
+        </div>
+      </div>
+
+      <div class="relative flex flex-col items-center space-y-4 p-4 rounded-lg transition-colors duration-300 group card" data-aos="zoom-in" data-aos-delay="500">
+        <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" class="icon default-icon  text-gray-200" viewBox="0 0 502.664 502.664">
+          <path d="M310.166,397.593H75.951V61.671h234.151v25.13h31.472V54.811C341.595,24.677,316.853,0,286.74,0H99.355
+              C69.199,0,44.522,24.677,44.522,54.811v393.02c0,30.178,24.677,54.833,54.833,54.833H286.74
+              c30.113,0,54.855-24.655,54.855-54.833V397.01h-31.429C310.166,397.01,310.166,397.593,310.166,397.593z M193.015,475.226
+              c-13.892,0-25.108-11.238-25.108-25.108c0-13.913,11.217-25.13,25.108-25.13c13.913,0,25.152,11.238,25.152,25.13
+              C218.167,463.988,206.929,475.226,193.015,475.226z"/>
+          <rect x="102.785" y="95.386" width="70.256" height="42.84"/>
+          <rect x="102.785" y="205.073" width="70.256" height="42.84"/>
+          <rect x="102.785" y="319.873" width="70.256" height="42.818"/>
+          <path d="M422.399,223.905c-2.481-12.986-7.507-25.001-14.625-35.506l25.195-25.216l-25.734-25.648l-25.152,25.173
+              c-10.462-7.161-22.541-12.123-35.484-14.625v-35.7h-36.411v35.7c-12.964,2.502-24.936,7.485-35.505,14.625l-25.108-25.173
+              l-25.734,25.669l25.152,25.216c-7.097,10.505-12.101,22.52-14.582,35.484h-35.657v36.39h35.656
+              c2.481,12.921,7.507,24.936,14.603,35.484l-25.173,25.173l25.734,25.626l25.173-25.152c10.527,7.161,22.541,12.144,35.505,14.668
+              v35.635h36.411v-35.656c12.942-2.481,24.936-7.507,35.484-14.625l25.152,25.152l25.734-25.648l-25.195-25.173
+              c7.118-10.505,12.123-22.541,14.625-35.505h35.678l0,0v-36.368H422.399z M328.437,281.693c-21.894,0-39.669-17.688-39.669-39.604
+              c0-21.894,17.774-39.69,39.669-39.69c21.916,0,39.604,17.774,39.604,39.69C368.041,264.026,350.309,281.693,328.437,281.693z"/>
+      </svg>
+        <div class="text-center">
+            <h3 class="text-lg md:text-xl text-white">Mobile Apps</h3>
+            <p class="text-gray-200 mt-2 text-sm md:text-base">Siswa diharapkan mampu membuat aplikasi mobile berbasis sistem operasi Android untuk dioperasikan di smartphone masing-masing.</p>
+        </div>
+      </div>
+
+      <div class="relative flex flex-col items-center space-y-4 p-4 rounded-lg transition-colors duration-300 group card" data-aos="zoom-in" data-aos-delay="500">
+        <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" class="icon default-icon  text-gray-200" viewBox="0 0 502.664 502.664">
+          <path d="M310.166,397.593H75.951V61.671h234.151v25.13h31.472V54.811C341.595,24.677,316.853,0,286.74,0H99.355
+              C69.199,0,44.522,24.677,44.522,54.811v393.02c0,30.178,24.677,54.833,54.833,54.833H286.74
+              c30.113,0,54.855-24.655,54.855-54.833V397.01h-31.429C310.166,397.01,310.166,397.593,310.166,397.593z M193.015,475.226
+              c-13.892,0-25.108-11.238-25.108-25.108c0-13.913,11.217-25.13,25.108-25.13c13.913,0,25.152,11.238,25.152,25.13
+              C218.167,463.988,206.929,475.226,193.015,475.226z"/>
+          <rect x="102.785" y="95.386" width="70.256" height="42.84"/>
+          <rect x="102.785" y="205.073" width="70.256" height="42.84"/>
+          <rect x="102.785" y="319.873" width="70.256" height="42.818"/>
+          <path d="M422.399,223.905c-2.481-12.986-7.507-25.001-14.625-35.506l25.195-25.216l-25.734-25.648l-25.152,25.173
+              c-10.462-7.161-22.541-12.123-35.484-14.625v-35.7h-36.411v35.7c-12.964,2.502-24.936,7.485-35.505,14.625l-25.108-25.173
+              l-25.734,25.669l25.152,25.216c-7.097,10.505-12.101,22.52-14.582,35.484h-35.657v36.39h35.656
+              c2.481,12.921,7.507,24.936,14.603,35.484l-25.173,25.173l25.734,25.626l25.173-25.152c10.527,7.161,22.541,12.144,35.505,14.668
+              v35.635h36.411v-35.656c12.942-2.481,24.936-7.507,35.484-14.625l25.152,25.152l25.734-25.648l-25.195-25.173
+              c7.118-10.505,12.123-22.541,14.625-35.505h35.678l0,0v-36.368H422.399z M328.437,281.693c-21.894,0-39.669-17.688-39.669-39.604
+              c0-21.894,17.774-39.69,39.669-39.69c21.916,0,39.604,17.774,39.604,39.69C368.041,264.026,350.309,281.693,328.437,281.693z"/>
+      </svg>
+        <div class="text-center">
+            <h3 class="text-lg md:text-xl text-white">Mobile Apps</h3>
+            <p class="text-gray-200 mt-2 text-sm md:text-base">Siswa diharapkan mampu membuat aplikasi mobile berbasis sistem operasi Android untuk dioperasikan di smartphone masing-masing.</p>
+        </div>
+      </div>
+    
+      </div>
+    </div>
+  </section>
+</section>
+
+
+<section id="guru" >
+  <section class=" pb-20 pt-20 p-4 relative" style="overflow: hidden !important;">
+    <div class="absolute inset-0 bg-gradient-to-b from-black/70 via-black/50 to-transparent" style="z-index: -20;"></div>
+    <div class="container mx-auto">
+        <div class="p-10 mx-0 sm:mx-32 relative z-10">
+          <h1 class="max-w-5xl mb-4 text-4xl tracking-tight leading-none md:text-5xl xl:text-6xl text-center text-white mx-auto pb-10" data-aos="zoom-out-down">
+            Guru PPLG <br>
+          </h1>
+        </div>
+        <div class="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 duration-500 " style="overflow: hidden important;">
+          <div class="grid-items !transition-transform !duration-300 !hover:scale-105" data-aos="zoom-in-right" data-aos="fade-right" data-aos-delay="100" data-aos-offset="400">
+            <a href="javascript:void(0)" class="block bg-gray-700/60 border-2 !pointer-events-none shadow-2xl rounded-2xl shadow-blue-400/50 border-blue-400" style="pointer-events:none !important;">
+              <img loading="lazy" decoding="async" alt="" src="./public/images/guru/guru-yuni.webp" class="object-cover w-full h-64 sm:h-80 lg:h-96 rounded-t-2xl rounded-b-3xl object-top">
+        
+              <h3 class="px-5 mt-4 text-lg font-bold text-white sm:text-sm md:text-lg">
+                Sri Wahyuni S.Kom M.Kom
+              </h3>
+        
+              <p class="max-w-sm px-5 py-3 pb-5 mt-2 text-base text-gray-300 sm:text-xs md:text-base">
+                Kepala Jurusan Pengembangan Perangkat Lunak dan Gim (PPLG)
+              </p>
+            </a>
+          </div>
+
+          <div class="grid-items transition-transform duration-300 hover:scale-105" data-aos="zoom-in-down" data-aos="fade-down" data-aos-delay="200" data-aos-offset="400">
+            <a href="javascript:void(0)" class="block bg-gray-700/60 border-2 !pointer-events-none shadow-2xl rounded-2xl shadow-blue-400/50 border-blue-400" style="pointer-events:none !important;">
+              <img loading="lazy" decoding="async" alt="" src="./public/images/guru/guru-meri.webp" class="object-cover w-full h-64 sm:h-80 lg:h-96 rounded-t-2xl rounded-b-3xl object-top">
+        
+              <h3 class="px-5 mt-4 text-lg font-bold text-white sm:text-sm md:text-lg">
+                Asmeri Desti S.Kom
+              </h3>
+        
+              <p class="max-w-sm px-5 py-3 pb-5 mt-2 text-base text-gray-300 sm:text-xs md:text-base">
+                Guru Produktif Jurusan Pengembangan Perangkat Lunak dan Gim (PPLG)
+              </p>
+            </a>
+          </div>
+
+          <div class="grid-items transition-transform duration-300 hover:scale-105" data-aos="zoom-in-up" data-aos="fade-up" data-aos-delay="300" data-aos-offset="400">
+            <a href="javascript:void(0)" class="block bg-gray-700/60 border-2 !pointer-events-none shadow-2xl rounded-2xl shadow-blue-400/50 border-blue-400" style="pointer-events:none !important;">
+              <img loading="lazy" decoding="async" alt="" src="./public/images/guru/guru-nina.webp" class="object-cover w-full h-64 sm:h-80 lg:h-96 rounded-t-2xl rounded-b-3xl object-top">
+        
+              <h3 class="px-5 mt-4 text-lg font-bold text-white sm:text-sm md:text-lg">
+                Erlina Baharuddin S.Kom
+              </h3>
+        
+              <p class="max-w-sm px-5 py-3 pb-5 mt-2 text-base text-gray-300 sm:text-xs md:text-base">
+                Guru Produktif Jurusan Pengembangan Perangkat Lunak dan Gim (PPLG)
+              </p>
+            </a>
+          </div>
+
+          <div class="grid-items transition-transform duration-300 hover:scale-105" data-aos="zoom-in-left" data-aos="fade-left" data-aos-delay="400" data-aos-offset="400">
+            <a href="javascript:void(0)" class="block bg-gray-700/60 border-2 !pointer-events-none shadow-2xl rounded-2xl shadow-blue-400/50 border-blue-400" style="pointer-events:none !important;">
+              <img loading="lazy" decoding="async" alt="" src="./public/images/guru/guru-nova.webp" class="object-cover w-full h-64 sm:h-80 lg:h-96 rounded-t-2xl rounded-b-3xl object-top">
+        
+              <h3 class="px-5 mt-4 text-lg font-bold text-white sm:text-sm md:text-lg">
+                Novarizal S.Kom
+              </h3>
+        
+              <p class="max-w-sm px-5 py-3 pb-5 mt-2 text-base text-gray-300 sm:text-xs md:text-base">
+                Guru Produktif Jurusan Pengembangan Perangkat Lunak dan Gim (PPLG)
+              </p>
+            </a>
+          </div>
+        </div>
+      <div class="mt-8" data-aos="zoom-in-down" data-aos="fade-left">
+        <div class="swiper-container w-full rounded-lg overflow-hidden border-2 shadow-2xl shadow-blue-400/50 border-blue-400" >
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <img 
+                src="./public/images/guru/guru-all-normal.webp" 
+                alt="First Image" 
+                class="w-full h-auto object-cover aspect-video">
+            </div>
+            <div class="swiper-slide">
+              <img 
+                src="./public/images/guru/guru-all-ok.webp" 
+                alt="Second Image" 
+                class="w-full h-auto object-cover aspect-video">
+            </div>
+          </div>
+          <div class="swiper-button-next" style="display: none !important ;"></div>
+          <div class="swiper-button-prev" style="display: none !important ;"></div>
+        </div>
+      </div>
+
+      <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+
+    </div>
+  </section>
+</section>
+
+
+
+
+<section class=" pb-20 pt-20 p-4 relative" id="Guru">
+  <div class="absolute inset-0 bg-gradient-to-b from-black/70 via-black/50 to-transparent" style="z-index: -20;"></div>
+  <div class="container mx-auto">
+      <div class="p-10 mx-0 sm:mx-32 relative z-10">
+        <h1 class="max-w-5xl mb-4 text-4xl tracking-tight leading-none md:text-5xl xl:text-6xl text-center text-white mx-auto pb-10" data-aos="zoom-out-down">
+          Guru PPLG <br>
+        </h1>
+      </div>
+      <div class="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 duration-500">
+        <div class="grid-items hover:scale-105">
+          <a href="javascript:void(0)" class="block bg-gray-700/60 border-2 !pointer-events-none shadow-2xl rounded-2xl shadow-blue-400/50 border-blue-400" style="pointer-events:none !important;">
+            <img loading="lazy" alt="" src="./public/images/guru/guru-yuni.webp" class="object-cover w-full h-64 sm:h-80 lg:h-96 rounded-t-2xl rounded-b-3xl object-top">
+      
+            <h3 class="px-5 mt-4 text-lg font-bold text-white sm:text-sm md:text-lg">
+              Lorem, ipsum dolor.
+            </h3>
+      
+            <p class="max-w-sm px-5 py-3 pb-5 mt-2 text-base text-gray-300 sm:text-xs md:text-base">
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Magni reiciendis sequi ipsam incidunt.
+            </p>
+          </a>
+        </div>
+
+        <div class="grid-items hover:scale-105">
+          <a href="javascript:void(0)" class="block bg-gray-700/60 border-2 !pointer-events-none shadow-2xl rounded-2xl shadow-blue-400/50 border-blue-400" style="pointer-events:none !important;">
+            <img loading="lazy" alt="" src="./public/images/guru/guru-meri.webp" class="object-cover w-full h-64 sm:h-80 lg:h-96 rounded-t-2xl rounded-b-3xl object-top">
+      
+            <h3 class="px-5 mt-4 text-lg font-bold text-white sm:text-sm md:text-lg">
+              Lorem, ipsum dolor.
+            </h3>
+      
+            <p class="max-w-sm px-5 py-3 pb-5 mt-2 text-base text-gray-300 sm:text-xs md:text-base">
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Magni reiciendis sequi ipsam incidunt.
+            </p>
+          </a>
+        </div>
+
+        <div class="grid-items hover:scale-105">
+          <a href="javascript:void(0)" class="block bg-gray-700/60 border-2 !pointer-events-none shadow-2xl rounded-2xl shadow-blue-400/50 border-blue-400" style="pointer-events:none !important;">
+            <img loading="lazy" alt="" src="./public/images/guru/guru-nina.webp" class="object-cover w-full h-64 sm:h-80 lg:h-96 rounded-t-2xl rounded-b-3xl object-top">
+      
+            <h3 class="px-5 mt-4 text-lg font-bold text-white sm:text-sm md:text-lg">
+              Lorem, ipsum dolor.
+            </h3>
+      
+            <p class="max-w-sm px-5 py-3 pb-5 mt-2 text-base text-gray-300 sm:text-xs md:text-base">
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Magni reiciendis sequi ipsam incidunt.
+            </p>
+          </a>
+        </div>
+
+        <div class="grid-items hover:scale-105">
+          <a href="javascript:void(0)" class="block bg-gray-700/60 border-2 !pointer-events-none shadow-2xl rounded-2xl shadow-blue-400/50 border-blue-400" style="pointer-events:none !important;">
+            <img loading="lazy" alt="" src="./public/images/guru/guru-nova.webp" class="object-cover w-full h-64 sm:h-80 lg:h-96 rounded-t-2xl rounded-b-3xl object-top">
+      
+            <h3 class="px-5 mt-4 text-lg font-bold text-white sm:text-sm md:text-lg">
+              Lorem, ipsum dolor.
+            </h3>
+      
+            <p class="max-w-sm px-5 py-3 pb-5 mt-2 text-base text-gray-300 sm:text-xs md:text-base">
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Magni reiciendis sequi ipsam incidunt.
+            </p>
+          </a>
+        </div>
+      </div>
+    <div class="mt-8">
+      <div class="swiper-container w-full rounded-lg overflow-hidden border-2 shadow-2xl shadow-blue-400/50 border-blue-400" style="pointer-events:none !important;">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <img 
+              src="./public/images/guru/guru-all-normal.webp" 
+              alt="First Image" 
+              class="w-full h-auto object-cover aspect-video">
+          </div>
+          <div class="swiper-slide">
+            <img 
+              src="./public/images/guru/guru-all-ok.webp" 
+              alt="Second Image" 
+              class="w-full h-auto object-cover aspect-video">
+          </div>
+        </div>
+        <div class="swiper-button-next" style="    display: none !important;"></div>
+        <div class="swiper-button-prev" style="    display: none !important;"></div>
+      </div>
+    </div>
+
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+    <script>
+      document.addEventListener('DOMContentLoaded', function() {
+        new Swiper('.swiper-container', {
+          loop: true, 
+          navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+          },
+          autoplay: {
+            delay: 5000, 
+            disableOnInteraction: false,
+          },
+        });
+      });
+    </script>
+  </div>
+</section>
+
+
+
+
+<section id="solar">
+  <section class="pb-20 pt-20 p-4 relative" style="overflow: hidden !important;" data-aos="fade-up" >
+    <div class="absolute inset-0" style="z-index: -20;"></div>
+    <div class="container mx-auto">
+      <div class="p-8 mx-0 sm:mx-20 relative z-10"></div>
+      <div class="table h-full mx-auto">
+        <div id="solar" class="h-fit table-cell align-middle mx-auto">
+          <div class="in relative w-64 h-64 flex items-center justify-center scale-[0.6]">
+            
+            <div class="rounded-full bg-yellow-500 w-16 h-16 flex items-center justify-center absolute">
+              <div class="absolute -top-3 text-white text-xs flex flex-col items-center">Sun</div>
+              <div class="rounded-full bg-yellow-400 w-12 h-12 animate-ping"></div>
+            </div>
+
+            <div class="rounded-full border border-gray-400 w-24 h-24 flex items-center justify-center absolute animate-spin" style="animation-duration: 2.5s;">
+              <div class="absolute -top-4 text-gray-300 text-xs flex flex-col items-center">
+                Mercury
+                <div class="rounded-full h-1 w-1 bg-gray-300"></div>
+              </div>
+            </div>
+
+            <div class="rounded-full border border-yellow-300 w-32 h-32 flex items-center justify-center absolute animate-spin" style="animation-duration: 8s;">
+              <div class="absolute -top-4 text-yellow-200 text-xs flex flex-col items-center">
+                Venus
+                <div class="rounded-full h-2 w-2 bg-yellow-200"></div>
+              </div>
+            </div>
+
+            <div class="rounded-full border border-blue-500 w-40 h-40 flex items-center justify-center absolute animate-spin" style="animation-duration: 10s;">
+              <div class="absolute -top-4 text-blue-400 text-xs flex flex-col items-center">
+                Earth
+                <div class="rounded-full h-[0.6rem] w-[0.6rem] bg-blue-400"></div>
+              </div>
+            </div>
+
+            <div class="rounded-full border border-red-500 w-48 h-48 flex items-center justify-center absolute animate-spin" style="animation-duration: 14s;">
+              <div class="absolute -top-[1rem] text-red-400 text-xs flex flex-col items-center">
+                Mars
+                <div class="rounded-full h-1.5 w-1.5 bg-red-400"></div>
+              </div>
+            </div>
+
+            <div class="rounded-full border border-orange-500 w-[15rem] h-[15rem] flex items-center justify-center absolute animate-spin" style="animation-duration: 35s;">
+              <div class="absolute -top-8 text-orange-400 text-xs flex flex-col items-center">
+                Jupiter
+                <div class="rounded-full h-[2.5rem] w-[2.5rem] bg-orange-400"></div>
+              </div>
+            </div>
+
+            <div class="rounded-full border border-yellow-600 w-[22rem] h-[22rem] flex items-center justify-center absolute animate-spin" style="animation-duration: 60s;">
+              <div class="absolute -top-6 text-yellow-500 text-xs flex flex-col items-center">
+                Saturn
+                <div class="rounded-full h-[2rem] w-[2rem] bg-yellow-500"></div>
+              </div>
+            </div>
+
+            <div class="rounded-full border border-cyan-400 w-[26rem] h-[26rem] flex items-center justify-center absolute animate-spin" style="animation-duration: 90s;">
+              <div class="absolute -top-5 text-cyan-300 text-xs flex flex-col items-center">
+                Uranus
+                <div class="rounded-full h-[1.2rem] w-[1.2rem] bg-cyan-300"></div>
+              </div>
+            </div>
+
+            <div class="rounded-full border border-blue-800 w-[30rem] h-[30rem] flex items-center justify-center absolute animate-spin" style="animation-duration: 130s;">
+              <div class="absolute -top-5 text-blue-700 text-xs flex flex-col items-center">
+                Neptune
+                <div class="rounded-full h-[1rem] w-[1rem] bg-blue-700"></div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</section>
+
+<section class="container mx-auto pt-20 pb-20 p-4" style="overflow: hidden !important;">
+  <h1 class="max-w-5xl mb-4 text-4xl tracking-tight leading-none md:text-5xl xl:text-6xl text-center text-white mx-auto" data-aos="zoom-out-down">
+    Fasilitas <br>
+  </h1>
+  <div class="flex justify-center items-center text-white p-6" style="overflow: hidden !important;">
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6"style="overflow: hidden !important;"> 
+      <div class="col-span-1 flex flex-col space-y-4 justify-center">
+        <img src="./public/images/guru/guru-meri.webp" alt="gambar fasilitas" class="rounded-lg shadow-lg w-full h-auto object-cover">
+        <img src="./public/images/guru/guru-nina.webp" alt="gambar fasilitas" class="rounded-lg shadow-lg w-full h-auto object-cover">
+        <img src="./public/images/guru/guru-nina.webp" alt="gambar fasilitas" class="rounded-lg shadow-lg w-full h-auto object-cover">
+      </div>
+      
+      <div class="col-span-1 sm:col-span-1 lg:col-span-2">
+        <p class="text-blue-400 mb-4">
+          Sarana dan prasarana penunjang pembelajaran di program keahlian Rekayasa Perangkat Lunak
+        </p>
+        <h3 class="text-2xl font-semibold mb-2">Laboratorium</h3>
+        <p class="mb-4">
+          Jurusan RPL dilengkapi dengan 1 laboratorium untuk menunjang pembelajaran produktif siswa. Setiap laboratorium ditujukan untuk berfokus pada pembelajaran tertentu.
+        </p>
+        <h3 class="text-2xl font-semibold mb-2">Buku Pegangan Siswa</h3>
+        <p>
+          Jurusan RPL menyediakan berbagai buku pegangan siswa untuk membantu siswa belajar.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<script src="./public/js/aos.js"></script>
+
+<script src="./public/js/main.js"></script>
+<script src="./public/js/alpine.js" defer></script>
+</body>
+</html>
+
