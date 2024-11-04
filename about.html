@@ -9,17 +9,17 @@
     <meta name="author" content="Zavents">
     <meta name="description" content="About Zavents can be found here ! ">
     <!-- icon -->
-    <link rel="icon" type="image/png" sizes="32x32" href="./assets/icon/zavents-logo-new.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="./assets/icon/zavents-logo-new.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./public/images/icon/zavents-logo-new.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./public/images/icon/zavents-logo-new.png">
     <!-- tailwind css -->
-    <link rel="stylesheet" href="./css/style.css">
-    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./public/css/style.css">
+    <link rel="stylesheet" href="./public/css/main.css">
     <!-- music css -->
-     <link rel="stylesheet" href="./css/music.css">
+     <link rel="stylesheet" href="./public/css/music.css">
     <!-- sweet alert -->
-    <link rel="stylesheet" href="./css/sweetalert.css">
+    <link rel="stylesheet" href="./public/css/sweetalert.css">
     <!-- Animate.css -->
-    <link rel="stylesheet" href="./css/animatedotcss.css">
+    <link rel="stylesheet" href="./public/css/animatedotcss.css">
   
 <style>
   @font-face {
@@ -99,11 +99,11 @@
 </style>
 
 </head>
-<body style="background-image: url(./assets/sky.png) " > 
+<body style="background-image: url(./public/images/sky.png) " > 
     <div class="bg-blue-100 sticky top-0 z-50 p-4">
         <div class="container mx-auto flex justify-center items-center">
             <a href="#" class="mr-auto flex items-center">
-                <img loading="lazy" class="h-9 w-auto" src="./assets/icon/logo.png" alt="Logo">
+                <img loading="lazy" class="h-9 w-auto" src="./public/images/icon/logo.png" alt="Logo">
             </a>
         <button class="block md:hidden text-black focus:outline-none" id="navbar-toggle">
             <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
@@ -112,7 +112,7 @@
         </button>
             <div class="hidden md:flex md:items-center" style="z-index: 20;" id="navbar-menu">
             <ul class="flex gap-x-20 text-base font-bold">
-                    <li><a href="./index.html" class="nav-link text-black hover:text-blue-700">Home</a></li>
+                    <li><a href="./zavents.html" class="nav-link text-black hover:text-blue-700">Home</a></li>
                     <li><a href="./about.html" class="nav-link text-blue-700 hover:text-blue-700">About Me</a></li>
                     <li><a href="./cv.html" class="nav-link text-black hover:text-blue-700">View CV</a></li>
                     <li><a href="./website.html" class="nav-link text-black hover:text-blue-700">Website</a></li>
@@ -126,7 +126,7 @@
     
       <div class="hidden absolute top-16 left-0 w-full bg-blue-100 p-5 md:hidden" style="z-index: 20;" id="mobile-menu">
           <ul class="flex flex-col gap-y-5 text-base font-bold">
-              <li><a href="#" class="nav-link text-black hover:text-blue-700">Home</a></li>
+              <li><a href="./zavents.html" class="nav-link text-black hover:text-blue-700">Home</a></li>
               <li><a href="./about.html" class="nav-link text-blue-700 hover:text-blue-700 active">About Me</a></li>
               <li><a href="./cv.html" class="nav-link text-black hover:text-blue-700">View CV</a></li>
               <li><a href="./website.html" class="nav-link text-black hover:text-blue-700">Website</a></li>
@@ -149,7 +149,7 @@
                 <div class="relative w-80 lg:max-h-[calc(100vh-6rem)] " style="z-index: -20;"> 
                     <img loading="lazy"
                         alt="my picture" style="z-index: -20;"
-                        src="./assets/me.jpg"
+                        src="./public/images/me.jpg"
                         class="h-full w-full object-cover rounded-md"
                     />
                 </div>                              
@@ -179,25 +179,25 @@
       </div>
       <div class="grid grid-cols-1 gap-12 lg:col-span-2 sm:grid-cols-2">
             <div class="relative flex items-start space-x-4 p-4 rounded-lg hover:bg-gray-800 transition-colors group animate__animated animate__fadeInTopLeft ms1s5">
-              <img loading="lazy" src="./assets/icon/py.svg" alt="Python Logo" class="w-12 h-12">
+              <img loading="lazy" src="./public/images/icon/py.svg" alt="Python Logo" class="w-12 h-12">
               <div>
                 <h3 class="font-bold text-xl text-white">Python</h3>
                 <p class="text-gray-400 mt-2">I am actively developing Discord bots using Python, focusing on automation, moderation, and custom commands for seamless user interactions.</p>
               </div>
               <div class="absolute bottom-full left-0 mb-6 w-64 p-4 bg-gray-900 text-white rounded-lg shadow-lg opacity-0 group-hover:opacity-100 group-hover:block transition-opacity duration-300 pointer-events-none group-hover:pointer-events-auto">
-                <img loading="lazy" src="./assets/azbukents.png" alt="My Bot" class="w-full h-auto mb-2 rounded-lg">
+                <img loading="lazy" src="./public/images/azbukents.png" alt="My Bot" class="w-full h-auto mb-2 rounded-lg">
                 <p>This is one of my Discord bots built with Python. Real-time notifications, and customizable commands for community management.</p>
               </div>
             </div>
           <div class="flex items-start space-x-4 p-4 rounded-lg hover:bg-gray-800 transition-colors animate__animated animate__fadeInTopRight ms1s5">
-              <img loading="lazy" src="./assets/icon/c.svg" alt="C++ Logo" class="w-12 h-12">
+              <img loading="lazy" src="./public/images/icon/c.svg" alt="C++ Logo" class="w-12 h-12">
               <div>
                   <h3 class="font-bold text-xl text-white">C++</h3>
                   <p class="text-gray-400 mt-2">I am experienced in designing and developing efficient IoT devices, using C++.</p>
               </div>
           </div>
           <div class="flex items-start space-x-4 p-4 rounded-lg hover:bg-gray-800 transition-colors animate__animated animate__fadeInBottomLeft ms1s5">
-              <img loading="lazy" src="./assets/icon/html.svg" alt="HTML Logo" class="w-12 h-12">
+              <img loading="lazy" src="./public/images/icon/html.svg" alt="HTML Logo" class="w-12 h-12">
               <div>
                   <h3 class="font-bold text-xl text-white">HTML</h3>
                   <p class="text-gray-400 mt./website.html">
@@ -205,7 +205,7 @@
               </div>
           </div>
           <div class="flex items-start space-x-4 p-4 rounded-lg hover:bg-gray-800 transition-colors animate__animated animate__fadeInBottomRight ms1s5">
-              <img loading="lazy" src="./assets/icon/vs.svg" alt="VS code Logo" class="w-12 h-12">
+              <img loading="lazy" src="./public/images/icon/vs.svg" alt="VS code Logo" class="w-12 h-12">
               <div>
                   <h3 class="font-bold text-xl text-white">VSCode</h3>
                   <p class="text-gray-400 mt-2">I mainly using <strong>Visual Studio Code </strong> as my text editor for coding</p>
@@ -216,7 +216,7 @@
 </section>
 <script>
   function showProject1() {
-      const imageUrl = "./assets/jam.jpeg";
+      const imageUrl = "./public/images/jam.jpeg";
       const img = new Image();
       img.src = imageUrl;
 
@@ -241,7 +241,7 @@
       };
   }
   function showProject3() {
-      const imageUrl = "assets/sampah.gif"; 
+      const imageUrl = "public/images/sampah.gif"; 
       const img = new Image();
       img.src = imageUrl;
 
@@ -277,7 +277,7 @@
 
           <li>
               <a href="javascript:void(0);" onclick="showProject1()" class="block overflow-hidden rounded-lg border border-gray-100 bg-white shadow-sm ">
-                  <img loading="lazy" alt="Project 2" src="./assets/jam.jpeg" class="h-56 w-full object-cover" />
+                  <img loading="lazy" alt="Project 2" src="./public/images/jam.jpeg" class="h-56 w-full object-cover" />
                   <div class="p-6">
                       <h3 class="font-bold text-gray-900">Digital Clock</h3>
                       <p class="mt-2 text-sm text-gray-500">Internet-based Digital Clock</p>
@@ -287,7 +287,7 @@
           </li>
           <li>
               <a href="javascript:void(0);" onclick="showProject3()" class="block overflow-hidden rounded-lg border border-gray-100 bg-white shadow-sm ">
-                  <img loading="lazy" alt="Project 3" src="./assets/sampah.gif" class="h-56 w-full object-cover" />
+                  <img loading="lazy" alt="Project 3" src="./public/images/sampah.gif" class="h-56 w-full object-cover" />
                   <div class="p-6">
                       <h3 class="font-bold text-gray-900">Smart Trash Bin</h3>
                       <p class="mt-2 text-sm text-gray-500">Smart Trash Bin That Opens and Closes by Itself</p>
@@ -370,7 +370,7 @@
     <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
     <div class="max-w-3xl mx-auto">
     <a href="https://github.com/zavents" target="_blank" class="flex justify-center ">
-      <img loading="lazy" src="./assets/icon/loogo.png" loading="lazy" width="100px" alt="">
+      <img loading="lazy" src="./public/images/icon/loogo.png" loading="lazy" width="100px" alt="">
     </a>
     <ul class="text-lg flex items-center justify-center flex-col gap-7 md:flex-row md:gap-12 transition-all duration-500 py-10 mb-10 border-b border-gray-200">
       <li>
