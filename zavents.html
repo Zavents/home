@@ -112,47 +112,47 @@
     }
 </style>
 <body class="relative bg-white">
-    <div class="bg-blue-100 navbar p-4">
-        <div class="container mx-auto flex justify-center items-center">
-            <a href="#" class="mr-auto flex items-center">
-                <img loading="lazy" class="h-9 w-auto" src="./public/images/icon/logo.png" alt="Logo">
-            </a>
-            <button class="block md:hidden text-black focus:outline-none" id="navbar-toggle">
-                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
-                </svg>
-            </button>
-            <div class="hidden md:flex md:items-center" id="navbar-menu">
-                <ul class="flex gap-x-20 text-base font-bold">
-                    <li><a href="./index.html" class="nav-link text-blue-700 hover:text-blue-700">Home</a></li>
-                    <li><a href="./about.html" class="nav-link text-black hover:text-blue-700">About Me</a></li>
-                    <li><a href="./cv.html" class="nav-link text-black hover:text-blue-700">View CV</a></li>
-                    <li><a href="./website.html" class="nav-link text-black hover:text-blue-700">Website</a></li>
-                    <li><a href="./photo.html" class="nav-link text-black hover:text-blue-700">Photo</a></li>
-                    <li><a href="#blog" class="nav-link text-black hover:text-blue-700">Video</a></li>
-                    <li><a href="#contact" class="nav-link text-black hover:text-blue-700">Vents</a></li>
-                </ul>
-            </div>
+  <nav class="bg-blue-100 sticky top-0 z-50 p-4">
+    <div class="container mx-auto flex justify-center items-center">
+        <a href="#" class="mr-auto flex items-center">
+            <img loading="lazy" class="h-9 w-auto" src="./public/images/icon/logo.png" alt="Logo">
+        </a>
+    <button class="block md:hidden text-black focus:outline-none" id="navbar-toggle">
+        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+        </svg>
+    </button>
+        <div class="hidden md:flex md:items-center" style="z-index: 20;" id="navbar-menu">
+        <ul class="flex gap-x-20 text-base font-bold">
+                <li><a href="./index.html" class="nav-link text-black hover:text-blue-700">Home</a></li>
+                <li><a href="./about.html" class="nav-link text-blue-700 hover:text-blue-700">About Me</a></li>
+                <li><a href="./cv.html" class="nav-link text-black hover:text-blue-700">View CV</a></li>
+                <li><a href="./website.html" class="nav-link text-black hover:text-blue-700">Website</a></li>
+                <li><a href="./photo.html" class="nav-link text-black hover:text-blue-700">Photo</a></li>
+                <li><a href="./404.html" class="nav-link text-black hover:text-blue-700">Video</a></li>
+                <li><a href="./404.html" class="nav-link text-black hover:text-blue-700">Vents</a></li>
+            </ul>
         </div>
     </div>
-    <div class="hidden absolute top-16 left-0 w-full bg-blue-100 p-5 md:hidden" id="mobile-menu">
-        <ul class="flex flex-col gap-y-5 text-base font-bold">
-            <li><a href="./index.html" class="nav-link text-black hover:text-blue-700">Home</a></li>
-            <li><a href="./about.html" class="nav-link text-blue-700 hover:text-blue-700 active">About Me</a></li>
-            <li><a href="./cv.html" class="nav-link text-black hover:text-blue-700">View CV</a></li>
-            <li><a href="./website.html" class="nav-link text-black hover:text-blue-700">Website</a></li>
-            <li><a href="./photo.html" class="nav-link text-black hover:text-blue-700">Photo</a></li>
-            <li><a href="#blog" class="nav-link text-black hover:text-blue-700">Video</a></li>
-            <li><a href="#contact" class="nav-link text-black hover:text-blue-700">Vents</a></li>
-        </ul>
-    </div>
-    <script>
-        // Toggle for mobile menu
-        document.getElementById('navbar-toggle').addEventListener('click', function() {
-            document.getElementById('mobile-menu').classList.toggle('hidden');
-        });
-    </script>
+</nav>
 
+  <nav class="hidden sticky  top-16 left-0 w-full bg-blue-100 p-5 md:hidden" style="z-index: 20;" id="mobile-menu">
+      <ul class="flex flex-col gap-y-5 text-base font-bold">
+          <li><a href="./index.html" class="nav-link text-black hover:text-blue-700">Home</a></li>
+          <li><a href="./about.html" class="nav-link text-blue-700 hover:text-blue-700 active">About Me</a></li>
+          <li><a href="./cv.html" class="nav-link text-black hover:text-blue-700">View CV</a></li>
+          <li><a href="./website.html" class="nav-link text-black hover:text-blue-700">Website</a></li>
+          <li><a href="./photo.html" class="nav-link text-black hover:text-blue-700">Photo</a></li>
+          <li><a href="./404.html" class="nav-link text-black hover:text-blue-700">Video</a></li>
+          <li><a href="./404.html" class="nav-link text-black hover:text-blue-700">Vents</a></li>
+      </ul>
+  </nav>
+  
+  <script>
+      document.getElementById('navbar-toggle').addEventListener('click', function() {
+          document.getElementById('mobile-menu').classList.toggle('hidden');
+      });
+  </script>
  <section id="hero" class="min-h-screen  flex items-center justify-center text-center ">
 <div class="container ">
    <div class="grid grid-cols-1">
