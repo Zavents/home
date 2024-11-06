@@ -89,5 +89,7 @@
     .navbar-scrolled {
       background-color: rgba(0, 0, 0, 0.7);
       padding: 0.2rem 2.5rem; /* Adjust padding as desired */
+      backdrop-filter: blur(8px); /* Adjust the blur intensity as desired */
+
     }
     
