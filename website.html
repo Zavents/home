@@ -9,23 +9,23 @@
     <meta name="author" content="Zavents">
     <meta name="description" content="All Zavents's Website ! ">
     <!-- icon -->
-    <link rel="icon" type="image/png" sizes="32x32" href="./assets/icon/zavents-logo-new.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="./assets/icon/zavents-logo-new.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./public/images/icon/zavents-logo-new.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./public/images/icon/zavents-logo-new.png">
     <!-- tailwind css -->
-    <link rel="stylesheet" href="./css/style-4.css">
-    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./public/css/style.css">
+    <link rel="stylesheet" href="./public/css/main.css">
     <!-- music css -->
-     <link rel="stylesheet" href="./css/music.css">
+     <link rel="stylesheet" href="./public/css/music.css">
     <!-- sweet alert -->
-    <link rel="stylesheet" href="./css/sweetalert.css">
+    <link rel="stylesheet" href="./public/css/sweetalert.css">
     <!-- Animate.css -->
-    <link rel="stylesheet" href="./css/animatedotcss.css">
+    <link rel="stylesheet" href="./public/css/animatedotcss.css">
   
 <style>
-  @font-face {
-    font-family: Terminus;
-    src: url(./fonts/TerminusTTF.woff2)
-}
+    @font-face {
+        font-family: Terminus;
+        src: url(./public/font/TerminusTTF.woff2)
+    }
   *
   {
     font-family: Terminus;
@@ -80,49 +80,48 @@
 
 </head>
 
-<body style="background-image: url(./assets/sky.png) " > 
-    <div class="bg-blue-100 sticky top-0 z-50 p-4">
+<body style="background-image: url(./public/images/sky.png) " > 
+    <nav class="bg-blue-100 sticky top-0 z-50 p-4">
         <div class="container mx-auto flex justify-center items-center">
             <a href="#" class="mr-auto flex items-center">
-                <img decoding="async" loading="lazy" class="h-9 w-auto" src="./assets/icon/logo.png" alt="Logo">
+                <img loading="lazy" class="h-9 w-auto" src="./public/images/icon/logo.png" alt="Logo">
             </a>
         <button class="block md:hidden text-black focus:outline-none" id="navbar-toggle">
             <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
             </svg>
         </button>
-            <div class="hidden md:flex md:items-center" id="navbar-menu">
+            <div class="hidden md:flex md:items-center" style="z-index: 20;" id="navbar-menu">
             <ul class="flex gap-x-20 text-base font-bold">
                     <li><a href="./index.html" class="nav-link text-black hover:text-blue-700">Home</a></li>
                     <li><a href="./about.html" class="nav-link text-black hover:text-blue-700">About Me</a></li>
                     <li><a href="./cv.html" class="nav-link text-black hover:text-blue-700">View CV</a></li>
-                    <li><a href="./website.html" class="nav-link text-blue-700 hover:text-blue-700">Website</a></li>
+                    <li><a href="./website.html" class="nav-link text-blue-700 hover:text-blue-700 active">Website</a></li>
                     <li><a href="./photo.html" class="nav-link text-black hover:text-blue-700">Photo</a></li>
-                    <li><a href="#blog" class="nav-link text-black hover:text-blue-700">Video</a></li>
-                    <li><a href="#contact" class="nav-link text-black hover:text-blue-700">Vents</a></li>
+                    <li><a href="./404.html" class="nav-link text-black hover:text-blue-700">Video</a></li>
+                    <li><a href="./404.html" class="nav-link text-black hover:text-blue-700">Vents</a></li>
                 </ul>
             </div>
         </div>
-    </div>
+    </nav>
     
-      <div class="hidden absolute top-16 left-0 w-full bg-blue-100 p-5 md:hidden" id="mobile-menu">
+      <nav class="hidden sticky  top-16 left-0 w-full bg-blue-100 p-5 md:hidden" style="z-index: 20;" id="mobile-menu">
           <ul class="flex flex-col gap-y-5 text-base font-bold">
-              <li><a href="#" class="nav-link text-black hover:text-blue-700">Home</a></li>
-              <li><a href="./about.html" class="nav-link text-blue-700 hover:text-blue-700 active">About Me</a></li>
+              <li><a href="./index.html" class="nav-link text-black hover:text-blue-700">Home</a></li>
+              <li><a href="./about.html" class="nav-link text-black hover:text-blue-700 ">About Me</a></li>
               <li><a href="./cv.html" class="nav-link text-black hover:text-blue-700">View CV</a></li>
-              <li><a href="./website.html" class="nav-link text-black hover:text-blue-700">Website</a></li>
+              <li><a href="./website.html" class="nav-link text-blue-700 hover:text-blue-700 active">Website</a></li>
               <li><a href="./photo.html" class="nav-link text-black hover:text-blue-700">Photo</a></li>
-              <li><a href="#blog" class="nav-link text-black hover:text-blue-700">Video</a></li>
-              <li><a href="#contact" class="nav-link text-black hover:text-blue-700">Vents</a></li>
+              <li><a href="./404.html" class="nav-link text-black hover:text-blue-700">Video</a></li>
+              <li><a href="./404.html" class="nav-link text-black hover:text-blue-700">Vents</a></li>
           </ul>
-      </div>
+      </nav>
       
       <script>
           document.getElementById('navbar-toggle').addEventListener('click', function() {
               document.getElementById('mobile-menu').classList.toggle('hidden');
           });
       </script>
-
 <section class="flex justify-center items-center gap-10 mx-auto p-4 min-h-screen">
   <div class="container min-screen-h mb-7 text-center">
     <h1 class="max-w-5xl mb-4 text-4xl  tracking-tight leading-none md:text-5xl xl:text-6xl text-gray-400 font-semibold mx-auto animate__animated animate__flash  animate__infinite	infinite">
@@ -136,7 +135,7 @@
             <div>
                 <div class="relative flex flex-col my-6 bg-gray-800 shadow-lg border border-white-500 hover:shadow-pink-700 rounded-lg w-70 transition-transform duration-300 ease-in-out transform hover:scale-105 max-h-[500px]">
                 <div class="relative h-56 m-2.5 overflow-hidden text-white rounded-md">
-                    <img decoding="async" loading="lazy" src="./assets/screenshot12.png" loading="lazy" alt="Website Image " class="cursor-pointer transition-transform duration-500 ease-in-out transform hover:scale-110" onclick="openModal(this)" />
+                    <img decoding="async" loading="lazy" src="./public/images/screenshot12.png" loading="lazy" alt="Website Image " class="cursor-pointer transition-transform duration-500 ease-in-out transform hover:scale-110" onclick="openModal(this)" />
                 </div>
                 <div class="p-4 flex-grow">
                     <h6 class="mb-2 text-white text-xl font-semibold">
@@ -145,23 +144,23 @@
                 </div>
                 <div class="flex  px-5 flex-wrap  items-center  align-middle left-20  gap-2 pb-3 ">
                     <a href="javascript:void(0)" class="flex bg-blue-300 border border-blue-600 rounded-full px-2 py-1 items-center text-center hover:scale-95 duration-200 hover:shadow-md hover:shadow-blue-700/70">
-                    <img decoding="async" loading="lazy" src="./assets/icon/tailwind.svg" class="w-3 h-3 bg-blue-100/30 rounded-full" alt="">
+                    <img decoding="async" loading="lazy" src="./public/images/icon/tailwind.svg" class="w-3 h-3 bg-blue-100/30 rounded-full" alt="">
                     <p class="text-blue-600 ps-1 text-xs font-semibold tracking-wider">TAILWIND</p>
                     </a>
                     <a href="javascript:void(0)" class="flex bg-purple-300 border border-purple-600 rounded-full px-2 py-1 items-center text-center hover:scale-95 duration-200 hover:shadow-md hover:shadow-purple-700/70">
-                        <img decoding="async" loading="lazy" src="./assets/icon/shuffle-logo.jpeg" class="w-3 h-3 bg-purple-100/30 rounded-full" alt="">
+                        <img decoding="async" loading="lazy" src="./public/images/icon/shuffle-logo.jpeg" class="w-3 h-3 bg-purple-100/30 rounded-full" alt="">
                         <p class="text-purple-600 ps-1 text-xs font-semibold tracking-wider">SHUFFLE</p>
                         </a>
                     <a href="javascript:void(0)" class="flex bg-orange-300 border border-orange-600 rounded-full px-2 py-1 items-center text-center hover:scale-95 duration-200 hover:shadow-md hover:shadow-orange-700/70">
-                    <img decoding="async" loading="lazy" src="./assets/icon/html.svg" class="w-3 h-3" alt="">
+                    <img decoding="async" loading="lazy" src="./public/images/icon/html.svg" class="w-3 h-3" alt="">
                     <p class="text-orange-600 ps-1 text-xs font-semibold tracking-wider">HTML</p>
                     </a>
                     <a href="javascript:void(0)" class="flex bg-cyan-300 border border-cyan-600 rounded-full px-2 py-1 items-center text-center hover:scale-95 duration-200 hover:shadow-md hover:shadow-cyan-700/70">
-                    <img decoding="async" loading="lazy" src="./assets/icon/css.svg" class="w-3 h-3" alt="">
+                    <img decoding="async" loading="lazy" src="./public/images/icon/css.svg" class="w-3 h-3" alt="">
                     <p class="text-cyan-600 ps-1 text-xs font-semibold tracking-wider">CSS</p>
                     </a>
                     <a href="javascript:void(0)" class="flex bg-yellow-300 border border-yellow-600 rounded-full px-2 py-1 items-center text-center hover:scale-95 duration-200 hover:shadow-md hover:shadow-yellow-700/70">
-                    <img decoding="async" loading="lazy" src="./assets/icon/js.svg" class="w-3 h-3" alt="">
+                    <img decoding="async" loading="lazy" src="./public/images/icon/js.svg" class="w-3 h-3" alt="">
                     <p class="text-yellow-600 ps-1 text-xs font-semibold tracking-wider">JAVASCRIPT</p>
                     </a>
                 </div>
@@ -194,7 +193,7 @@
             <div>
                 <div class="relative flex flex-col my-6 bg-gray-800 shadow-lg border border-white-500 hover:shadow-pink-700 rounded-lg w-70 transition-transform duration-300 ease-in-out transform hover:scale-105 max-h-[500px]">
                 <div class="relative h-56 m-2.5 overflow-hidden text-white rounded-md">
-                    <img decoding="async" loading="lazy" src="./assets/screenshot11.png" loading="lazy" alt="Website Image " class="cursor-pointer transition-transform duration-500 ease-in-out transform hover:scale-110" onclick="openModal(this)" />
+                    <img decoding="async" loading="lazy" src="./public/images/screenshot11.png" loading="lazy" alt="Website Image " class="cursor-pointer transition-transform duration-500 ease-in-out transform hover:scale-110" onclick="openModal(this)" />
                 </div>
                 <div class="p-4 flex-grow">
                     <h6 class="mb-2 text-white text-xl font-semibold">
@@ -203,19 +202,19 @@
                 </div>
                 <div class="flex  px-5 flex-wrap  items-center  align-middle left-20  gap-2 pb-3 ">
                     <a href="javascript:void(0)" class="flex bg-blue-300 border border-blue-600 rounded-full px-2 py-1 items-center text-center hover:scale-95 duration-200 hover:shadow-md hover:shadow-blue-700/70">
-                    <img decoding="async" loading="lazy" src="./assets/icon/tailwind.svg" class="w-3 h-3 bg-blue-100/30 rounded-full" alt="">
+                    <img decoding="async" loading="lazy" src="./public/images/icon/tailwind.svg" class="w-3 h-3 bg-blue-100/30 rounded-full" alt="">
                     <p class="text-blue-600 ps-1 text-xs font-semibold tracking-wider">TAILWIND</p>
                     </a>
                     <a href="javascript:void(0)" class="flex bg-orange-300 border border-orange-600 rounded-full px-2 py-1 items-center text-center hover:scale-95 duration-200 hover:shadow-md hover:shadow-orange-700/70">
-                    <img decoding="async" loading="lazy" src="./assets/icon/html.svg" class="w-3 h-3" alt="">
+                    <img decoding="async" loading="lazy" src="./public/images/icon/html.svg" class="w-3 h-3" alt="">
                     <p class="text-orange-600 ps-1 text-xs font-semibold tracking-wider">HTML</p>
                     </a>
                     <a href="javascript:void(0)" class="flex bg-cyan-300 border border-cyan-600 rounded-full px-2 py-1 items-center text-center hover:scale-95 duration-200 hover:shadow-md hover:shadow-cyan-700/70">
-                    <img decoding="async" loading="lazy" src="./assets/icon/css.svg" class="w-3 h-3" alt="">
+                    <img decoding="async" loading="lazy" src="./public/images/icon/css.svg" class="w-3 h-3" alt="">
                     <p class="text-cyan-600 ps-1 text-xs font-semibold tracking-wider">CSS</p>
                     </a>
                     <a href="javascript:void(0)" class="flex bg-yellow-300 border border-yellow-600 rounded-full px-2 py-1 items-center text-center hover:scale-95 duration-200 hover:shadow-md hover:shadow-yellow-700/70">
-                    <img decoding="async" loading="lazy" src="./assets/icon/js.svg" class="w-3 h-3" alt="">
+                    <img decoding="async" loading="lazy" src="./public/images/icon/js.svg" class="w-3 h-3" alt="">
                     <p class="text-yellow-600 ps-1 text-xs font-semibold tracking-wider">JAVASCRIPT</p>
                     </a>
                 </div>
@@ -248,7 +247,7 @@
         <div>
             <div class="relative flex flex-col my-6 bg-gray-800 shadow-lg border border-white-500 hover:shadow-pink-700 rounded-lg w-70 transition-transform duration-300 ease-in-out transform hover:scale-105 max-h-[450px]">
             <div class="relative h-56 m-2.5 overflow-hidden text-white rounded-md">
-                <img decoding="async" loading="lazy" src="./assets/screenshot10.png" loading="lazy" alt="Website Image " class="cursor-pointer transition-transform duration-500 ease-in-out transform hover:scale-110" onclick="openModal(this)" />
+                <img decoding="async" loading="lazy" src="./public/images/screenshot10.png" loading="lazy" alt="Website Image " class="cursor-pointer transition-transform duration-500 ease-in-out transform hover:scale-110" onclick="openModal(this)" />
             </div>
             <div class="p-4 flex-grow">
                 <h6 class="mb-2 text-white text-xl font-semibold">
@@ -257,19 +256,19 @@
             </div>
             <div class="flex  px-5 flex-wrap  items-center  align-middle left-20  gap-2 pb-3 ">
                 <a href="javascript:void(0)" class="flex bg-blue-300 border border-blue-600 rounded-full px-2 py-1 items-center text-center hover:scale-95 duration-200 hover:shadow-md hover:shadow-blue-700/70">
-                <img decoding="async" loading="lazy" src="./assets/icon/tailwind.svg" class="w-3 h-3 bg-blue-100/30 rounded-full" alt="">
+                <img decoding="async" loading="lazy" src="./public/images/icon/tailwind.svg" class="w-3 h-3 bg-blue-100/30 rounded-full" alt="">
                 <p class="text-blue-600 ps-1 text-xs font-semibold tracking-wider">TAILWIND</p>
                 </a>
                 <a href="javascript:void(0)" class="flex bg-orange-300 border border-orange-600 rounded-full px-2 py-1 items-center text-center hover:scale-95 duration-200 hover:shadow-md hover:shadow-orange-700/70">
-                <img decoding="async" loading="lazy" src="./assets/icon/html.svg" class="w-3 h-3" alt="">
+                <img decoding="async" loading="lazy" src="./public/images/icon/html.svg" class="w-3 h-3" alt="">
                 <p class="text-orange-600 ps-1 text-xs font-semibold tracking-wider">HTML</p>
                 </a>
                 <a href="javascript:void(0)" class="flex bg-cyan-300 border border-cyan-600 rounded-full px-2 py-1 items-center text-center hover:scale-95 duration-200 hover:shadow-md hover:shadow-cyan-700/70">
-                <img decoding="async" loading="lazy" src="./assets/icon/css.svg" class="w-3 h-3" alt="">
+                <img decoding="async" loading="lazy" src="./public/images/icon/css.svg" class="w-3 h-3" alt="">
                 <p class="text-cyan-600 ps-1 text-xs font-semibold tracking-wider">CSS</p>
                 </a>
                 <a href="javascript:void(0)" class="flex bg-yellow-300 border border-yellow-600 rounded-full px-2 py-1 items-center text-center hover:scale-95 duration-200 hover:shadow-md hover:shadow-yellow-700/70">
-                <img decoding="async" loading="lazy" src="./assets/icon/js.svg" class="w-3 h-3" alt="">
+                <img decoding="async" loading="lazy" src="./public/images/icon/js.svg" class="w-3 h-3" alt="">
                 <p class="text-yellow-600 ps-1 text-xs font-semibold tracking-wider">JAVASCRIPT</p>
                 </a>
             </div>
@@ -302,7 +301,7 @@
         <div>
             <div class="relative flex flex-col my-6 bg-gray-800 shadow-lg border border-white-500 hover:shadow-pink-700 rounded-lg w-70 transition-transform duration-300 ease-in-out transform hover:scale-105 max-h-[450px]">
             <div class="relative h-56 m-2.5 overflow-hidden text-white rounded-md">
-                <img decoding="async" loading="lazy" src="./assets/screenshot9.png" loading="lazy" alt="Website Image " class="cursor-pointer transition-transform duration-500 ease-in-out transform hover:scale-110" onclick="openModal(this)" />
+                <img decoding="async" loading="lazy" src="./public/images/screenshot9.png" loading="lazy" alt="Website Image " class="cursor-pointer transition-transform duration-500 ease-in-out transform hover:scale-110" onclick="openModal(this)" />
             </div>
             <div class="p-4 flex-grow">
                 <h6 class="mb-2 text-white text-xl font-semibold">
@@ -311,19 +310,19 @@
             </div>
             <div class="flex  px-5 flex-wrap  items-center  align-middle left-20  gap-2 pb-3 ">
                 <a href="javascript:void(0)" class="flex bg-blue-300 border border-blue-600 rounded-full px-2 py-1 items-center text-center hover:scale-95 duration-200 hover:shadow-md hover:shadow-blue-700/70">
-                <img decoding="async" loading="lazy" src="./assets/icon/tailwind.svg" class="w-3 h-3 bg-blue-100/30 rounded-full" alt="">
+                <img decoding="async" loading="lazy" src="./public/images/icon/tailwind.svg" class="w-3 h-3 bg-blue-100/30 rounded-full" alt="">
                 <p class="text-blue-600 ps-1 text-xs font-semibold tracking-wider">TAILWIND</p>
                 </a>
                 <a href="javascript:void(0)" class="flex bg-orange-300 border border-orange-600 rounded-full px-2 py-1 items-center text-center hover:scale-95 duration-200 hover:shadow-md hover:shadow-orange-700/70">
-                <img decoding="async" loading="lazy" src="./assets/icon/html.svg" class="w-3 h-3" alt="">
+                <img decoding="async" loading="lazy" src="./public/images/icon/html.svg" class="w-3 h-3" alt="">
                 <p class="text-orange-600 ps-1 text-xs font-semibold tracking-wider">HTML</p>
                 </a>
                 <a href="javascript:void(0)" class="flex bg-cyan-300 border border-cyan-600 rounded-full px-2 py-1 items-center text-center hover:scale-95 duration-200 hover:shadow-md hover:shadow-cyan-700/70">
-                <img decoding="async" loading="lazy" src="./assets/icon/css.svg" class="w-3 h-3" alt="">
+                <img decoding="async" loading="lazy" src="./public/images/icon/css.svg" class="w-3 h-3" alt="">
                 <p class="text-cyan-600 ps-1 text-xs font-semibold tracking-wider">CSS</p>
                 </a>
                 <a href="javascript:void(0)" class="flex bg-yellow-300 border border-yellow-600 rounded-full px-2 py-1 items-center text-center hover:scale-95 duration-200 hover:shadow-md hover:shadow-yellow-700/70">
-                <img decoding="async" loading="lazy" src="./assets/icon/js.svg" class="w-3 h-3" alt="">
+                <img decoding="async" loading="lazy" src="./public/images/icon/js.svg" class="w-3 h-3" alt="">
                 <p class="text-yellow-600 ps-1 text-xs font-semibold tracking-wider">JAVASCRIPT</p>
                 </a>
             </div>
@@ -356,7 +355,7 @@
         <div>
             <div class="relative flex flex-col my-6 bg-gray-800 shadow-lg border border-white-500 hover:shadow-pink-700 rounded-lg w-70 transition-transform duration-300 ease-in-out transform hover:scale-105 max-h-[450px]"> 
             <div class="relative h-56 m-2.5 overflow-hidden text-white rounded-md">
-                <img decoding="async" loading="lazy" src="./assets/screenshot8.png" loading="lazy" alt="Website Image " class="cursor-pointer transition-transform duration-500 ease-in-out transform hover:scale-110" onclick="openModal(this)" />
+                <img decoding="async" loading="lazy" src="./public/images/screenshot8.png" loading="lazy" alt="Website Image " class="cursor-pointer transition-transform duration-500 ease-in-out transform hover:scale-110" onclick="openModal(this)" />
             </div>
             <div class="p-4 flex-grow">
                 <h6 class="mb-2 text-white text-xl font-semibold">
@@ -365,15 +364,15 @@
             </div>
             <div class="flex  px-5 flex-wrap  items-center  align-middle left-20  gap-2 pb-3 ">
                 <a href="javascript:void(0)" class="flex bg-yellow-300 border border-yellow-600 rounded-full px-2 py-1 items-center text-center hover:scale-95 duration-200 hover:shadow-md hover:shadow-yellow-700/70">
-                <img decoding="async" loading="lazy" src="./assets/icon/js.svg" class="w-3 h-3 border border-white" alt="">
+                <img decoding="async" loading="lazy" src="./public/images/icon/js.svg" class="w-3 h-3 border border-white" alt="">
                 <p class="text-yellow-600 ps-1 text-xs font-semibold tracking-wider">JAVASCRIPT</p>
                 </a>
                 <a href="javascript:void(0)" class="flex bg-orange-300 border border-orange-600 rounded-full px-2 py-1 items-center text-center hover:scale-95 duration-200 hover:shadow-md hover:shadow-orange-700/70">
-                <img decoding="async" loading="lazy" src="./assets/icon/html.svg" class="w-3 h-3" alt="">
+                <img decoding="async" loading="lazy" src="./public/images/icon/html.svg" class="w-3 h-3" alt="">
                 <p class="text-orange-600 ps-1 text-xs font-semibold tracking-wider">HTML</p>
                 </a>
                 <a href="javascript:void(0)" class="flex bg-cyan-300 border border-cyan-600 rounded-full px-2 py-1 items-center text-center hover:scale-95 duration-200 hover:shadow-md hover:shadow-cyan-700/70">
-                <img decoding="async" loading="lazy" src="./assets/icon/css.svg" class="w-3 h-3" alt="">
+                <img decoding="async" loading="lazy" src="./public/images/icon/css.svg" class="w-3 h-3" alt="">
                 <p class="text-cyan-600 ps-1 text-xs font-semibold tracking-wider">CSS</p>
                 </a>
             </div>
@@ -406,7 +405,7 @@
         <div>
             <div class="relative flex flex-col my-6 bg-gray-800 shadow-lg border border-white-500 hover:shadow-pink-700 rounded-lg w-70 transition-transform duration-300 ease-in-out transform hover:scale-105 max-h-[450px]">
             <div class="relative h-56 m-2.5 overflow-hidden text-white rounded-md">
-                <img decoding="async" loading="lazy" src="./assets/screenshot7.png" loading="lazy" alt="Website Image " class="cursor-pointer transition-transform duration-500 ease-in-out transform hover:scale-110" onclick="openModal(this)" />
+                <img decoding="async" loading="lazy" src="./public/images/screenshot7.png" loading="lazy" alt="Website Image " class="cursor-pointer transition-transform duration-500 ease-in-out transform hover:scale-110" onclick="openModal(this)" />
             </div>
             <div class="p-4 flex-grow">
                 <h6 class="mb-2 text-white text-xl font-semibold">
@@ -415,20 +414,20 @@
             </div>
             <div class="flex  px-5 flex-wrap  items-center  align-middle left-20  gap-2 pb-3 ">
                 <a href="javascript:void(0)" class="flex bg-cyan-300 border border-cyan-600 rounded-full px-2 py-1 items-center text-center hover:scale-95 duration-200 hover:shadow-md hover:shadow-cyan-700/70">
-                <img decoding="async" loading="lazy" src="./assets/icon/css.svg" class="w-3 h-3" alt="">
+                <img decoding="async" loading="lazy" src="./public/images/icon/css.svg" class="w-3 h-3" alt="">
                 <p class="text-cyan-600 ps-1 text-xs font-semibold tracking-wider">CSS</p>
                 </a>
                 <a href="javascript:void(0)" class="flex bg-orange-300 border border-orange-600 rounded-full px-2 py-1 items-center text-center hover:scale-95 duration-200 hover:shadow-md hover:shadow-orange-700/70">
-                <img decoding="async" loading="lazy" src="./assets/icon/html.svg" class="w-3 h-3" alt="">
+                <img decoding="async" loading="lazy" src="./public/images/icon/html.svg" class="w-3 h-3" alt="">
                 <p class="text-orange-600 ps-1 text-xs font-semibold tracking-wider">HTML</p>
                 </a>
 
                 <a href="javascript:void(0)" class="flex bg-yellow-300 border border-yellow-600 rounded-full px-2 py-1 items-center text-center hover:scale-95 duration-200 hover:shadow-md hover:shadow-yellow-700/70">
-                <img decoding="async" loading="lazy" src="./assets/icon/js.svg" class="w-3 h-3 border border-white" alt="">
+                <img decoding="async" loading="lazy" src="./public/images/icon/js.svg" class="w-3 h-3 border border-white" alt="">
                 <p class="text-yellow-600 ps-1 text-xs font-semibold tracking-wider">JAVASCRIPT</p>
                 </a>
                 <a href="javascript:void(0)" class="flex bg-purple-300 border border-purple-600 rounded-full px-2 py-1 items-center text-center hover:scale-95 duration-200 hover:shadow-md hover:shadow-purple-700/70">
-                <img decoding="async" loading="lazy" src="./assets/icon/bs.svg" class="w-3 h-3" alt="">
+                <img decoding="async" loading="lazy" src="./public/images/icon/bs.svg" class="w-3 h-3" alt="">
                 <p class="text-purple-600 ps-1 text-xs font-semibold tracking-wider">BOOTSTRAP</p>
                 </a>
             </div>
@@ -461,7 +460,7 @@
         <div>
             <div class="relative flex flex-col my-6 bg-gray-800 shadow-lg border border-white-500 hover:shadow-pink-700 rounded-lg w-70 transition-transform duration-300 ease-in-out transform hover:scale-105 max-h-[450px]">
             <div class="relative h-56 m-2.5 overflow-hidden text-white rounded-md">
-                <img decoding="async" loading="lazy" src="./assets/screenshot6.png" loading="lazy" alt="Website Image " class="cursor-pointer transition-transform duration-500 ease-in-out transform hover:scale-110" onclick="openModal(this)" />
+                <img decoding="async" loading="lazy" src="./public/images/screenshot6.png" loading="lazy" alt="Website Image " class="cursor-pointer transition-transform duration-500 ease-in-out transform hover:scale-110" onclick="openModal(this)" />
             </div>
             <div class="p-4 flex-grow">
                 <h6 class="mb-2 text-white text-xl font-semibold">
@@ -470,19 +469,19 @@
             </div>
             <div class="flex  px-5 flex-wrap  items-center  align-middle left-20  gap-2 pb-3 ">
                 <a href="javascript:void(0)" class="flex bg-purple-300 border border-purple-600 rounded-full px-2 py-1 items-center text-center hover:scale-95 duration-200 hover:shadow-md hover:shadow-purple-700/70">
-                <img decoding="async" loading="lazy" src="./assets/icon/bs.svg" class="w-3 h-3" alt="">
+                <img decoding="async" loading="lazy" src="./public/images/icon/bs.svg" class="w-3 h-3" alt="">
                 <p class="text-purple-600 ps-1 text-xs font-semibold tracking-wider">BOOTSTRAP</p>
                 </a>
                 <a href="javascript:void(0)" class="flex bg-orange-300 border border-orange-600 rounded-full px-2 py-1 items-center text-center hover:scale-95 duration-200 hover:shadow-md hover:shadow-orange-700/70">
-                <img decoding="async" loading="lazy" src="./assets/icon/html.svg" class="w-3 h-3" alt="">
+                <img decoding="async" loading="lazy" src="./public/images/icon/html.svg" class="w-3 h-3" alt="">
                 <p class="text-orange-600 ps-1 text-xs font-semibold tracking-wider">HTML</p>
                 </a>
                 <a href="javascript:void(0)" class="flex bg-cyan-300 border border-cyan-600 rounded-full px-2 py-1 items-center text-center hover:scale-95 duration-200 hover:shadow-md hover:shadow-cyan-700/70">
-                <img decoding="async" loading="lazy" src="./assets/icon/css.svg" class="w-3 h-3" alt="">
+                <img decoding="async" loading="lazy" src="./public/images/icon/css.svg" class="w-3 h-3" alt="">
                 <p class="text-cyan-600 ps-1 text-xs font-semibold tracking-wider">CSS</p>
                 </a>
                 <a href="javascript:void(0)" class="flex bg-yellow-300 border border-yellow-600 rounded-full px-2 py-1 items-center text-center hover:scale-95 duration-200 hover:shadow-md hover:shadow-yellow-700/70">
-                <img decoding="async" loading="lazy" src="./assets/icon/js.svg" class="w-3 h-3 border border-white" alt="">
+                <img decoding="async" loading="lazy" src="./public/images/icon/js.svg" class="w-3 h-3 border border-white" alt="">
                 <p class="text-yellow-600 ps-1 text-xs font-semibold tracking-wider">JAVASCRIPT</p>
                 </a>
             </div>
@@ -515,7 +514,7 @@
         <div>
             <div class="relative flex flex-col my-6 bg-gray-800 shadow-lg border border-white-500 hover:shadow-pink-700 rounded-lg w-70 transition-transform duration-300 ease-in-out transform hover:scale-105 max-h-[450px]"> 
             <div class="relative h-56 m-2.5 overflow-hidden text-white rounded-md">
-                <img decoding="async" loading="lazy" src="./assets/screenshot5.png" loading="lazy" alt="Website Image " class="cursor-pointer transition-transform duration-500 ease-in-out transform hover:scale-110" onclick="openModal(this)" />
+                <img decoding="async" loading="lazy" src="./public/images/screenshot5.png" loading="lazy" alt="Website Image " class="cursor-pointer transition-transform duration-500 ease-in-out transform hover:scale-110" onclick="openModal(this)" />
             </div>
             <div class="p-4 flex-grow">
                 <h6 class="mb-2 text-white text-xl font-semibold">
@@ -524,15 +523,15 @@
             </div>
             <div class="flex  px-5 flex-wrap  items-center  align-middle left-20  gap-2 pb-3 ">
                 <a href="javascript:void(0)" class="flex bg-purple-300 border border-purple-600 rounded-full px-2 py-1 items-center text-center hover:scale-95 duration-200 hover:shadow-md hover:shadow-purple-700/70">
-                <img decoding="async" loading="lazy" src="./assets/icon/bs.svg" class="w-3 h-3" alt="">
+                <img decoding="async" loading="lazy" src="./public/images/icon/bs.svg" class="w-3 h-3" alt="">
                 <p class="text-purple-600 ps-1 text-xs font-semibold tracking-wider">BOOTSTRAP</p>
                 </a>
                 <a href="javascript:void(0)" class="flex bg-orange-300 border border-orange-600 rounded-full px-2 py-1 items-center text-center hover:scale-95 duration-200 hover:shadow-md hover:shadow-orange-700/70">
-                <img decoding="async" loading="lazy" src="./assets/icon/html.svg" class="w-3 h-3" alt="">
+                <img decoding="async" loading="lazy" src="./public/images/icon/html.svg" class="w-3 h-3" alt="">
                 <p class="text-orange-600 ps-1 text-xs font-semibold tracking-wider">HTML</p>
                 </a>
                 <a href="javascript:void(0)" class="flex bg-cyan-300 border border-cyan-600 rounded-full px-2 py-1 items-center text-center hover:scale-95 duration-200 hover:shadow-md hover:shadow-cyan-700/70">
-                <img decoding="async" loading="lazy" src="./assets/icon/css.svg" class="w-3 h-3" alt="">
+                <img decoding="async" loading="lazy" src="./public/images/icon/css.svg" class="w-3 h-3" alt="">
                 <p class="text-cyan-600 ps-1 text-xs font-semibold tracking-wider">CSS</p>
                 </a>
             </div>
@@ -565,7 +564,7 @@
         <div>
             <div class="relative flex flex-col my-6 bg-gray-800 shadow-lg border border-white-500 hover:shadow-pink-700 rounded-lg w-70 transition-transform duration-300 ease-in-out transform hover:scale-105 max-h-[450px]">
             <div class="relative h-56 m-2.5 overflow-hidden text-white rounded-md">
-                <img decoding="async" loading="lazy" src="./assets/screenshot4.png" loading="lazy" alt="Website Image " class="cursor-pointer transition-transform duration-500 ease-in-out transform hover:scale-110" onclick="openModal(this)" />
+                <img decoding="async" loading="lazy" src="./public/images/screenshot4.png" loading="lazy" alt="Website Image " class="cursor-pointer transition-transform duration-500 ease-in-out transform hover:scale-110" onclick="openModal(this)" />
             </div>
             <div class="p-4 flex-grow">
                 <h6 class="mb-2 text-white text-xl font-semibold">
@@ -574,15 +573,15 @@
             </div>
             <div class="flex  px-5 flex-wrap  items-center  align-middle left-20  gap-2 pb-3 ">
                 <a href="javascript:void(0)" class="flex bg-orange-300 border border-orange-600 rounded-full px-2 py-1 items-center text-center hover:scale-95 duration-200 hover:shadow-md hover:shadow-orange-700/70">
-                <img decoding="async" loading="lazy" src="./assets/icon/html.svg" class="w-3 h-3" alt="">
+                <img decoding="async" loading="lazy" src="./public/images/icon/html.svg" class="w-3 h-3" alt="">
                 <p class="text-orange-600 ps-1 text-xs font-semibold tracking-wider">HTML</p>
                 </a>
                 <a href="javascript:void(0)" class="flex bg-cyan-300 border border-cyan-600 rounded-full px-2 py-1 items-center text-center hover:scale-95 duration-200 hover:shadow-md hover:shadow-cyan-700/70">
-                <img decoding="async" loading="lazy" src="./assets/icon/css.svg" class="w-3 h-3" alt="">
+                <img decoding="async" loading="lazy" src="./public/images/icon/css.svg" class="w-3 h-3" alt="">
                 <p class="text-cyan-600 ps-1 text-xs font-semibold tracking-wider">CSS</p>
                 </a>
                 <a href="javascript:void(0)" class="flex bg-yellow-300 border border-yellow-600 rounded-full px-2 py-1 items-center text-center hover:scale-95 duration-200 hover:shadow-md hover:shadow-yellow-700/70">
-                <img decoding="async" loading="lazy" src="./assets/icon/js.svg" class="w-3 h-3" alt="">
+                <img decoding="async" loading="lazy" src="./public/images/icon/js.svg" class="w-3 h-3" alt="">
                 <p class="text-yellow-600 ps-1 text-xs font-semibold tracking-wider">JAVASCRIPT</p>
                 </a>
             </div>
@@ -615,7 +614,7 @@
         <div>
             <div class="relative flex flex-col my-6 bg-gray-800 shadow-lg border border-white-500 hover:shadow-pink-700 rounded-lg w-70 transition-transform duration-300 ease-in-out transform hover:scale-105 max-h-[450px]">
             <div class="relative h-56 m-2.5 overflow-hidden text-white rounded-md">
-                <img decoding="async" loading="lazy" src="./assets/screenshot3.png" loading="lazy" alt="Website Image " class="cursor-pointer transition-transform duration-500 ease-in-out transform hover:scale-110" onclick="openModal(this)" />
+                <img decoding="async" loading="lazy" src="./public/images/screenshot3.png" loading="lazy" alt="Website Image " class="cursor-pointer transition-transform duration-500 ease-in-out transform hover:scale-110" onclick="openModal(this)" />
             </div>
             <div class="p-4 flex-grow">
                 <h6 class="mb-2 text-white text-xl font-semibold">
@@ -624,19 +623,19 @@
             </div>
             <div class="flex  px-5 flex-wrap  items-center  align-middle left-20  gap-2 pb-3 ">
             <a href="javascript:void(0)" class="flex bg-purple-300 border border-purple-600 rounded-full px-2 py-1 items-center text-center hover:scale-95 duration-200 hover:shadow-md hover:shadow-purple-700/70">
-                <img decoding="async" loading="lazy" src="./assets/icon/bs.svg" class="w-3 h-3" alt="">
+                <img decoding="async" loading="lazy" src="./public/images/icon/bs.svg" class="w-3 h-3" alt="">
                 <p class="text-purple-600 ps-1 text-xs font-semibold tracking-wider">BOOTSTRAP</p>
                 </a>
                 <a href="javascript:void(0)" class="flex bg-orange-300 border border-orange-600 rounded-full px-2 py-1 items-center text-center hover:scale-95 duration-200 hover:shadow-md hover:shadow-orange-700/70">
-                <img decoding="async" loading="lazy" src="./assets/icon/html.svg" class="w-3 h-3" alt="">
+                <img decoding="async" loading="lazy" src="./public/images/icon/html.svg" class="w-3 h-3" alt="">
                 <p class="text-orange-600 ps-1 text-xs font-semibold tracking-wider">HTML</p>
                 </a>
                 <a href="javascript:void(0)" class="flex bg-cyan-300 border border-cyan-600 rounded-full px-2 py-1 items-center text-center hover:scale-95 duration-200 hover:shadow-md hover:shadow-cyan-700/70">
-                <img decoding="async" loading="lazy" src="./assets/icon/css.svg" class="w-3 h-3" alt="">
+                <img decoding="async" loading="lazy" src="./public/images/icon/css.svg" class="w-3 h-3" alt="">
                 <p class="text-cyan-600 ps-1 text-xs font-semibold tracking-wider">CSS</p>
                 </a>
                 <a href="javascript:void(0)" class="flex bg-yellow-300 border border-yellow-600 rounded-full px-2 py-1 items-center text-center hover:scale-95 duration-200 hover:shadow-md hover:shadow-yellow-700/70">
-                <img decoding="async" loading="lazy" src="./assets/icon/js.svg" class="w-3 h-3" alt="">
+                <img decoding="async" loading="lazy" src="./public/images/icon/js.svg" class="w-3 h-3" alt="">
                 <p class="text-yellow-600 ps-1 text-xs font-semibold tracking-wider">JAVASCRIPT</p>
                 </a>
             </div>
@@ -669,7 +668,7 @@
         <div>
             <div class="relative flex flex-col my-6 bg-gray-800 shadow-lg border border-white-500 hover:shadow-pink-700 rounded-lg w-70 transition-transform duration-300 ease-in-out transform hover:scale-105 max-h-[450px]">
             <div class="relative h-56 m-2.5 overflow-hidden text-white rounded-md">
-                <img decoding="async" loading="lazy" src="./assets/screenshot2.png" loading="lazy" alt="Website Image " class="cursor-pointer transition-transform duration-500 ease-in-out transform hover:scale-110" onclick="openModal(this)" />
+                <img decoding="async" loading="lazy" src="./public/images/screenshot2.png" loading="lazy" alt="Website Image " class="cursor-pointer transition-transform duration-500 ease-in-out transform hover:scale-110" onclick="openModal(this)" />
             </div>
             <div class="p-4 flex-grow">
                 <h6 class="mb-2 text-white text-xl font-semibold">
@@ -678,15 +677,15 @@
             </div>
             <div class="flex  px-5 flex-wrap  items-center  align-middle left-20  gap-2 pb-3 ">
                 <a href="javascript:void(0)" class="flex bg-orange-300 border border-orange-600 rounded-full px-2 py-1 items-center text-center hover:scale-95 duration-200 hover:shadow-md hover:shadow-orange-700/70">
-                <img decoding="async" loading="lazy" src="./assets/icon/html.svg" class="w-3 h-3" alt="">
+                <img decoding="async" loading="lazy" src="./public/images/icon/html.svg" class="w-3 h-3" alt="">
                 <p class="text-orange-600 ps-1 text-xs font-semibold tracking-wider">HTML</p>
                 </a>
                 <a href="javascript:void(0)" class="flex bg-cyan-300 border border-cyan-600 rounded-full px-2 py-1 items-center text-center hover:scale-95 duration-200 hover:shadow-md hover:shadow-cyan-700/70">
-                <img decoding="async" loading="lazy" src="./assets/icon/css.svg" class="w-3 h-3" alt="">
+                <img decoding="async" loading="lazy" src="./public/images/icon/css.svg" class="w-3 h-3" alt="">
                 <p class="text-cyan-600 ps-1 text-xs font-semibold tracking-wider">CSS</p>
                 </a>
                 <a href="javascript:void(0)" class="flex bg-yellow-300 border border-yellow-600 rounded-full px-2 py-1 items-center text-center hover:scale-95 duration-200 hover:shadow-md hover:shadow-yellow-700/70">
-                <img decoding="async" loading="lazy" src="./assets/icon/js.svg" class="w-3 h-3" alt="">
+                <img decoding="async" loading="lazy" src="./public/images/icon/js.svg" class="w-3 h-3" alt="">
                 <p class="text-yellow-600 ps-1 text-xs font-semibold tracking-wider">JAVASCRIPT</p>
                 </a>
             </div>
@@ -719,7 +718,7 @@
         <div>
             <div class="relative flex flex-col my-6 bg-gray-800 shadow-lg border border-white-500 hover:shadow-pink-700 rounded-lg w-70 transition-transform duration-300 ease-in-out transform hover:scale-105 max-h-[450px]">
             <div class="relative h-56 m-2.5 overflow-hidden text-white rounded-md">
-                <img decoding="async" loading="lazy" src="./assets/screenshot1.png" loading="lazy" alt="Website Image " class="cursor-pointer transition-transform duration-500 ease-in-out transform hover:scale-110" onclick="openModal(this)" />
+                <img decoding="async" loading="lazy" src="./public/images/screenshot1.png" loading="lazy" alt="Website Image " class="cursor-pointer transition-transform duration-500 ease-in-out transform hover:scale-110" onclick="openModal(this)" />
             </div>
             <div class="p-4 flex-grow">
                 <h6 class="mb-2 text-white text-xl font-semibold">
@@ -728,7 +727,7 @@
             </div>
             <div class="flex  px-5 flex-wrap  items-center  align-middle left-20  gap-2 pb-3 ">
                 <a href="javascript:void(0)" class="flex bg-orange-300 border border-orange-600 rounded-full px-2 py-1 items-center text-center hover:scale-95 duration-200 hover:shadow-md hover:shadow-orange-700/70">
-                <img decoding="async" loading="lazy" src="./assets/icon/html.svg" class="w-3 h-3" alt="">
+                <img decoding="async" loading="lazy" src="./public/images/icon/html.svg" class="w-3 h-3" alt="">
                 <p class="text-orange-600 ps-1 text-xs font-semibold tracking-wider">HTML</p>
                 </a>
             </div>

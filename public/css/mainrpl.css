@@ -1,0 +1,95 @@
+@font-face {
+    font-family: '印品鸿蒙体';
+    src: url('../font/ja-jp.ttf') format('truetype');
+    font-weight: normal !important;
+    font-style: normal;
+  }
+  
+  body {
+    font-family: '印品鸿蒙体', sans-serif;
+  }
+  
+  
+  html {
+    scroll-behavior: smooth;
+  }
+  ::-webkit-scrollbar {
+  width: 6px;
+  }
+  ::-webkit-scrollbar-track {
+  background: #afb3b1;
+  }
+  ::-webkit-scrollbar-thumb {
+  background: #062637;
+  }
+  ::-webkit-scrollbar-thumb:hover {
+  background: rgb(42, 42, 111);
+  }
+  @layer utilities {
+    .scrollbar-thin {
+      scrollbar-width: thin;
+      scrollbar-color: #2ad46c #1c9d5698; /* thumb color | track color */
+    }
+  
+    .scrollbar-thumb {
+      &::-webkit-scrollbar-thumb {
+        background-color: #07441e; /* Thumb color */
+        border-radius: 10px;
+      }
+    }
+    .scrollbar-thumb {
+      &::-webkit-scrollbar-thumb {
+        background-color: #07441e; /* Thumb color */
+        border-radius: 10px;
+      }
+    }
+  
+    .scrollbar-track {
+      &::-webkit-scrollbar-track {
+        background-color: #333333; /* Track color */
+      }
+    }
+  
+    .scrollbar {
+      &::-webkit-scrollbar {
+        width: 8px; /* Width of the scrollbar */
+      }
+    }
+  } 
+    
+    
+    .matrix-text, .matrix-icon path {
+      animation: flicker 6s infinite alternate, cascade 2s infinite alternate;
+    }
+  
+    /* Flicker animation */
+    @keyframes flicker {
+      0%, 18%, 22%, 25%, 53%, 57%, 100% {
+        opacity: 1;
+      }
+      20%, 24%, 55% {
+        opacity: 0.3;
+      }
+    }
+  
+    /* Slight movement for a cascading effect */
+    @keyframes cascade {
+      0%, 100% {
+        transform: translateY(0);
+      }
+      50% {
+        transform: translateY(3px);
+      }
+    
+    }
+    nav {
+      transition: background-color 0.5s ease, padding 0.5s ease;
+    }
+    
+    .navbar-scrolled {
+      background-color: rgba(0, 0, 0, 0.7);
+      padding: 0.2rem 2.5rem; /* Adjust padding as desired */
+      backdrop-filter: blur(8px); /* Adjust the blur intensity as desired */
+
+    }
+    
